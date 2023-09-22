@@ -1,4 +1,40 @@
+:root {
+    --principal-color: #002533;
+    --secondary-color: #f7efe7;
+    --tertiary-color: #f2621f;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: var(--principal-color);
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+main {
+
+}
+
+footer {
+    background-color: var(--principal-color);
+}
+
+button {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--principal-color);
+    color: var(--tertiary-color);
 }
