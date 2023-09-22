@@ -1,3 +1,5 @@
+/*initialisation*/
+
 :root {
     --principal-color: #002533;
     --secondary-color: #f7efe7;
@@ -9,28 +11,23 @@
     padding: 0;
 }
 
+/*HEADER*/
+
 header {
     background-color: var(--principal-color);
 }
 
+.menu-2 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+/*BODY*/
 
 body {
     background-color: var(--secondary-color);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    gap: 10px;
-}
-
-
-
-footer {
-    background-color: var(--principal-color);
 }
 
 button {
@@ -45,4 +42,18 @@ button {
 button:hover {
     background-color: var(--principal-color);
     color: var(--tertiary-color);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--principal-color);
 }
