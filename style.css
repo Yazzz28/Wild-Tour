@@ -30,6 +30,8 @@ body {
     background-color: var(--secondary-color);
 }
 
+/*Contact*/
+
 button {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
