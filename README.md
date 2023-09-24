@@ -9,6 +9,6 @@ Demain on s'organise pour faire un wire frame et une mise en page du site et apr
 update : Tu as gérer mec l'Index est magnifique :O
 
 Salut tout le monde voila j'ai avancer le menu deroulant en suivant ce tuto : "https://www.codeur.com/tuto/css/creer-menu-deroulant-css/"
-
++ test avec image mais rien de concluent pour le moment 
 j'ai reussi a cacher les sous categories (on peut les voir grace a l'inspecteur) mais je n'arrive pas a les faire reapparaitre au clic si quelqun voit ou j'ai rate un truc hesitez pas a me dire ^^ 
 ps je l'ai fait que sur l'acceuil.html histoire de tester :D
