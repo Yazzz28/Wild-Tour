@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(/assets-daniel/nils-nedel-ONpGBpns3cs-unsplash\ \(1\).jpg);
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 5.5rem;
+    color: #f7efe7;
+    margin-left: 4rem;
+    margin-top: 15%;
+    text-shadow: 3px 4px #f2621f;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 9rem;
+    gap: 7rem;
+}
+
+.boutons button {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    background: #002533;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0%;
+}
+
+.boutons button a {
+    color: #f7efe7;
+    text-decoration: none;
+    text-shadow: 1px 2px #f2621f;
+    padding:0rem 3rem;
+    border-radius: 5px;
+    border: 0%;
+}
+
+.boutons button a:hover {
+    background: #f7efe7;
+    color:#002533;
+    transition: .5s;
+    border: 3px solid #002533;
+}
+
