@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>The Wild tour</title>
 </head>
@@ -11,36 +14,30 @@
     <header>
             <!--Partie nav avec logo et un menu déroulant-->
         <section class="icon"></section>
-        <section class="nav">
             <nav>
-                <h2 class="title-nav"></h2>
                 <ul>
-                    <h2 class="nom-mn-deroulant">Découvrir</h2>
-                    <li>
-                        <ul>
-                                <!--Menu déroulant-->
-                            <li><a href="fiche-yacine.html">Gastronomie</a></li>
-                            <li><a href="fiche-julien.html">Art</a></li>
-                            <li><a href="fiche-stephV.html">Ecologie</a></li>
-                            <li><a href="fiche_stephM.html">Nature</a></li>
-                            <li><a href="fiche-daniel.html">Sport</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul>
-                        <!--Deux links "Acceuil et Contact" en liste seule-->
-                    <section class="menu-2">
+                    <ul>
                         <li><a href="acceuil.html">Acceuil</a></li>
                         <li><a href="">Articles</a></li>
                         <li><a href="contact.html">contact</a></li>
-                    </section>
+                    </ul>
+                    <!--Menu deroulant-->
+                    <li class="menuDeroulant">
+                        <a href="#" >Categories</a>
+                        <ul class="sousMenu">
+                            <li><a href="fiche-yacine.html">Gastronomie</a></li>
+                            <li><a href="fiche-daniel.html">Sport</a></li>
+                            <li><a href="fiche-julien.html">Art</a></li>
+                            <li><a href="fiche-stephV.html">Nature</a></li>
+                            <li><a href="fiche_stephM.html">Bien-etre</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav> 
-        </section>
     </header>
     <main>
             <!--Titre central-gauche dans l'image principale-->
-        <h1 class="principal-title"></h1>
+        <h1 class="principal-title">The Wild Tour :<br/>Le Guide Touristique Des Wilders</h1>
         <section class="image"></section>
         <section class="paragraphe">
                 <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
