@@ -26,7 +26,8 @@ header {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;    
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
 }
 
 /*Sous menu*/
@@ -141,6 +142,7 @@ body {
  
 .texte p {
     margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
 .texte div {
