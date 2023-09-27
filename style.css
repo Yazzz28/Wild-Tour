@@ -30,6 +30,37 @@ header {
     border-radius: 0px 0px 15px 15px;  
 }
 
+/*page yacine*/
+.principal-title-yacine {
+    background-image: url(assets-yacine/pexels-cats-coming-1907229.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
+}
+
+.texte-yacine {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 49% 49%;
+}
+
+.contenu-yacine {
+    font-family: 'Lexend';
+    grid-column: 2;
+    
+}
+
+.image-sushi {
+    background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
+    grid-row: 2;
+}
+/*fin page yacine*/
 /*Sous menu*/
 
 
