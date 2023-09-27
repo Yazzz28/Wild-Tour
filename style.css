@@ -16,6 +16,13 @@
 
 header {
     background-color: var(--principal-color);
+    border-radius: 0px 0px 15px 15px;
+}
+
+nav {
+    background-color: #002533;
+    position: sticky;
+    top: 0;
 }
 
 .principal-title {
@@ -26,9 +33,9 @@ header {
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: center;
-    border-radius: 0px 0px 15px 15px;
+    padding: 3%;
+    background-position: bottom;  
+    border-radius: 0px 0px 15px 15px;  
 }
 
 body {
@@ -45,29 +52,113 @@ body {
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: center;
-    border-radius: 0px 0px 15px 15px;
+    padding: 3%;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
 }
 
 .texte-yacine {
     display: grid;
-    grid-template-columns: 49% 49%;
-    grid-template-rows: 49% 49%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45rem 30rem 45rem;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .contenu-yacine {
     font-family: 'Lexend';
+    font-size: xx-large;
     grid-column: 2;
-
+    margin: 3%;
+    background: rgb(247,239,231);
+    background: linear-gradient(90deg, rgba(247,239,231,1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
     background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
     grid-row: 2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    margin: 3%;
 }
 
+
 /*fin page yacine*/
+
+/*Page Danie*/
+
+h1.principal-title-daniel{
+    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
+}
+
+.texte-daniel {
+    display:grid;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.1rem;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-gap: 0.9rem;
+    grid-template-areas: 
+    " 1, 2 ";
+    
+}
+
+.texte-daniel p {
+    display: grid;
+    grid-area: 1 ;
+    padding: 2rem;
+    text-align:center;
+    margin-top: 10%;
+}
+
+div.grid-daniel {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr ;
+    grid-gap: 0.9rem;
+    grid-template-areas: 
+    " 1 2 "
+    " 3 ";
+}
+
+.img1 {
+    grid-area: 1 ;
+    margin: 1%;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
+    background-size: cover;
+    background-position:top;
+    padding: 11rem;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.img2 {
+    grid-area: 2 ; 
+    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
+    padding: 11rem;
+    margin: 1%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.parag2 {
+    grid-area: 2 ; 
+}
+
+
+
+/*Sous menu*/
 
 /*page StephV*/
 
@@ -163,15 +254,13 @@ h3 {
     /*Sous menu*/
 
 
-    nav ul,
-    .menuDeroulant {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
-
+nav ul, .menuDeroulant{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
 
     li a {
         color: #f7efe7;
@@ -350,7 +439,8 @@ h3 {
 
     /*FOOTER*/
 
-    footer {
-        background-color: var(--principal-color);
-
-    }
+footer {
+    background-color: var(--principal-color);
+    bottom: 0;
+    width: 100%;
+}
