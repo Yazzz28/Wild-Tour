@@ -4,6 +4,7 @@
     --principal-color: #002533;
     --secondary-color: #f7efe7;
     --tertiary-color: #f2621f;
+    --border-radius: 40px;
 }
 
 * {
@@ -15,6 +16,13 @@
 
 header {
     background-color: var(--principal-color);
+    border-radius: 0px 0px 15px 15px;
+}
+
+nav {
+    background-color: #002533;
+    position: sticky;
+    top: 0;
 }
 
 .principal-title {
@@ -25,9 +33,14 @@ header {
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: center;  
+    padding: 3%;
+    background-position: bottom;  
     border-radius: 0px 0px 15px 15px;  
+}
+
+body {
+    background-color: var(--secondary-color);
+    margin: 0rem 4rem;
 }
 
 /*page yacine*/
@@ -39,21 +52,26 @@ header {
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
+    padding: 3%;
     background-position: center;  
     border-radius: 0px 0px 15px 15px;  
 }
 
 .texte-yacine {
     display: grid;
-    grid-template-columns: 49% 40rem;
-    grid-template-rows: 49% 49%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45rem 30rem 45rem;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .contenu-yacine {
     font-family: 'Lexend';
     font-size: xx-large;
     grid-column: 2;
+    margin: 3%;
+    background: rgb(247,239,231);
+    background: linear-gradient(90deg, rgba(247,239,231,1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
@@ -61,8 +79,179 @@ header {
     grid-row: 2;
     background-size: cover;
     background-position: center;
+    border-radius: 15%;
+    margin: 3%;
 }
+
+
 /*fin page yacine*/
+
+/*Page Danie*/
+
+h1.principal-title-daniel{
+    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
+}
+
+.texte-daniel {
+    display:grid;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.1rem;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-gap: 0.9rem;
+    grid-template-areas: 
+    " 1, 2 ";
+    
+}
+
+.texte-daniel p {
+    display: grid;
+    grid-area: 1 ;
+    padding: 2rem;
+    text-align:center;
+    margin-top: 10%;
+}
+
+div.grid-daniel {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr ;
+    grid-gap: 0.9rem;
+    grid-template-areas: 
+    " 1 2 "
+    " 3 ";
+}
+
+.img1 {
+    grid-area: 1 ;
+    margin: 1%;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
+    background-size: cover;
+    background-position:top;
+    padding: 11rem;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.img2 {
+    grid-area: 2 ; 
+    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
+    padding: 11rem;
+    margin: 1%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.parag2 {
+    grid-area: 2 ; 
+}
+
+
+
+/*Sous menu*/
+
+/*page StephV*/
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fil, 100%);
+    text-align: left;
+    gap: 10px;
+    border-radius: var(--border-radius);
+
+}
+
+.principal-title-stephV1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+}
+
+.principal-title-stephV2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: #f7efe7;
+}
+
+.imageprincipalstephV {
+    background-image: url(assets-stephV/photofrancevuedelespace.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.paragrapheprincipalstephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    color: #f7efe7;
+}
+
+.article1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.imagearticle1stephV {
+    background-image: url(assets-stephV/CYCLO_PIERRO.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.article2 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.imagearticle2stephV {
+    background-image: url(assets-stephV/ledrivetoutnu.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.article3 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.imagearticle3stephV {
+    background-image: url(assets-stephV/ledrivetoutnu.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.article4 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.imagearticle4stephV {
+    background-image: url(assets-stephV/KOOZUMAIN.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    /*fin de page StephV*/
+    /*Sous menu*/
 
 /*page StephM*/
 .principal-title-stephm {
@@ -106,180 +295,185 @@ nav ul, .menuDeroulant{
     padding: 1rem;
 }
 
+    li a {
+        color: #f7efe7;
+        text-decoration: none;
+        text-shadow: 1px 2px #f2621f;
+        padding: 0rem 3rem;
+        border-radius: 5px;
+        border: 0%;
+    }
 
-
-li a {
-    color: #f7efe7;
-    text-decoration: none;
-    text-shadow: 1px 2px #f2621f;
-    padding:0rem 3rem;
-    border-radius: 5px;
-    border: 0%;
-}
-
- /*menu cassé*//*
+    /*menu cassé*/
+    /*
 .menuDeroulant {
     content: ">";
     display: inline-block;
 }*/
 
-.sousMenu {
-    width: 100%;
-    text-align: left;
-    /*Couleur pour tester*/
-    background-color: #f2621f;
-    border-radius: 2px;
-    overflow: hidden;
-    max-height: 0;
-}
-
-.sousMenu > li > a {
-    height: 50px;
-    padding-left: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-/*A adapter a notre code couleur !!*/
-
-@keyframes rotationFleche  {
-    0% {
-        transform: rotate(0deg);
+    .sousMenu {
+        width: 100%;
+        text-align: left;
+        /*Couleur pour tester*/
+        background-color: #f2621f;
+        border-radius: 2px;
+        overflow: hidden;
+        max-height: 0;
     }
-    100% {
-        transform: rotate(90deg);
+
+    .sousMenu>li>a {
+        height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
-}
 
-.menuDeroulant:hover > a:after {
-    animation: rotatonFleche 0.2s linear forwards;
-}
+    /*A adapter a notre code couleur !!*/
 
-@keyframes apparitionSousMenu {
-    0% {
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
-        border-top: 3px solid #f7efe7;
+    @keyframes rotationFleche {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(90deg);
+        }
     }
-    30% {
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+
+    .menuDeroulant:hover>a:after {
+        animation: rotatonFleche 0.2s linear forwards;
     }
-    100% {
-        max-width: 50em;
-        border-top: 3px solid #f2621f;
-        box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
+
+    @keyframes apparitionSousMenu {
+        0% {
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+            border-top: 3px solid #f7efe7;
+        }
+
+        30% {
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        100% {
+            max-width: 50em;
+            border-top: 3px solid #f2621f;
+            box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
+        }
     }
-}
 
-.menuDeroulant > .sousMenu {
-    animation: apparitionSousMenu 1s forwards;
-}
+    .menuDeroulant>.sousMenu {
+        animation: apparitionSousMenu 1s forwards;
+    }
 
-nav > ul > li:hover > a{
-    color: #f7efe7;
-}
+    nav>ul>li:hover>a {
+        color: #f7efe7;
+    }
 
-.sousMenu > li:hover {
-    background-color: #002533;
-}
+    .sousMenu>li:hover {
+        background-color: #002533;
+    }
 
-.sousMenu > li:hover > a {
-    color: #f2621f;
-}
+    .sousMenu>li:hover>a {
+        color: #f2621f;
+    }
 
-/*Fin sous menu*/
-
-
-/*BODY*/
-
-body {
-    background-color: var(--secondary-color);
-    margin: 0rem 0rem;
-}
-
-.texte, div {
-    display: flex;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--principal-color);
-    font-family: 'Lexend', sans-serif;
-}
- 
-.texte p {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-}
-
-.texte div {
-    padding: 1rem;
-}
-
-/*Contact*/
-
-button {
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--principal-color);
-    color: var(--tertiary-color);
-}
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    gap: 10px;
-}
-
-/*rate*/
-
-.rating:not(:checked) > input {
-    position: absolute;
-    appearance: none;
-  }
-  
-  .rating:not(:checked) > label {
-    float:inherit;
-    cursor: pointer;
-    font-size: 30px;
-    color: #666;
-  }
-  
-  .rating:not(:checked) > label:before {
-    content: '★';
-  }
-  
-  .rating > input:checked + label:hover,
-  .rating > input:checked + label:hover ~ label,
-  .rating > input:checked ~ label:hover,
-  .rating > input:checked ~ label:hover ~ label,
-  .rating > label:hover ~ input:checked ~ label {
-    color: #e58e09;
-  }
-  
-  .rating:not(:checked) > label:hover,
-  .rating:not(:checked) > label:hover ~ label {
-    color: #ff9e0b;
-  }
-  
-  .rating > input:checked ~ label {
-    color: #ffa723;
-  }
-  
-
-/*Fin rate*/
+    /*Fin sous menu*/
 
 
-/*FOOTER*/
+    /*BODY*/
+
+    body {
+        background-color: var(--secondary-color);
+        margin: 0rem 0rem;
+    }
+
+    .texte,
+    div {
+        display: flex;
+        padding: 1rem;
+        background-color: var(--secondary-color);
+        color: var(--principal-color);
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .texte p {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .texte div {
+        padding: 1rem;
+    }
+
+    /*Contact*/
+
+    button {
+        background-color: var(--tertiary-color);
+        color: var(--secondary-color);
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--principal-color);
+        color: var(--tertiary-color);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        gap: 10px;
+    }
+
+    /*rate*/
+
+    .rating:not(:checked)>input {
+        position: absolute;
+        appearance: none;
+    }
+
+    .rating:not(:checked)>label {
+        float: inherit;
+        cursor: pointer;
+        font-size: 30px;
+        color: #666;
+    }
+
+    .rating:not(:checked)>label:before {
+        content: '★';
+    }
+
+    .rating>input:checked+label:hover,
+    .rating>input:checked+label:hover~label,
+    .rating>input:checked~label:hover,
+    .rating>input:checked~label:hover~label,
+    .rating>label:hover~input:checked~label {
+        color: #e58e09;
+    }
+
+    .rating:not(:checked)>label:hover,
+    .rating:not(:checked)>label:hover~label {
+        color: #ff9e0b;
+    }
+
+    .rating>input:checked~label {
+        color: #ffa723;
+    }
+
+
+    /*Fin rate*/
+
+
+    /*FOOTER*/
 
 footer {
     background-color: var(--principal-color);
-    
+    bottom: 0;
+    width: 100%;
 }
