@@ -46,19 +46,21 @@ header {
 
 .texte-yacine {
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 49% 40rem;
     grid-template-rows: 49% 49%;
 }
 
 .contenu-yacine {
     font-family: 'Lexend';
+    font-size: xx-large;
     grid-column: 2;
-    
 }
 
 .image-sushi {
     background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
     grid-row: 2;
+    background-size: cover;
+    background-position: center;
 }
 /*fin page yacine*/
 
