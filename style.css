@@ -63,6 +63,38 @@ header {
     background-position: center;
 }
 /*fin page yacine*/
+
+/*page StephM*/
+.principal-title-stephm {
+    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px; 
+}
+
+.texte-stephm {
+    display: grid;
+    grid-template-columns: 49% 40rem;
+    grid-template-rows: 49% 49%;
+    font-family: 'Lexend';
+    font-size: large;
+    grid-column: 2;
+}
+
+.p1 {
+    display: grid;
+    grid-area: 1;
+}
+
+
+/*Fin page StepM*/
+
 /*Sous menu*/
 
 
