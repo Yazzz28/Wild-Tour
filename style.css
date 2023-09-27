@@ -64,7 +64,7 @@ header {
 }
 /*fin page yacine*/
 
-/*Page Danie*/
+/*Page Daniel*/
 
 h1.principal-title-daniel{
     background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
@@ -134,6 +134,70 @@ div.grid-daniel {
     grid-area: 2 ; 
 }
 
+.cards-daniel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card1 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card2 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card3 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .card4 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background:url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card5 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background:url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+  }
+
+/*test caroussel*/
 
 
 /*Sous menu*/
@@ -314,9 +378,7 @@ form {
     color: #ffa723;
   }
   
-
 /*Fin rate*/
-
 
 /*FOOTER*/
 
