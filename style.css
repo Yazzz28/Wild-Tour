@@ -22,7 +22,6 @@ nav {
     background-color: #002533;
     position: sticky;
     top: 0;
-    opacity: 50%;
 }
 
 .principal-title {
@@ -33,7 +32,7 @@ nav {
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
+    padding: 3%;
     background-position: bottom;  
     border-radius: 0px 0px 15px 15px;  
 }
@@ -47,15 +46,15 @@ nav {
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
+    padding: 3%;
     background-position: center;  
     border-radius: 0px 0px 15px 15px;  
 }
 
 .texte-yacine {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45rem 30rem 45rem;
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -64,6 +63,9 @@ nav {
     font-family: 'Lexend';
     font-size: xx-large;
     grid-column: 2;
+    margin: 3%;
+    background: rgb(247,239,231);
+    background: linear-gradient(90deg, rgba(247,239,231,1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
@@ -72,7 +74,10 @@ nav {
     background-size: cover;
     background-position: center;
     border-radius: 15%;
+    margin: 3%;
 }
+
+
 /*fin page yacine*/
 
 /*Page Danie*/
