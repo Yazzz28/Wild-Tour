@@ -15,6 +15,14 @@
 
 header {
     background-color: var(--principal-color);
+    border-radius: 0px 0px 15px 15px;
+}
+
+nav {
+    background-color: #002533;
+    position: sticky;
+    top: 0;
+    opacity: 50%;
 }
 
 .principal-title {
@@ -46,8 +54,10 @@ header {
 
 .texte-yacine {
     display: grid;
-    grid-template-columns: 49% 40rem;
-    grid-template-rows: 49% 49%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .contenu-yacine {
@@ -61,6 +71,7 @@ header {
     grid-row: 2;
     background-size: cover;
     background-position: center;
+    border-radius: 15%;
 }
 /*fin page yacine*/
 /*Sous menu*/
@@ -73,8 +84,6 @@ nav ul, .menuDeroulant{
     align-items: center;
     padding: 1rem;
 }
-
-
 
 li a {
     color: #f7efe7;
