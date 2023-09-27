@@ -14,7 +14,7 @@
 /*HEADER*/
 
 header {
-    background-color: var(--principal-color);
+    background: var(--principal-color);
 }
 
 .principal-title {
@@ -26,7 +26,7 @@ header {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
+    background-position: bottom;  
     border-radius: 0px 0px 15px 15px;  
 }
 
@@ -61,6 +61,79 @@ header {
     grid-row: 2;
 }
 /*fin page yacine*/
+
+/*Page Danie*/
+
+h1.principal-title-daniel{
+    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
+}
+
+.texte-daniel {
+    display:grid;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.1rem;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-gap: 0.9rem;
+    grid-template-areas: 
+    " 1, 2 ";
+    
+}
+
+.texte-daniel p {
+    display: grid;
+    grid-area: 1 ;
+    padding: 2rem;
+    text-align:center;
+    margin-top: 10%;
+}
+
+div.grid-daniel {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr ;
+    grid-gap: 0.9rem;
+    grid-template-areas: 
+    " 1 2 "
+    " 3 ";
+}
+
+.img1 {
+    grid-area: 1 ;
+    margin: 1%;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
+    background-size: cover;
+    background-position:top;
+    padding: 11rem;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.img2 {
+    grid-area: 2 ; 
+    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
+    padding: 11rem;
+    margin: 1%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.parag2 {
+    grid-area: 2 ; 
+}
+
+
+
 /*Sous menu*/
 
 
@@ -247,5 +320,6 @@ form {
 
 footer {
     background-color: var(--principal-color);
-    
+    bottom: 0;
+    width: 100%;
 }
