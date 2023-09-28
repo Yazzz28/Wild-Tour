@@ -308,11 +308,7 @@ h3 {
     opacity: 0.6;
 }
 
-<<<<<<< HEAD
-                                    /*fin de page StephV*/
-=======
 /*fin de page StephV*/
->>>>>>> 0e810db8fc2c98ab815effa138dee48ba3e3f30b
 
                                         /*page StephM*/
 
@@ -357,16 +353,6 @@ nav {
     border-bottom: 0.5px solid var(--tertiary-color);
 }
 
-<<<<<<< HEAD
-.list-general {
-    display: flex;
-    justify-content: center;
-    color: var(--secondary-color);
-    list-style: none;
-    height: 100%;
-    line-height: 90px;
-    font-size: 22px;
-=======
 li a {
     color: #f7efe7;
     text-decoration: none;
@@ -374,7 +360,6 @@ li a {
     padding: 0rem 3rem;
     border-radius: 5px;
     border: 0%;
->>>>>>> e502d223a1f325042d54da305161d3c4badad0e5
 }
 
 .listeN {
@@ -383,39 +368,6 @@ li a {
     flex-shrink: 0;
 }
 
-<<<<<<< HEAD
-
-.listeN span {
-    font-size: 15px;
-    color: var(--tertiary-color);
-}
-
-    /*Sous menu*/
-
-.sousMenu {
-    position: relative;
-    top: -1px;
-    display: none;
-}
-
-.sousListe {
-    list-style: none;
-    text-align: center;
-    padding: 0 10px;
-    background-color: var(--principal-color);
-    border-bottom: 0.5px solid var(--tertiary-color);
-}
-
-.sousListe:hover {
-    background-color: var(--secondary-color);
-}
-
-.listeN:hover > ul {
-    display: block;
-}
-
-    /*Fin menu et sous menu*/
-=======
 .sousMenu {
     width: 100%;
     text-align: left;
@@ -484,7 +436,6 @@ nav>ul>li:hover>a {
 }
 
     /*Fin sous menu*/
->>>>>>> e502d223a1f325042d54da305161d3c4badad0e5
 
 
     /*BODY*/
