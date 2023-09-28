@@ -79,12 +79,8 @@ body {
   margin: 3%;
 }
 
-<<<<<<< HEAD
-/*fin page yacine*/
-=======
 
                                     /*fin page yacine*/
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 
                                     /*Page Daniel*/
 
@@ -211,12 +207,8 @@ div.grid-daniel {
   background-position: center;
 }
 
-<<<<<<< HEAD
-/*page StephV*/
-=======
 
                                     /*page StephV*/
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 
 /*section {
     display: grid;
@@ -339,15 +331,10 @@ h3 {
   grid-area: 1;
 }
 
-<<<<<<< HEAD
-/*Fin page StepM*/
-=======
 
                                     /*Fin page StepM*/
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 
                                         /*BODY*/
-=======
 /* menu*/
 
 nav {
@@ -360,24 +347,13 @@ nav {
   bottom: 0;
 }
 
-<<<<<<< HEAD
 .list-general {
   display: flex;
   justify-content: center;
-  color: var(--secondary-color);
   list-style: none;
   height: 100%;
   line-height: 90px;
   font-size: 22px;
-=======
-li a {
-    color: #f7efe7;
-    text-decoration: none;
-    text-shadow: 1px 2px #f2621f;
-    padding: 0rem 3rem;
-    border-radius: 5px;
-    border: 0%;
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 }
 
 .listeN {
@@ -386,7 +362,6 @@ li a {
   flex-shrink: 0;
 }
 
-<<<<<<< HEAD
 .listeN span {
   font-size: 15px;
   color: var(--tertiary-color);
@@ -425,80 +400,7 @@ li a {
 /*Fin menu et sous menu*/
 
 /*BODY*/
-=======
-.sousMenu {
-    width: 100%;
-    text-align: left;
-    /*Couleur pour tester*/
-    background-color: #f2621f;
-    border-radius: 2px;
-    overflow: hidden;
-    max-height: 0;
-}
-
-.sousMenu>li>a {
-    height: 50px;
-    padding-left: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-/*A adapter a notre code couleur !!*/
-
-@keyframes rotationFleche {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(90deg);
-    }
-}
-
-.menuDeroulant:hover>a:after {
-    animation: rotatonFleche 0.2s linear forwards;
-}
-
-@keyframes apparitionSousMenu {
-    0% {
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
-        border-top: 3px solid #f7efe7;
-    }
-
-    30% {
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
-    }
-
-    100% {
-        max-width: 50em;
-        border-top: 3px solid #f2621f;
-        box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
-    }
-}
-
-.menuDeroulant>.sousMenu {
-    animation: apparitionSousMenu 1s forwards;
-}
-
-nav>ul>li:hover>a {
-    color: #f7efe7;
-}
-
-.sousMenu>li:hover {
-    background-color: #002533;
-}
-
-.sousMenu>li:hover>a {
-    color: #f2621f;
-}
-
-    /*Fin sous menu*/
-
-
-    /*BODY*/
->>>>>>> 0e810db8fc2c98ab815effa138dee48ba3e3f30b
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
+/*>>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33*/
 
 body {
   background-color: var(--secondary-color);
@@ -523,11 +425,7 @@ div {
   padding: 1rem;
 }
 
-<<<<<<< HEAD
-/*Contact*/
-=======
                                 /*Contact*/
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 
 button {
   background-color: var(--tertiary-color);
@@ -552,12 +450,8 @@ form {
   gap: 10px;
 }
 
-<<<<<<< HEAD
-/*rate*/
-=======
 
                                         /*rate*/
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 
 .rating:not(:checked) > input {
   position: absolute;
@@ -592,17 +486,11 @@ form {
   color: #ffa723;
 }
 
-<<<<<<< HEAD
-/*Fin rate*/
-
-/*FOOTER*/
-=======
 
                                             /*Fin rate*/
 
 
                                             /*FOOTER*/
->>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33
 
 footer {
   background-color: var(--principal-color);
