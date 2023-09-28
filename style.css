@@ -319,33 +319,184 @@ h3 {
 /*page StephM*/
 
 .principal-title-stephm {
-    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
+    background-image: url(/assets-stephM/couché-de-soleil-plage.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
-    text-align: left;
+    text-align: center;
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
+    background-position: 20% 80%;
     border-radius: 0px 0px 15px 15px; 
 }
 
 .texte-stephm {
     display: grid;
-    grid-template-columns: 49% 40rem;
-    grid-template-rows: 49% 49%;
-    font-family: 'Lexend';
-    font-size: large;
-    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1,2rem;
+    grid-gap: .5rem;
+    grid-template-areas: 
+    "1 2"
+    "3 4"
+    "5 6"
+    "7 8";
+    text-align: center;
+    padding: 3rem;
+
 }
 
-.p1 {
-    display: grid;
+.texte-stephm p1 {
     grid-area: 1;
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
 }
 
+.img1stephm {
+    grid-area: 1;
+    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
 
+.img2stephm {
+    grid-area: 2;
+    background: url(/assets-stephM/images.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p2 {
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.texte-stephm p3 {
+    grid-area: 3;
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.img3stephm {
+    grid-area: 3;
+    background: url(/assets-stephM/Plage.webp);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.img4stephm {
+    grid-area: 4;
+    background: url(/assets-stephM/image.png);
+    background-size: cover;
+    background-position:top;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p4 {
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.cards-stephm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card1 {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/download.jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/Forêt.webp);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/download\ \(1\).jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card4 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation-stephm {
+    display: grid;
+    grid-template-columns: 1.5fr .5fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem;
+}
+
+.card5 {
+    background: url(/assets-stephM/carte.jpg);
+    background-size: cover;
+    background-position:right;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    width: 10rem;
+    height: 10rem;
+}
 /*Fin page StepM*/
 
 /*Sous menu*/
