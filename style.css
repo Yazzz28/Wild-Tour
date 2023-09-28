@@ -25,17 +25,17 @@ nav {
     top: 0;
 }
 
-.principal-title {
-    background-image: url(assets-julien/masashi-wakui-12.jpg);
+.principal-title{
+    background-image: url(/assets-julien/masashi-wakui-12.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
     text-align: left;
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 3%;
-    background-position: bottom;
-    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
 }
 
 body {
@@ -44,17 +44,18 @@ body {
 }
 
 /*page yacine*/
+
 .principal-title-yacine {
-    background-image: url(assets-yacine/pexels-cats-coming-1907229.jpg);
+    background-image: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
     text-align: left;
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 3%;
-    background-position: center;
-    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px;  
 }
 
 .texte-yacine {
@@ -86,7 +87,7 @@ body {
 
 /*fin page yacine*/
 
-/*Page Danie*/
+/*Page Daniel*/
 
 h1.principal-title-daniel {
     background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
@@ -156,20 +157,81 @@ div.grid-daniel {
     grid-area: 2;
 }
 
+.cards-daniel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card1 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
 
 
-/*Sous menu*/
+.card4 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background:url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.card5 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background:url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
 
 /*page StephV*/
 
-section {
+/*section {
+/*section {
     display: grid;
     grid-template-columns: repeat(auto-fil, 100%);
     text-align: left;
     gap: 10px;
     border-radius: var(--border-radius);
 
-}
+}*/
 
 .principal-title-stephV1 {
     font-family: 'Playfair Display', serif;
@@ -250,8 +312,43 @@ h3 {
     background-size: cover;
     background-position: center;
     opacity: 0.6;
+}
+
     /*fin de page StephV*/
-    /*Sous menu*/
+
+/*page StephM*/
+
+.principal-title-stephm {
+    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;  
+    border-radius: 0px 0px 15px 15px; 
+}
+
+.texte-stephm {
+    display: grid;
+    grid-template-columns: 49% 40rem;
+    grid-template-rows: 49% 49%;
+    font-family: 'Lexend';
+    font-size: large;
+    grid-column: 2;
+}
+
+.p1 {
+    display: grid;
+    grid-area: 1;
+}
+
+
+/*Fin page StepM*/
+
+/*Sous menu*/
 
 
     nav ul,
@@ -273,8 +370,8 @@ h3 {
     }
 
     /*menu cassé*/
-    /*
-.menuDeroulant {
+    
+/*.menuDeroulant {
     content: ">";
     display: inline-block;
 }*/
@@ -351,94 +448,95 @@ h3 {
 
     /*BODY*/
 
-    body {
-        background-color: var(--secondary-color);
-        margin: 0rem 0rem;
-    }
+body {
+    background-color: var(--secondary-color);
+    margin: 0rem 0rem;
+}
 
-    .texte,
-    div {
-        display: flex;
-        padding: 1rem;
-        background-color: var(--secondary-color);
-        color: var(--principal-color);
-        font-family: 'Lexend', sans-serif;
-    }
+.texte,
+div {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--principal-color);
+    font-family: 'Lexend', sans-serif;
+}
 
-    .texte p {
-        margin-left: 2rem;
-        font-size: 1.5rem;
-    }
+.texte p {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
 
-    .texte div {
-        padding: 1rem;
-    }
+.texte div {
+    padding: 1rem;
+}
 
     /*Contact*/
 
-    button {
-        background-color: var(--tertiary-color);
-        color: var(--secondary-color);
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        cursor: pointer;
-    }
+button {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
 
-    button:hover {
-        background-color: var(--principal-color);
-        color: var(--tertiary-color);
-    }
+button:hover {
+    background-color: var(--principal-color);
+    color: var(--tertiary-color);
+}
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
-        gap: 10px;
-    }
-
-    /*rate*/
-
-    .rating:not(:checked)>input {
-        position: absolute;
-        appearance: none;
-    }
-
-    .rating:not(:checked)>label {
-        float: inherit;
-        cursor: pointer;
-        font-size: 30px;
-        color: #666;
-    }
-
-    .rating:not(:checked)>label:before {
-        content: '★';
-    }
-
-    .rating>input:checked+label:hover,
-    .rating>input:checked+label:hover~label,
-    .rating>input:checked~label:hover,
-    .rating>input:checked~label:hover~label,
-    .rating>label:hover~input:checked~label {
-        color: #e58e09;
-    }
-
-    .rating:not(:checked)>label:hover,
-    .rating:not(:checked)>label:hover~label {
-        color: #ff9e0b;
-    }
-
-    .rating>input:checked~label {
-        color: #ffa723;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
 
 
-    /*Fin rate*/
+/*rate*/
+
+.rating:not(:checked)>input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked)>label {
+    float: inherit;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+}
+
+.rating:not(:checked)>label:before {
+    content: '★';
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #e58e09;
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #ff9e0b;
+}
+
+.rating>input:checked~label {
+    color: #ffa723;
+}
 
 
-    /*FOOTER*/
+/*Fin rate*/
+
+
+/*FOOTER*/
 
     footer {
         background-color: var(--principal-color);
