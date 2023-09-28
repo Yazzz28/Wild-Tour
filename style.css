@@ -44,6 +44,7 @@ body {
 }
 
 /*page yacine*/
+
 .principal-title-yacine {
     background-image: url(assets-yacine/pexels-cats-coming-1907229.jpg);
     background-size: cover;
@@ -226,14 +227,14 @@ div.grid-daniel {
 
 /*page StephV*/
 
-section {
+/*section {
     display: grid;
     grid-template-columns: repeat(auto-fil, 100%);
     text-align: left;
     gap: 10px;
     border-radius: var(--border-radius);
 
-}
+}*/
 
 .principal-title-stephV1 {
     font-family: 'Playfair Display', serif;
@@ -314,10 +315,12 @@ h3 {
     background-size: cover;
     background-position: center;
     opacity: 0.6;
+}
     /*fin de page StephV*/
     /*Sous menu*/
 
 /*page StephM*/
+
 .principal-title-stephm {
     background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
     background-size: cover;
@@ -369,8 +372,8 @@ nav ul, .menuDeroulant{
     }
 
     /*menu cassé*/
-    /*
-.menuDeroulant {
+    
+/*.menuDeroulant {
     content: ">";
     display: inline-block;
 }*/
@@ -540,4 +543,4 @@ footer {
     background-color: var(--principal-color);
     bottom: 0;
     width: 100%;
-}}
+}
