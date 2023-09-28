@@ -1,4 +1,4 @@
-/*initialisation*/
+                                /*initialisation*/
 
 :root {
     --principal-color: #002533;
@@ -12,18 +12,13 @@
     padding: 0;
 }
 
-/*HEADER*/
+                                    /*HEADER*/
 
 header {
     background-color: var(--principal-color);
     border-radius: 0px 0px 15px 15px;
 }
 
-nav {
-    background-color: #002533;
-    position: sticky;
-    top: 0;
-}
 
 .principal-title{
     background-image: url(/assets-julien/masashi-wakui-12.jpg);
@@ -43,7 +38,7 @@ body {
     margin: 0rem 4rem;
 }
 
-/*page yacine*/
+                                    /*page yacine*/
 
 .principal-title-yacine {
     background-image: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
@@ -85,9 +80,9 @@ body {
 }
 
 
-/*fin page yacine*/
+                                    /*fin page yacine*/
 
-/*Page Daniel*/
+                                    /*Page Daniel*/
 
 h1.principal-title-daniel{
     background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
@@ -221,7 +216,7 @@ div.grid-daniel {
 }
 
 
-/*page StephV*/
+                                    /*page StephV*/
 
 /*section {
     display: grid;
@@ -313,9 +308,9 @@ h3 {
     opacity: 0.6;
 }
 
-    /*fin de page StephV*/
+                                    /*fin de page StephV*/
 
-/*page StephM*/
+                                        /*page StephM*/
 
 .principal-title-stephm {
     background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
@@ -345,106 +340,9 @@ h3 {
 }
 
 
-/*Fin page StepM*/
+                                    /*Fin page StepM*/
 
-/*Sous menu*/
-
-
-nav ul, .menuDeroulant{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-li a {
-    color: #f7efe7;
-    text-decoration: none;
-    text-shadow: 1px 2px #f2621f;
-    padding: 0rem 3rem;
-    border-radius: 5px;
-    border: 0%;
-}
-
-    /*menu cassé*/
-    
-/*.menuDeroulant {
-    content: ">";
-    display: inline-block;
-}*/
-
-.sousMenu {
-    width: 100%;
-    text-align: left;
-    /*Couleur pour tester*/
-    background-color: #f2621f;
-    border-radius: 2px;
-    overflow: hidden;
-    max-height: 0;
-}
-
-.sousMenu>li>a {
-    height: 50px;
-    padding-left: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-/*A adapter a notre code couleur !!*/
-
-@keyframes rotationFleche {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(90deg);
-    }
-}
-
-.menuDeroulant:hover>a:after {
-    animation: rotatonFleche 0.2s linear forwards;
-}
-
-@keyframes apparitionSousMenu {
-    0% {
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
-        border-top: 3px solid #f7efe7;
-    }
-
-    30% {
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
-    }
-
-    100% {
-        max-width: 50em;
-        border-top: 3px solid #f2621f;
-        box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
-    }
-}
-
-.menuDeroulant>.sousMenu {
-    animation: apparitionSousMenu 1s forwards;
-}
-
-nav>ul>li:hover>a {
-    color: #f7efe7;
-}
-
-.sousMenu>li:hover {
-    background-color: #002533;
-}
-
-.sousMenu>li:hover>a {
-    color: #f2621f;
-}
-
-    /*Fin sous menu*/
-
-
-    /*BODY*/
+                                        /*BODY*/
 
 body {
     background-color: var(--secondary-color);
@@ -469,7 +367,7 @@ div {
     padding: 1rem;
 }
 
-    /*Contact*/
+                                /*Contact*/
 
 button {
     background-color: var(--tertiary-color);
@@ -495,7 +393,7 @@ form {
 }
 
 
-/*rate*/
+                                        /*rate*/
 
 .rating:not(:checked)>input {
     position: absolute;
@@ -531,10 +429,10 @@ form {
 }
 
 
-/*Fin rate*/
+                                            /*Fin rate*/
 
 
-/*FOOTER*/
+                                            /*FOOTER*/
 
 footer {
     background-color: var(--principal-color);
