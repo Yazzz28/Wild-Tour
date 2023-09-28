@@ -46,14 +46,14 @@ body {
 /*page yacine*/
 
 .principal-title-yacine {
-    background-image: url(assets-yacine/pexels-cats-coming-1907229.jpg);
+    background-image: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
     text-align: left;
     font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
-    padding: 3%;
+    padding: 15rem;
     background-position: center;  
     border-radius: 0px 0px 15px 15px;  
 }
@@ -360,14 +360,14 @@ nav ul, .menuDeroulant{
     padding: 1rem;
 }
 
-    li a {
-        color: #f7efe7;
-        text-decoration: none;
-        text-shadow: 1px 2px #f2621f;
-        padding: 0rem 3rem;
-        border-radius: 5px;
-        border: 0%;
-    }
+li a {
+    color: #f7efe7;
+    text-decoration: none;
+    text-shadow: 1px 2px #f2621f;
+    padding: 0rem 3rem;
+    border-radius: 5px;
+    border: 0%;
+}
 
     /*menu cassé*/
     
@@ -376,72 +376,72 @@ nav ul, .menuDeroulant{
     display: inline-block;
 }*/
 
-    .sousMenu {
-        width: 100%;
-        text-align: left;
-        /*Couleur pour tester*/
-        background-color: #f2621f;
-        border-radius: 2px;
-        overflow: hidden;
-        max-height: 0;
+.sousMenu {
+    width: 100%;
+    text-align: left;
+    /*Couleur pour tester*/
+    background-color: #f2621f;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.sousMenu>li>a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*A adapter a notre code couleur !!*/
+
+@keyframes rotationFleche {
+    0% {
+        transform: rotate(0deg);
     }
 
-    .sousMenu>li>a {
-        height: 50px;
-        padding-left: 20px;
-        width: 100%;
-        display: flex;
-        align-items: center;
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.menuDeroulant:hover>a:after {
+    animation: rotatonFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+    0% {
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+        border-top: 3px solid #f7efe7;
     }
 
-    /*A adapter a notre code couleur !!*/
-
-    @keyframes rotationFleche {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(90deg);
-        }
+    30% {
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
     }
 
-    .menuDeroulant:hover>a:after {
-        animation: rotatonFleche 0.2s linear forwards;
+    100% {
+        max-width: 50em;
+        border-top: 3px solid #f2621f;
+        box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
     }
+}
 
-    @keyframes apparitionSousMenu {
-        0% {
-            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
-            border-top: 3px solid #f7efe7;
-        }
+.menuDeroulant>.sousMenu {
+    animation: apparitionSousMenu 1s forwards;
+}
 
-        30% {
-            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
-        }
+nav>ul>li:hover>a {
+    color: #f7efe7;
+}
 
-        100% {
-            max-width: 50em;
-            border-top: 3px solid #f2621f;
-            box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
-        }
-    }
+.sousMenu>li:hover {
+    background-color: #002533;
+}
 
-    .menuDeroulant>.sousMenu {
-        animation: apparitionSousMenu 1s forwards;
-    }
-
-    nav>ul>li:hover>a {
-        color: #f7efe7;
-    }
-
-    .sousMenu>li:hover {
-        background-color: #002533;
-    }
-
-    .sousMenu>li:hover>a {
-        color: #f2621f;
-    }
+.sousMenu>li:hover>a {
+    color: #f2621f;
+}
 
     /*Fin sous menu*/
 
