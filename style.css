@@ -219,7 +219,6 @@ div.grid-daniel {
 /*page StephV*/
 
 /*section {
-/*section {
     display: grid;
     grid-template-columns: repeat(auto-fil, 100%);
     text-align: left;
@@ -352,6 +351,7 @@ nav {
     border-bottom: 0.5px solid var(--tertiary-color);
 }
 
+<<<<<<< HEAD
 .list-general {
     display: flex;
     justify-content: center;
@@ -360,6 +360,15 @@ nav {
     height: 100%;
     line-height: 90px;
     font-size: 22px;
+=======
+li a {
+    color: #f7efe7;
+    text-decoration: none;
+    text-shadow: 1px 2px #f2621f;
+    padding: 0rem 3rem;
+    border-radius: 5px;
+    border: 0%;
+>>>>>>> e502d223a1f325042d54da305161d3c4badad0e5
 }
 
 .listeN {
@@ -368,6 +377,7 @@ nav {
     flex-shrink: 0;
 }
 
+<<<<<<< HEAD
 
 .listeN span {
     font-size: 15px;
@@ -399,6 +409,76 @@ nav {
 }
 
     /*Fin menu et sous menu*/
+=======
+.sousMenu {
+    width: 100%;
+    text-align: left;
+    /*Couleur pour tester*/
+    background-color: #f2621f;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.sousMenu>li>a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*A adapter a notre code couleur !!*/
+
+@keyframes rotationFleche {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.menuDeroulant:hover>a:after {
+    animation: rotatonFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+    0% {
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+        border-top: 3px solid #f7efe7;
+    }
+
+    30% {
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        max-width: 50em;
+        border-top: 3px solid #f2621f;
+        box-shadow: 0px 3px 3px 1px rgba 0, 0, 0, 0.3;
+    }
+}
+
+.menuDeroulant>.sousMenu {
+    animation: apparitionSousMenu 1s forwards;
+}
+
+nav>ul>li:hover>a {
+    color: #f7efe7;
+}
+
+.sousMenu>li:hover {
+    background-color: #002533;
+}
+
+.sousMenu>li:hover>a {
+    color: #f2621f;
+}
+
+    /*Fin sous menu*/
+>>>>>>> e502d223a1f325042d54da305161d3c4badad0e5
 
 
     /*BODY*/
