@@ -34,8 +34,8 @@ nav {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 3%;
-    background-position: bottom;  
-    border-radius: 0px 0px 15px 15px;  
+    background-position: bottom;
+    border-radius: 0px 0px 15px 15px;
 }
 
 body {
@@ -53,8 +53,8 @@ body {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 3%;
-    background-position: center;  
-    border-radius: 0px 0px 15px 15px;  
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-yacine {
@@ -70,8 +70,8 @@ body {
     font-size: xx-large;
     grid-column: 2;
     margin: 3%;
-    background: rgb(247,239,231);
-    background: linear-gradient(90deg, rgba(247,239,231,1) 90%, #f2621f 45%);
+    background: rgb(247, 239, 231);
+    background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
@@ -88,7 +88,7 @@ body {
 
 /*Page Danie*/
 
-h1.principal-title-daniel{
+h1.principal-title-daniel {
     background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
@@ -97,53 +97,53 @@ h1.principal-title-daniel{
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
-    border-radius: 0px 0px 15px 15px;  
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-daniel {
-    display:grid;
+    display: grid;
     font-family: 'Lexend', sans-serif;
     font-size: 1.1rem;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0.9rem;
-    grid-template-areas: 
-    " 1, 2 ";
-    
+    grid-template-areas:
+        " 1, 2 ";
+
 }
 
 .texte-daniel p {
     display: grid;
-    grid-area: 1 ;
+    grid-area: 1;
     padding: 2rem;
-    text-align:center;
+    text-align: center;
     margin-top: 10%;
 }
 
 div.grid-daniel {
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 2fr ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
     grid-gap: 0.9rem;
-    grid-template-areas: 
-    " 1 2 "
-    " 3 ";
+    grid-template-areas:
+        " 1 2 "
+        " 3 ";
 }
 
 .img1 {
-    grid-area: 1 ;
+    grid-area: 1;
     margin: 1%;
     background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
     background-size: cover;
-    background-position:top;
+    background-position: top;
     padding: 11rem;
     gap: 1rem;
     border-radius: 15px;
 }
 
 .img2 {
-    grid-area: 2 ; 
+    grid-area: 2;
     background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
     padding: 11rem;
     margin: 1%;
@@ -151,9 +151,9 @@ div.grid-daniel {
     background-size: cover;
     background-position: center;
 }
- 
+
 .parag2 {
-    grid-area: 2 ; 
+    grid-area: 2;
 }
 
 
@@ -254,13 +254,14 @@ h3 {
     /*Sous menu*/
 
 
-nav ul, .menuDeroulant{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
+    nav ul,
+    .menuDeroulant {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
 
     li a {
         color: #f7efe7;
@@ -439,8 +440,8 @@ nav ul, .menuDeroulant{
 
     /*FOOTER*/
 
-footer {
-    background-color: var(--principal-color);
-    bottom: 0;
-    width: 100%;
-}
+    footer {
+        background-color: var(--principal-color);
+        bottom: 0;
+        width: 100%;
+    }
