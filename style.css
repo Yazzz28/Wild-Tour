@@ -25,7 +25,7 @@ nav {
     top: 0;
 }
 
-.principal-title{
+.principal-title {
     background-image: url(/assets-julien/masashi-wakui-12.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
@@ -34,8 +34,8 @@ nav {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
-    border-radius: 0px 0px 15px 15px;  
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 body {
@@ -54,8 +54,8 @@ body {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
-    border-radius: 0px 0px 15px 15px;  
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-yacine {
@@ -71,8 +71,8 @@ body {
     font-size: xx-large;
     grid-column: 2;
     margin: 3%;
-    background: rgb(247,239,231);
-    background: linear-gradient(90deg, rgba(247,239,231,1) 90%, #f2621f 45%);
+    background: rgb(247, 239, 231);
+    background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
@@ -89,7 +89,7 @@ body {
 
 /*Page Daniel*/
 
-h1.principal-title-daniel{
+h1.principal-title-daniel {
     background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
     background-size: cover;
     font-family: 'Playfair Display', serif;
@@ -98,53 +98,53 @@ h1.principal-title-daniel{
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
-    border-radius: 0px 0px 15px 15px;  
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-daniel {
-    display:grid;
+    display: grid;
     font-family: 'Lexend', sans-serif;
     font-size: 1.1rem;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0.9rem;
-    grid-template-areas: 
-    " 1, 2 ";
-    
+    grid-template-areas:
+        " 1, 2 ";
+
 }
 
 .texte-daniel p {
     display: grid;
-    grid-area: 1 ;
+    grid-area: 1;
     padding: 2rem;
-    text-align:center;
+    text-align: center;
     margin-top: 10%;
 }
 
 div.grid-daniel {
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 2fr ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
     grid-gap: 0.9rem;
-    grid-template-areas: 
-    " 1 2 "
-    " 3 ";
+    grid-template-areas:
+        " 1 2 "
+        " 3 ";
 }
 
 .img1 {
-    grid-area: 1 ;
+    grid-area: 1;
     margin: 1%;
     background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
     background-size: cover;
-    background-position:top;
+    background-position: top;
     padding: 11rem;
     gap: 1rem;
     border-radius: 15px;
 }
 
 .img2 {
-    grid-area: 2 ; 
+    grid-area: 2;
     background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
     padding: 11rem;
     margin: 1%;
@@ -152,9 +152,9 @@ div.grid-daniel {
     background-size: cover;
     background-position: center;
 }
- 
+
 .parag2 {
-    grid-area: 2 ; 
+    grid-area: 2;
 }
 
 .cards-daniel {
@@ -169,8 +169,8 @@ div.grid-daniel {
     height: 20rem;
     border-radius: 30px;
     background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
-    box-shadow:15px 15px 30px #bebebe,
-    -15px -15px 30px #aaaaaa;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
     background-size: cover;
     background-position: center;
 }
@@ -181,7 +181,7 @@ div.grid-daniel {
     border-radius: 30px;
     background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
     box-shadow: 15px 15px 30px #bebebe,
-                -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
     background-size: cover;
     background-position: center;
 }
@@ -192,7 +192,7 @@ div.grid-daniel {
     border-radius: 30px;
     background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
     box-shadow: 15px 15px 30px #bebebe,
-                -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
     background-size: cover;
     background-position: center;
 }
@@ -202,9 +202,9 @@ div.grid-daniel {
     width: 14rem;
     height: 20rem;
     border-radius: 30px;
-    background:url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
+    background: url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
     box-shadow: 15px 15px 30px #bebebe,
-                -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
     background-size: cover;
     background-position: center;
 }
@@ -213,107 +213,110 @@ div.grid-daniel {
     width: 14rem;
     height: 20rem;
     border-radius: 30px;
-    background:url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
+    background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
     box-shadow: 15px 15px 30px #bebebe,
-                -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
     background-size: cover;
     background-position: center;
 }
+
 
 
 /*page StephV*/
 
-/*section {
+.pagestephV {
     display: grid;
-    grid-template-columns: repeat(auto-fil, 100%);
+    grid-template-rows: auto;
+    grid-template-columns: auto;
     text-align: left;
-    gap: 10px;
-    border-radius: var(--border-radius);
+}
 
-}*/
-
-.principal-title-stephV1 {
+.startstephV {
+    background-image: url(assets-stephV/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20rem;
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
 }
 
-.principal-title-stephV2 {
+.articl1stephV {
     font-family: 'Lexend', sans-serif;
+    color: black;
     font-size: 2rem;
-    color: #f7efe7;
-}
-
-.imageprincipalstephV {
-    background-image: url(assets-stephV/photofrancevuedelespace.jpg);
+    background-image: url(assets-stephV/coucherdesoleil.jpg);
     background-size: cover;
     background-position: center;
+    opacity: 0.6;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
 }
 
-.paragrapheprincipalstephV {
-    font-family: 'Lexend', sans-serif;
-    font-size: 1rem;
-    color: #f7efe7;
-}
-
-.article1 {
-    font-family: 'Lexend', sans-serif;
-    font-size: 1rem;
-    color: black;
-}
-
-h3 {
+.h2stephV {
+    font-size: 3rem;
     font-weight: bold;
 }
 
-.imagearticle1stephV {
+.article2stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
     background-image: url(assets-stephV/CYCLO_PIERRO.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-.article2 {
+.article3stephV {
     font-family: 'Lexend', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     color: black;
-}
-
-.imagearticle2stephV {
-    background-image: url(assets-stephV/ledrivetoutnu.png);
+    background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-.article3 {
+.article4stephV {
     font-family: 'Lexend', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     color: black;
-}
-
-.imagearticle3stephV {
-    background-image: url(assets-stephV/ledrivetoutnu.png);
+    background-image: url(assets-stephV/EROBOT_LECLERC_LIBOURNE.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-.article4 {
+.article5stephV {
     font-family: 'Lexend', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     color: black;
-}
-
-.imagearticle4stephV {
     background-image: url(assets-stephV/KOOZUMAIN.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-    /*fin de page StephV*/
+
+/*fin de page StephV*/
+
+
+
 
 /*page StephM*/
 
@@ -326,8 +329,8 @@ h3 {
     color: #f7efe7;
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
-    background-position: center;  
-    border-radius: 0px 0px 15px 15px; 
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-stephm {
@@ -350,7 +353,8 @@ h3 {
 /*Sous menu*/
 
 
-nav ul, .menuDeroulant{
+nav ul,
+.menuDeroulant {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -367,8 +371,8 @@ li a {
     border: 0%;
 }
 
-    /*menu cassé*/
-    
+/*menu cassé*/
+
 /*.menuDeroulant {
     content: ">";
     display: inline-block;
@@ -441,10 +445,10 @@ nav>ul>li:hover>a {
     color: #f2621f;
 }
 
-    /*Fin sous menu*/
+/*Fin sous menu*/
 
 
-    /*BODY*/
+/*BODY*/
 
 body {
     background-color: var(--secondary-color);
@@ -469,7 +473,7 @@ div {
     padding: 1rem;
 }
 
-    /*Contact*/
+/*Contact*/
 
 button {
     background-color: var(--tertiary-color);
