@@ -338,18 +338,28 @@ h3 {
 /* menu*/
 
 nav {
-  width: 100%;
-  height: 90px;
+  height: 7rem;
   background-color: var(--principal-color);
   border-bottom: 0.5px solid var(--tertiary-color);
   position: sticky;
   top: 0;
   bottom: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  size: 100%;
 }
 
 .list-general {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   list-style: none;
   height: 100%;
   line-height: 90px;
@@ -367,6 +377,11 @@ nav {
   color: var(--tertiary-color);
 }
 
+
+.sousListe:nth-child(5) {
+  border-radius: 0px 0px 15px 15px;
+}
+
 /*Sous menu*/
 
 .sousMenu {
@@ -378,17 +393,20 @@ nav {
 .sousListe {
   list-style: none;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   background-color: var(--principal-color);
   border-bottom: 0.5px solid var(--tertiary-color);
 }
 
 .sousListe > a {
-  background-color: #f2621f;
+  padding: 25px 60px;
+}
+
+.sousListe > a:hover {
+  background-color: #056081;
 }
 
 .sousListe:hover {
-  background-color: var(--secondary-color);
   height: 100%;
   line-height: 90px;
 }
