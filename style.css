@@ -20,17 +20,23 @@ header {
   border-radius: 0px 0px 15px 15px;
 }
 
+nav {
+    background-color: #002533;
+    position: sticky;
+    top: 0;
+}
+
 .principal-title {
-  background-image: url(/assets-julien/masashi-wakui-12.jpg);
-  background-size: cover;
-  font-family: "Playfair Display", serif;
-  text-align: left;
-  font-size: 4rem;
-  color: #f7efe7;
-  text-shadow: 3px 4px #f2621f;
-  padding: 15rem;
-  background-position: center;
-  border-radius: 0px 0px 15px 15px;
+    background-image: url(/assets-julien/masashi-wakui-12.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 body {
@@ -208,103 +214,122 @@ div.grid-daniel {
 }
 
 
+
                                     /*page StephV*/
 
-/*section {
+.pagestephV {
     display: grid;
-    grid-template-columns: repeat(auto-fil, 100%);
+    grid-template-rows: auto;
+    grid-template-columns: auto;
     text-align: left;
-    gap: 10px;
-    border-radius: var(--border-radius);
-
-}*/
-
-.principal-title-stephV1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
-  color: #f7efe7;
-  text-shadow: 3px 4px #f2621f;
 }
 
-.principal-title-stephV2 {
-  font-family: "Lexend", sans-serif;
-  font-size: 2rem;
-  color: #f7efe7;
+.startstephV {
+    background-image: url(assets-stephV/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
 }
 
-.imageprincipalstephV {
-  background-image: url(assets-stephV/photofrancevuedelespace.jpg);
-  background-size: cover;
-  background-position: center;
+.articl1stephV {
+    font-family: 'Lexend', sans-serif;
+    color: black;
+    font-size: 2rem;
+    background-image: url(assets-stephV/coucherdesoleil.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
 }
 
-.paragrapheprincipalstephV {
-  font-family: "Lexend", sans-serif;
-  font-size: 1rem;
-  color: #f7efe7;
+.h2stephV {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-.article1 {
-  font-family: "Lexend", sans-serif;
-  font-size: 1rem;
-  color: black;
+.article2stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/CYCLO_PIERRO.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-h3 {
-  font-weight: bold;
+
+.liencyclopierro {
+    
 }
 
-.imagearticle1stephV {
-  background-image: url(assets-stephV/CYCLO_PIERRO.jpg);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
+.article3stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-.article2 {
-  font-family: "Lexend", sans-serif;
-  font-size: 1rem;
-  color: black;
+.article4stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/EROBOT_LECLERC_LIBOURNE.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-.imagearticle2stephV {
-  background-image: url(assets-stephV/ledrivetoutnu.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
+.article5stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/KOOZUMAIN.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    border-radius: 0px 0px 15px 15px;
+    padding: 15rem;
+    text-align: left;
 }
 
-.article3 {
-  font-family: "Lexend", sans-serif;
-  font-size: 1rem;
-  color: black;
-}
-
-.imagearticle3stephV {
-  background-image: url(assets-stephV/ledrivetoutnu.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-}
-
-.article4 {
-  font-family: "Lexend", sans-serif;
-  font-size: 1rem;
-  color: black;
-}
-
-.imagearticle4stephV {
-  background-image: url(assets-stephV/KOOZUMAIN.jpg);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-}
 
 /*fin de page StephV*/
+/*fin de page StephV*/
 
-                                        /*page StephM*/
+
+
+
+/*page StephM*/
 
 .principal-title-stephm {
+    background-image: url(/assets-stephM/couché-de-soleil-plage.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: 20% 80%;
+    border-radius: 0px 0px 15px 15px; 
   background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
   background-size: cover;
   font-family: "Playfair Display", serif;
@@ -318,21 +343,172 @@ h3 {
 }
 
 .texte-stephm {
-  display: grid;
-  grid-template-columns: 49% 40rem;
-  grid-template-rows: 49% 49%;
-  font-family: "Lexend";
-  font-size: large;
-  grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1,2rem;
+    grid-gap: .5rem;
+    grid-template-areas: 
+    "1 2"
+    "3 4"
+    "5 6"
+    "7 8";
+    text-align: center;
+    padding: 3rem;
+
 }
 
-.p1 {
-  display: grid;
-  grid-area: 1;
+.texte-stephm p1 {
+    grid-area: 1;
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
 }
 
+.img1stephm {
+    grid-area: 1;
+    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
 
-                                    /*Fin page StepM*/
+.img2stephm {
+    grid-area: 2;
+    background: url(/assets-stephM/images.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p2 {
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.texte-stephm p3 {
+    grid-area: 3;
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.img3stephm {
+    grid-area: 3;
+    background: url(/assets-stephM/Plage.webp);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.img4stephm {
+    grid-area: 4;
+    background: url(/assets-stephM/image.png);
+    background-size: cover;
+    background-position:top;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p4 {
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.cards-stephm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card1 {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/download.jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/Forêt.webp);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/download\ \(1\).jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card4 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
+    box-shadow:15px 15px 30px #bebebe,
+    -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation-stephm {
+    display: grid;
+    grid-template-columns: 1.5fr .5fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem;
+}
+
+.card5 {
+    background: url(/assets-stephM/carte.jpg);
+    background-size: cover;
+    background-position:right;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    width: 10rem;
+    height: 10rem;
+}
+/*Fin page StepM*/
 
                                         /*BODY*/
 /* menu*/
@@ -417,8 +593,7 @@ a {
 
 /*Fin menu et sous menu*/
 
-/*BODY*/
-/*>>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33*/
+    /*BODY*/
 
 body {
   background-color: var(--secondary-color);
