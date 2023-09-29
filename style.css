@@ -540,12 +540,15 @@ a {
   height: 100%;
   line-height: 90px;
   font-size: 22px;
+  gap: 10rem;
+  margin-right: 15rem;
 }
 
 .listeN {
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0;
   flex-shrink: 0;
+  text-align: center;
 }
 
 .listeN span {
@@ -562,14 +565,14 @@ a {
 
 .sousMenu {
   position: relative;
-  top: -1px;
+  top: 0;
   display: none;
 }
 
 .sousListe {
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 3px;
   background-color: var(--principal-color);
   border-bottom: 0.5px solid var(--tertiary-color);
 }
@@ -583,7 +586,7 @@ a {
 }
 
 .sousListe:hover {
-  height: 100%;
+  height: 90%;
   line-height: 90px;
 }
 
