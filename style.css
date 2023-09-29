@@ -20,11 +20,6 @@ header {
   border-radius: 0px 0px 15px 15px;
 }
 
-nav {
-    background-color: #002533;
-    position: sticky;
-    top: 0;
-}
 
 .principal-title {
     background-image: url(/assets-julien/masashi-wakui-12.jpg);
@@ -267,9 +262,9 @@ div.grid-daniel {
 }
 
 
-.liencyclopierro {
+/*.liencyclopierro {
     
-}
+}*/
 
 .article3stephV {
     font-family: 'Lexend', sans-serif;
@@ -517,10 +512,14 @@ nav {
   height: 7rem;
   background-color: var(--principal-color);
   border-bottom: 0.5px solid var(--tertiary-color);
-  position: sticky;
+  position: fixed;
   top: 0;
   bottom: 0;
   border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
 }
 
 a {
@@ -541,7 +540,6 @@ a {
   line-height: 90px;
   font-size: 22px;
   gap: 10rem;
-  margin-right: 15rem;
 }
 
 .listeN {
