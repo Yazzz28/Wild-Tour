@@ -1,4 +1,4 @@
-                                /*initialisation*/
+/*initialisation*/
 
 :root {
   --principal-color: #002533;
@@ -13,18 +13,13 @@
   padding: 0;
 }
 
-                                    /*HEADER*/
+/*HEADER*/
 
 header {
   background-color: var(--principal-color);
   border-radius: 0px 0px 15px 15px;
 }
 
-nav {
-    background-color: #002533;
-    position: sticky;
-    top: 0;
-}
 
 .principal-title {
     background-image: url(/assets-julien/masashi-wakui-12.jpg);
@@ -44,7 +39,7 @@ body {
   margin: 0rem 4rem;
 }
 
-                                    /*page yacine*/
+/*page yacine*/
 
 .principal-title-yacine {
   background-image: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
@@ -62,7 +57,7 @@ body {
 .texte-yacine {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 45rem 30rem 45rem;
+  grid-template-rows: 45rem 30rem;
   margin-right: 30px;
   margin-left: 30px;
 }
@@ -85,10 +80,67 @@ body {
   margin: 3%;
 }
 
+.cards-yacine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+}
 
-                                    /*fin page yacine*/
+.card1y {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background-image: url(/assets-yacine/pexels-cottonbro-studio-5900771.jpg);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
 
-                                    /*Page Daniel*/
+.card2y {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background: url(/assets-yacine/pexels-hải-hòa-lê-trần-6144971.jpg);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+.card3y {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background: url(/assets-yacine/pexels-cup-of-couple-8472622.jpg);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+.card4y {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background: url(/assets-yacine/pexels-nadin-sh-17952227.jpg);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+.card5y {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*fin page yacine*/
+
+/*Page Daniel*/
 
 h1.principal-title-daniel {
   background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
@@ -215,7 +267,7 @@ div.grid-daniel {
 
 
 
-                                    /*page StephV*/
+/*page StephV*/
 
 .pagestephV {
     display: grid;
@@ -267,9 +319,9 @@ div.grid-daniel {
 }
 
 
-.liencyclopierro {
+/*.liencyclopierro {
     
-}
+}*/
 
 .article3stephV {
     font-family: 'Lexend', sans-serif;
@@ -312,10 +364,6 @@ div.grid-daniel {
 
 
 /*fin de page StephV*/
-/*fin de page StephV*/
-
-
-
 
 /*page StephM*/
 
@@ -510,18 +558,24 @@ div.grid-daniel {
 }
 /*Fin page StepM*/
 
-                                        /*BODY*/
+/*BODY*/
 /* menu*/
 
 nav {
   height: 7rem;
   background-color: var(--principal-color);
   border-bottom: 0.5px solid var(--tertiary-color);
-  position: sticky;
+  position: fixed;
   top: 0;
   bottom: 0;
   border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
 }
+
+.navBarre 
 
 a {
   text-decoration: none;
@@ -540,11 +594,12 @@ a {
   height: 100%;
   line-height: 90px;
   font-size: 22px;
+  gap: 10rem;
 }
 
 .listeN {
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0;
   flex-shrink: 0;
 }
 
@@ -562,14 +617,14 @@ a {
 
 .sousMenu {
   position: relative;
-  top: -1px;
+  top: 0;
   display: none;
 }
 
 .sousListe {
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 3px;
   background-color: var(--principal-color);
   border-bottom: 0.5px solid var(--tertiary-color);
 }
@@ -583,7 +638,7 @@ a {
 }
 
 .sousListe:hover {
-  height: 100%;
+  height: 90%;
   line-height: 90px;
 }
 
@@ -593,7 +648,7 @@ a {
 
 /*Fin menu et sous menu*/
 
-    /*BODY*/
+/*BODY*/
 
 body {
   background-color: var(--secondary-color);
@@ -618,7 +673,7 @@ div {
   padding: 1rem;
 }
 
-                                /*Contact*/
+/*Contact*/
 
 button {
   background-color: var(--tertiary-color);
@@ -631,7 +686,6 @@ button {
 
 button:hover {
   background-color: var(--principal-color);
-  color: var(--tertiary-color);
 }
 
 form {
@@ -644,7 +698,7 @@ form {
 }
 
 
-                                        /*rate*/
+/*rate*/
 
 .rating:not(:checked) > input {
   position: absolute;
@@ -680,10 +734,10 @@ form {
 }
 
 
-                                            /*Fin rate*/
+/*Fin rate*/
 
 
-                                            /*FOOTER*/
+/*FOOTER*/
 
 footer {
   background-color: var(--principal-color);
