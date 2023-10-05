@@ -1,688 +1,729 @@
-                                /*initialisation*/
-
-                                :root {
-                                    --principal-color: #002533;
-                                    --secondary-color: #f7efe7;
-                                    --tertiary-color: #f2621f;
-                                    --bleupale-color: #d1dbe4;
-                                    --border-radius: 40px;
-                                }
-
-                                * {
-                                    margin: 0;
-                                    padding: 0;
-                                }
-
-                                /*HEADER*/
-
-                                header {
-                                    background-color: var(--principal-color);
-                                    border-radius: 0px 0px 15px 15px;
-                                }
-
-                                nav {
-                                    background-color: #002533;
-                                    position: sticky;
-                                    top: 0;
-                                }
-
-                                .principal-title {
-                                    background-image: url(/assets-julien/masashi-wakui-12.jpg);
-                                    background-size: cover;
-                                    font-family: 'Playfair Display', serif;
-                                    text-align: left;
-                                    font-size: 4rem;
-                                    color: #f7efe7;
-                                    text-shadow: 3px 4px #f2621f;
-                                    padding: 15rem;
-                                    background-position: center;
-                                    border-radius: 0px 0px 15px 15px;
-                                }
-
-                                body {
-                                    background-color: var(--secondary-color);
-                                    margin: 0rem 4rem;
-                                }
-
-                                /*page yacine*/
-
-                                .principal-title-yacine {
-                                    background-image: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
-                                    background-size: cover;
-                                    font-family: "Playfair Display", serif;
-                                    text-align: left;
-                                    font-size: 4rem;
-                                    color: #f7efe7;
-                                    text-shadow: 3px 4px #f2621f;
-                                    padding: 15rem;
-                                    background-position: center;
-                                    border-radius: 0px 0px 15px 15px;
-                                }
-
-                                .texte-yacine {
-                                    display: grid;
-                                    grid-template-columns: 50% 50%;
-                                    grid-template-rows: 45rem 30rem 45rem;
-                                    margin-right: 30px;
-                                    margin-left: 30px;
-                                }
-
-                                .contenu-yacine {
-                                    font-family: "Lexend";
-                                    font-size: xx-large;
-                                    grid-column: 2;
-                                    margin: 3%;
-                                    background: rgb(247, 239, 231);
-                                    background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
-                                }
-
-                                .image-sushi {
-                                    background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
-                                    grid-row: 2;
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 15%;
-                                    margin: 3%;
-                                }
-
-
-                                /*fin page yacine*/
-
-                                /*Page Daniel*/
-
-                                h1.principal-title-daniel {
-                                    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
-                                    background-size: cover;
-                                    font-family: "Playfair Display", serif;
-                                    text-align: left;
-                                    font-size: 4rem;
-                                    color: #f7efe7;
-                                    text-shadow: 3px 4px #f2621f;
-                                    padding: 15rem;
-                                    background-position: center;
-                                    border-radius: 0px 0px 15px 15px;
-                                }
-
-                                .texte-daniel {
-                                    display: grid;
-                                    font-family: "Lexend", sans-serif;
-                                    font-size: 1.1rem;
-                                    grid-template-columns: 1fr 1fr;
-                                    grid-template-rows: 1fr;
-                                    grid-gap: 0.9rem;
-                                    grid-template-areas: " 1, 2 ";
-                                }
-
-                                .texte-daniel p {
-                                    display: grid;
-                                    grid-area: 1;
-                                    padding: 2rem;
-                                    text-align: center;
-                                    margin-top: 10%;
-                                }
-
-                                div.grid-daniel {
-                                    display: grid;
-                                    grid-template-columns: 1fr 1fr;
-                                    grid-template-rows: 2fr;
-                                    grid-gap: 0.9rem;
-                                    grid-template-areas:
-                                        " 1 2 "
-                                        " 3 ";
-                                }
-
-                                .img1 {
-                                    grid-area: 1;
-                                    margin: 1%;
-                                    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
-                                    background-size: cover;
-                                    background-position: top;
-                                    padding: 11rem;
-                                    gap: 1rem;
-                                    border-radius: 15px;
-                                }
-
-                                .img2 {
-                                    grid-area: 2;
-                                    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
-                                    padding: 11rem;
-                                    margin: 1%;
-                                    border-radius: 15px;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .parag2 {
-                                    grid-area: 2;
-                                }
-
-                                .cards-daniel {
-                                    display: flex;
-                                    justify-content: space-around;
-                                    align-items: center;
-                                    padding: 5rem;
-                                }
-
-                                .card1 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #aaaaaa;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card2 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card3 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card4 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background: url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card5 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-
-
-                                /*page StephV*/
-
-                                .pagestephV {
-                                    display: grid;
-                                    grid-template-rows: auto;
-                                    grid-template-columns: auto;
-                                    text-align: justify;
-                                }
-
-                                .startstephV {
-                                    background-image: url(assets-stephV/nature.jpg);
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 20px 20px 20px 20px;
-                                    padding: 20rem;
-                                    font-family: 'Playfair Display', serif;
-                                    font-size: 4rem;
-                                    color: #f7efe7;
-                                    text-shadow: 3px 4px #f2621f;
-                                }
-
-                                .articl1stephV {
-                                    font-family: 'Lexend', sans-serif;
-                                    color: black;
-                                    font-size: 2rem;
-                                    background-image: url(assets-stephV/coucherdesoleil.jpg);
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 20px 20px 20px 20px;
-                                    padding: 10rem 10rem 20rem 10rem;
-                                }
-
-                                .imagearticl1stephV {
-                                    opacity: 0.3;
-                                }
-
-                                .h2stephV {
-                                    font-size: 3rem;
-                                    font-weight: bold;
-                                }
-
-                                .article2stephV {
-                                    font-family: 'Lexend', sans-serif;
-                                    font-size: 2rem;
-                                    color: black;
-                                    background-image: url(assets-stephV/CYCLO_PIERRO.jpg);
-                                    background-size: contain;
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-color: seagreen;
-                                    border-radius: 20px 20px 20px 20px;
-                                    padding: 10rem 10rem 20rem 10rem;
-                                }
-
-                                .imagearticl2stephV {
-                                    opacity: 3;
-                                    background: transparent;
-                                }
-
-                                .article3stephV {
-                                    font-family: 'Lexend', sans-serif;
-                                    font-size: 2rem;
-                                    color: black;
-                                    background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
-                                    background-size: ;
-                                    background-position: auto;
-                                    background-color: #FDD2CC;
-                                    border-radius: 20px 20px 20px 20px;
-                                    padding: 10rem 10rem 10rem 5rem;
-                                    background-repeat: no-repeat;
-                                }
-
-                                .imagearticl3stephV {
-                                    opacity: 0.6;
-                                }
-
-                                .article4stephV {
-                                    font-family: 'Lexend', sans-serif;
-                                    font-size: 2rem;
-                                    color: black;
-                                    background-image: url(assets-stephV/recycling-6490267_1280.png);
-                                    background-size: contain;
-                                    background-position: center;
-                                    background-repeat: no-repeat;
-                                    border-radius: 20px 20px 20px 20px;
-                                    padding: 10rem 10rem 10rem 5rem;
-                                }
-
-                                .imagearticl4stephV {
-                                    ;
-                                }
-
-                                .article5stephV {
-                                    font-family: 'Lexend', sans-serif;
-                                    font-size: 2rem;
-                                    color: black;
-                                    background-image: url(assets-stephV/KOOZUMAIN.jpg);
-                                    background-size: cover;
-                                    background-position: bottom;
-                                    background-repeat: no-repeat;
-                                    border-radius: 20px 20px 20px 20px;
-                                    padding: 5rem 5rem 20rem 10rem;
-                                    text-align: right;
-                                }
-
-                                .imagearticl5stephV {
-                                    opacity: 0.6;
-                                }
-
-                                /*fin de page StephV*/
-
-
-
-
-
-                                /*page StephM*/
-
-                                .principal-title-stephm {
-                                    background-image: url(/assets-stephM/couché-de-soleil-plage.jpg);
-                                    background-size: cover;
-                                    font-family: 'Playfair Display', serif;
-                                    text-align: center;
-                                    font-size: 4rem;
-                                    color: #f7efe7;
-                                    text-shadow: 3px 4px #f2621f;
-                                    padding: 15rem;
-                                    background-position: 20% 80%;
-                                    border-radius: 0px 0px 15px 15px;
-                                    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
-                                    background-size: cover;
-                                    font-family: "Playfair Display", serif;
-                                    text-align: left;
-                                    font-size: 4rem;
-                                    color: #f7efe7;
-                                    text-shadow: 3px 4px #f2621f;
-                                    padding: 15rem;
-                                    background-position: center;
-                                    border-radius: 0px 0px 15px 15px;
-                                }
-
-                                .texte-stephm {
-                                    display: grid;
-                                    grid-template-columns: 1fr 1fr;
-                                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                                    font-family: 'Lexend', sans-serif;
-                                    font-size: 1, 2rem;
-                                    grid-gap: .5rem;
-                                    grid-template-areas:
-                                        "1 2"
-                                        "3 4"
-                                        "5 6"
-                                        "7 8";
-                                    text-align: center;
-                                    padding: 3rem;
-
-                                }
-
-                                .texte-stephm p1 {
-                                    grid-area: 1;
-                                    font-size: 1.1rem;
-                                    align-self: center;
-                                    justify-self: center;
-                                    width: 70%;
-                                    padding: 2rem;
-                                }
-
-                                .img1stephm {
-                                    grid-area: 1;
-                                    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 15px;
-                                    align-self: center;
-                                    justify-self: center;
-                                    padding: 10rem 17rem;
-                                }
-
-                                .img2stephm {
-                                    grid-area: 2;
-                                    background: url(/assets-stephM/images.jpg);
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 15px;
-                                    align-self: center;
-                                    justify-self: center;
-                                    padding: 10rem 17rem;
-                                }
-
-                                .texte-stephm p2 {
-                                    font-size: 1.1rem;
-                                    align-self: center;
-                                    justify-self: center;
-                                    width: 70%;
-                                    padding: 2rem;
-                                }
-
-                                .texte-stephm p3 {
-                                    grid-area: 3;
-                                    font-size: 1.1rem;
-                                    align-self: center;
-                                    justify-self: center;
-                                    width: 70%;
-                                    padding: 2rem;
-                                }
-
-                                .img3stephm {
-                                    grid-area: 3;
-                                    background: url(/assets-stephM/Plage.webp);
-                                    background-size: cover;
-                                    background-position: center;
-                                    border-radius: 15px;
-                                    align-self: center;
-                                    justify-self: center;
-                                    padding: 10rem 17rem;
-                                }
-
-                                .img4stephm {
-                                    grid-area: 4;
-                                    background: url(/assets-stephM/image.png);
-                                    background-size: cover;
-                                    background-position: top;
-                                    border-radius: 15px;
-                                    align-self: center;
-                                    justify-self: center;
-                                    padding: 10rem 17rem;
-                                }
-
-                                .texte-stephm p4 {
-                                    font-size: 1.1rem;
-                                    align-self: center;
-                                    justify-self: center;
-                                    width: 70%;
-                                    padding: 2rem;
-                                }
-
-                                .cards-stephm {
-                                    display: flex;
-                                    justify-content: space-around;
-                                    align-items: center;
-                                    padding: 5rem;
-                                }
-
-                                .card1 {
-                                    width: 20rem;
-                                    height: 14rem;
-                                    border-radius: 30px;
-                                    background-image: url(/assets-stephM/download.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe,
-                                        -15px -15px 30px #aaaaaa;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card2 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background-image: url(/assets-stephM/Forêt.webp);
-                                    box-shadow: 15px 15px 30px #bebebe,
-                                        -15px -15px 30px #aaaaaa;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card3 {
-                                    width: 20rem;
-                                    height: 14rem;
-                                    border-radius: 30px;
-                                    background-image: url(/assets-stephM/download\ \(1\).jpg);
-                                    box-shadow: 15px 15px 30px #bebebe,
-                                        -15px -15px 30px #aaaaaa;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .card4 {
-                                    width: 14rem;
-                                    height: 20rem;
-                                    border-radius: 30px;
-                                    background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
-                                    box-shadow: 15px 15px 30px #bebebe,
-                                        -15px -15px 30px #aaaaaa;
-                                    background-size: cover;
-                                    background-position: center;
-                                }
-
-                                .presentation-stephm {
-                                    display: grid;
-                                    grid-template-columns: 1.5fr .5fr;
-                                    font-family: 'Lexend', sans-serif;
-                                    font-size: 1.2rem;
-                                    align-items: center;
-                                    justify-items: center;
-                                    margin: 2rem;
-                                }
-
-                                .card5 {
-                                    background: url(/assets-stephM/carte.jpg);
-                                    background-size: cover;
-                                    background-position: right;
-                                    border-radius: 15px;
-                                    align-self: center;
-                                    justify-self: center;
-                                    width: 10rem;
-                                    height: 10rem;
-                                }
-
-                                /*Fin page StepM*/
-
-                                /*BODY*/
-                                /* menu*/
-
-                                nav {
-                                    width: 100%;
-                                    height: 90px;
-                                    background-color: var(--principal-color);
-                                    border-bottom: 0.5px solid var(--tertiary-color);
-                                    position: sticky;
-                                    top: 0;
-                                    bottom: 0;
-                                }
-
-                                .list-general {
-                                    display: flex;
-                                    justify-content: center;
-                                    list-style: none;
-                                    height: 100%;
-                                    line-height: 90px;
-                                    font-size: 22px;
-                                }
-
-                                .listeN {
-                                    cursor: pointer;
-                                    margin: 0 20px;
-                                    flex-shrink: 0;
-                                }
-
-                                .listeN span {
-                                    font-size: 15px;
-                                    color: var(--tertiary-color);
-                                }
-
-                                /*Sous menu*/
-
-                                .sousMenu {
-                                    position: relative;
-                                    top: -1px;
-                                    display: none;
-                                }
-
-                                .sousListe {
-                                    list-style: none;
-                                    text-align: center;
-                                    padding: 0px;
-                                    background-color: var(--principal-color);
-                                    border-bottom: 0.5px solid var(--tertiary-color);
-                                }
-
-                                .sousListe>a {
-                                    background-color: #f2621f;
-                                }
-
-                                .sousListe:hover {
-                                    background-color: var(--secondary-color);
-                                    height: 100%;
-                                    line-height: 90px;
-                                }
-
-                                .listeN:hover>ul {
-                                    display: block;
-                                }
-
-                                /*Fin menu et sous menu*/
-
-                                /*BODY*/
-
-                                body {
-                                    background-color: var(--secondary-color);
-                                    margin: 0rem 0rem;
-                                }
-
-                                .texte,
-                                div {
-                                    display: flex;
-                                    padding: 1rem;
-                                    background-color: var(--secondary-color);
-                                    color: var(--principal-color);
-                                    font-family: "Lexend", sans-serif;
-                                }
-
-                                .texte p {
-                                    margin-left: 2rem;
-                                    font-size: 1.5rem;
-                                }
-
-                                .texte div {
-                                    padding: 1rem;
-                                }
-
-                                /*Contact*/
-
-                                button {
-                                    background-color: var(--tertiary-color);
-                                    color: var(--secondary-color);
-                                    border: none;
-                                    border-radius: 5px;
-                                    padding: 10px;
-                                    cursor: pointer;
-                                }
-
-                                button:hover {
-                                    background-color: var(--principal-color);
-                                    color: var(--tertiary-color);
-                                }
-
-                                form {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-                                    margin: 20px;
-                                    gap: 10px;
-                                }
-
-
-                                /*rate*/
-
-                                .rating:not(:checked)>input {
-                                    position: absolute;
-                                    appearance: none;
-                                }
-
-                                .rating:not(:checked)>label {
-                                    float: inherit;
-                                    cursor: pointer;
-                                    font-size: 30px;
-                                    color: #666;
-                                }
-
-                                .rating:not(:checked)>label:before {
-                                    content: "★";
-                                }
-
-                                .rating>input:checked+label:hover,
-                                .rating>input:checked+label:hover~label,
-                                .rating>input:checked~label:hover,
-                                .rating>input:checked~label:hover~label,
-                                .rating>label:hover~input:checked~label {
-                                    color: #e58e09;
-                                }
-
-                                .rating:not(:checked)>label:hover,
-                                .rating:not(:checked)>label:hover~label {
-                                    color: #ff9e0b;
-                                }
-
-                                .rating>input:checked~label {
-                                    color: #ffa723;
-                                }
-
-
-                                /*Fin rate*/
-
-
-                                /*FOOTER*/
-
-                                footer {
-                                    background-color: var(--principal-color);
-                                    bottom: 0;
-                                    width: 100%;
-                                }
+/*initialisation*/
+
+:root {
+    --principal-color: #002533;
+    --secondary-color: #f7efe7;
+    --tertiary-color: #f2621f;
+    --bleupale-color: #d1dbe4;
+    --border-radius: 40px;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Début navbar*/
+nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 37, 51, 0.5);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+.headerG {
+    background: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f7efe7;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerG h1 {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 5rem;
+}
+
+.sousMenu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    background-color: rgba(0, 37, 51, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0;
+}
+
+.listeN:hover>ul {
+    display: block;
+}
+
+.listeN {
+    cursor: pointer;
+    margin: 0 1.2rem;
+}
+
+/*Fin navbar*/
+
+body {
+    background-color: var(--secondary-color);
+    margin: 0rem 4rem;
+}
+
+/*page yacine*/
+
+.principal-title-yacine {
+    background-image: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.texte-yacine {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45rem 30rem 45rem;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.contenu-yacine {
+    font-family: "Lexend";
+    font-size: xx-large;
+    grid-column: 2;
+    margin: 3%;
+    background: rgb(247, 239, 231);
+    background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
+}
+
+.image-sushi {
+    background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
+    grid-row: 2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    margin: 3%;
+}
+
+
+/*fin page yacine*/
+
+/*Page Daniel*/
+
+h1.principal-title-daniel {
+    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.texte-daniel {
+    display: grid;
+    font-family: "Lexend", sans-serif;
+    font-size: 1.1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.9rem;
+    grid-template-areas: " 1, 2 ";
+}
+
+.texte-daniel p {
+    display: grid;
+    grid-area: 1;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+div.grid-daniel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-gap: 0.9rem;
+    grid-template-areas:
+        " 1 2 "
+        " 3 ";
+}
+
+.img1 {
+    grid-area: 1;
+    margin: 1%;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 11rem;
+    gap: 1rem;
+    border-radius: 15px;
+}
+
+.img2 {
+    grid-area: 2;
+    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
+    padding: 11rem;
+    margin: 1%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.parag2 {
+    grid-area: 2;
+}
+
+.cards-daniel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card1 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.card4 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.card5 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+/* DEBUT PAGE STEPH V */
+/* DEBUT PAGE STEPH V */
+
+
+
+.header-stephV {
+    background: url(assets-stephV/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.header-stephV h1 {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 5rem 5rem 5rem 0rem;
+}
+
+.pagestephV {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+/* ARTICLE 1 STEPH V PRESENTATION */
+.articl1stephV {
+    font-family: 'Lexend', sans-serif;
+    color: black;
+    font-size: 2rem;
+    background-image: url(assets-stephV/coucherdesoleil.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 2rem 10rem 20rem 5rem;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
+}
+
+.imgarticl1stephV {
+    object-fit: url(assets-stephV/carte_Libourne.jpg);
+    object-position: right;
+}
+
+.h2articl1stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* ARTICLE 2 STEPH V */
+.article2stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/cyclo2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--principal-color) -20px -20px;
+}
+
+.h2article2stephV {
+    color: var(--principal-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.liencyclopierro {
+    color: var(--principal-color);
+}
+
+/* ARTICLE 3 STEPH V */
+.article3stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
+    background-position: auto;
+    background-color: #FDD2CC;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    background-repeat: no-repeat;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
+}
+
+.h2article3stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.liendrivetoutnu {
+    color: var(--tertiary-color);
+}
+
+/* ARTICLE 4 STEPH V */
+.article4stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/recyclage2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--principal-color) -20px -20px;
+}
+
+.h2article4stephV {
+    color: var(--principal-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.lienbbot {
+    color: var(--principal-color);
+}
+
+/* ARTICLE 5 STEPH V */
+.article5stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/koozumain2.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 5rem 5rem 20rem 10rem;
+    text-align: right;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
+}
+
+.h2article5stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.lienkoozumain {
+    color: var(--tertiary-color);
+}
+
+/* FIN PAGE STEPH V */
+/* FIN PAGE STEPH V */
+
+
+
+
+
+/*page StephM*/
+
+.principal-title-stephm {
+    background-image: url(/assets-stephM/couché-de-soleil-plage.jpg);
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: 20% 80%;
+    border-radius: 0px 0px 15px 15px;
+    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.texte-stephm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1, 2rem;
+    grid-gap: .5rem;
+    grid-template-areas:
+        "1 2"
+        "3 4"
+        "5 6"
+        "7 8";
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.texte-stephm p1 {
+    grid-area: 1;
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.img1stephm {
+    grid-area: 1;
+    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.img2stephm {
+    grid-area: 2;
+    background: url(/assets-stephM/images.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p2 {
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.texte-stephm p3 {
+    grid-area: 3;
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.img3stephm {
+    grid-area: 3;
+    background: url(/assets-stephM/Plage.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.img4stephm {
+    grid-area: 4;
+    background: url(/assets-stephM/image.png);
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p4 {
+    font-size: 1.1rem;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    padding: 2rem;
+}
+
+.cards-stephm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card1 {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/download.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/Forêt.webp);
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/download\ \(1\).jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.card4 {
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation-stephm {
+    display: grid;
+    grid-template-columns: 1.5fr .5fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem;
+}
+
+.card5 {
+    background: url(/assets-stephM/carte.jpg);
+    background-size: cover;
+    background-position: right;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    width: 10rem;
+    height: 10rem;
+}
+
+/*Fin page StepM*/
+
+/*BODY*/
+
+body {
+    background-color: var(--secondary-color);
+    margin: 0rem 0rem;
+}
+
+.texte,
+div {
+    display: flex;
+    padding: 1rem;
+    color: var(--principal-color);
+    font-family: "Lexend", sans-serif;
+}
+
+.texte p {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.texte div {
+    padding: 1rem;
+}
+
+/*Contact*/
+
+button {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--principal-color);
+    color: var(--tertiary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+
+/*rate*/
+
+.rating:not(:checked)>input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked)>label {
+    float: inherit;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+}
+
+.rating:not(:checked)>label:before {
+    content: "★";
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #e58e09;
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #ff9e0b;
+}
+
+.rating>input:checked~label {
+    color: #ffa723;
+}
+
+
+/*Fin rate*/
+
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--principal-color);
+    bottom: 0;
+    width: 100%;
+}

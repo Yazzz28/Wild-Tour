@@ -1,0 +1,63 @@
+/*initialisation*/
+
+:root {
+    /* Couleurs */
+    --principal-color: #002533;
+    --secondary-color: #f7efe7;
+    --tertiary-color: #f2621f;
+    --bleupale-color: #d1dbe4;
+    /* Titres et texte */
+    --h2-size-desktop: 64px;
+    --h2-size-mobile: 48px;
+    --h3-size-desktop: 48px;
+    --h3-size-mobile: 36px;
+    --h4-size-desktop: 36px;
+    --h4-size-mobile: 24px;
+    --p-size-desktop: 16px;
+    --p-size-mobile: 12px;
+    --p-button: 20px;
+    /* Margin et padding */
+    --margin-x-desktop: 10vw;
+    --margin-y-desktop: 5vh;
+    --padding-y-desktop: 5vh;
+    --padding-x-desktop: 5vw;
+    --margin-x-mobile: 5vw;
+    --margin-y-mobile: 5vh;
+    --padding-y-mobile: 2vh;
+    --padding-x-mobile: 2vw;
+    --row-gap: 30px;
+    --column-gap: 30px;
+    /* Effets */
+    --border-radius: 40px;
+    --img-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    --transition-time: 400ms;
+}
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-top {
+    object-fit: cover;
+    object-position: center;
+    height: 75vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.title-top {
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 15rem;
+    color: #f7efe7;
+    position: absolute;
+    bottom: 30vh;
+    margin-left: 5vw;
+    mix-blend-mode: soft-light;
+}
