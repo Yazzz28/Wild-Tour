@@ -8,30 +8,86 @@
   --border-radius: 40px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
                                     /*HEADER*/
-
-header {
-  background-color: var(--principal-color);
-  border-radius: 0px 0px 15px 15px;
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Début navbar*/
+nav {
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 37, 51, 0.5);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top:0;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1rem;
+    height: 4rem;
 }
 
-.principal-title {
-  background-image: url(/assets-julien/masashi-wakui-12.jpg);
-  background-size: cover;
-  font-family: "Playfair Display", serif;
-  text-align: left;
-  font-size: 4rem;
-  color: #f7efe7;
-  text-shadow: 3px 4px #f2621f;
-  padding: 15rem;
-  background-position: center;
-  border-radius: 0px 0px 15px 15px;
+.logo {
+    height: 3.5rem;
 }
+
+headerG {
+    background: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f7efe7;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerG h1 {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 5rem;
+}
+
+.sousMenu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    background-color: rgba(0, 37, 51, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0;
+}
+
+.listeN:hover > ul {
+    display: block;
+}
+
+.listeN {
+    cursor: pointer;
+    margin: 0 1.2rem;
+}
+/*Fin navbar*/
 
 body {
   background-color: var(--secondary-color);
@@ -303,19 +359,23 @@ h3 {
 /*fin de page StephV*/
 
                                         /*page StephM*/
-
-.principal-title-stephm {
-    background-image: url(/assets-stephM/couché-de-soleil-plage.jpg);
-    background-size: cover;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: 20% 80%;
-    border-radius: 0px 0px 15px 15px; 
+.header-stephm {
+  background: url(/assets-stephM/couché-de-soleil-plage.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 10%;
+  /*border-radius: 0px 0px 15px 15px;*/
 }
+
+.header-stephm h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 4rem;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  padding: 5rem;
+}
+
 
 .texte-stephm {
     display: grid;
@@ -471,6 +531,7 @@ h3 {
     align-items: center;
     justify-items: center;
     margin: 2rem;
+    margin-left: 4rem;
 }
 
 .card5 {
@@ -483,72 +544,47 @@ h3 {
     width: 10rem;
     height: 10rem;
 }
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 960px) {
+  .header-stephm h1{
+    /*width: auto;*/
+    font-size: 3rem;
+  }
+  .texte-stephm{
+    /*width: auto;*/
+    display: flex;
+    /*grid-template-columns: none;
+    grid-template-rows: auto;
+    grid-template-areas: none;*/
+    flex-wrap: wrap;
+    
+  }
+  .img1stephm .img2stephm .img3stephm .img4stephm{
+    width: auto;
+  }
+    .cards-stephm{
+    width: auto;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .presentation-stephm{
+    grid-template-columns: none;
+  }
+  .card5{
+    margin-top: 1.5rem;
+  }
+}
+
 /*Fin page StepM*/
 
                                         /*BODY*/
-/* menu*/
 
-nav {
-  width: 100%;
-  height: 90px;
-  background-color: var(--principal-color);
-  border-bottom: 0.5px solid var(--tertiary-color);
-  position: sticky;
-  top: 0;
-  bottom: 0;
-}
 
-.list-general {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  height: 100%;
-  line-height: 90px;
-  font-size: 22px;
-}
 
-.listeN {
-  cursor: pointer;
-  margin: 0 20px;
-  flex-shrink: 0;
-}
 
-.listeN span {
-  font-size: 15px;
-  color: var(--tertiary-color);
-}
 
-/*Sous menu*/
-
-.sousMenu {
-  position: relative;
-  top: -1px;
-  display: none;
-}
-
-.sousListe {
-  list-style: none;
-  text-align: center;
-  padding: 0px;
-  background-color: var(--principal-color);
-  border-bottom: 0.5px solid var(--tertiary-color);
-}
-
-.sousListe > a {
-  background-color: #f2621f;
-}
-
-.sousListe:hover {
-  background-color: var(--secondary-color);
-  height: 100%;
-  line-height: 90px;
-}
-
-.listeN:hover > ul {
-  display: block;
-}
-
-/*Fin menu et sous menu*/
 
 /*BODY*/
 /*>>>>>>> f58c84f50201b71ed9d13d6dced397c5336a9d33*/
@@ -562,7 +598,7 @@ body {
 div {
   display: flex;
   padding: 1rem;
-  background-color: var(--secondary-color);
+  /*background-color: var(--secondary-color);*/
   color: var(--principal-color);
   font-family: "Lexend", sans-serif;
 }
