@@ -68,6 +68,7 @@ header nav ul li a {
     font-size: 1.5rem;
 }
 
+
 header nav ul {
     display: flex;
     justify-content: center;
@@ -94,6 +95,7 @@ header nav ul {
     padding: 0;
 }
 
+
 .listeN:hover > ul {
     display: block;
 }
@@ -102,16 +104,18 @@ header nav ul {
     cursor: pointer;
     margin: 0 1.2rem;
 }
+
 /*Fin navbar*/
 /*HEADER*/
 
 
 body {
-  background-color: var(--secondary-color);
-  margin: 0rem 4rem;
+    background-color: var(--secondary-color);
+    margin: 0rem 4rem;
 }
 
 /*page yacine*/
+
 
 .headerY {
   background: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
@@ -138,21 +142,21 @@ body {
 }
 
 .contenu-yacine {
-  font-family: "Lexend";
-  font-size: xx-large;
-  grid-column: 2;
-  margin: 3%;
-  background: rgb(247, 239, 231);
-  background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
+    font-family: "Lexend";
+    font-size: xx-large;
+    grid-column: 2;
+    margin: 3%;
+    background: rgb(247, 239, 231);
+    background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
-  background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
-  grid-row: 2;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15%;
-  margin: 3%;
+    background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
+    grid-row: 2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    margin: 3%;
 }
 
 h2 {
@@ -546,151 +550,160 @@ hr {
 /*Page Daniel*/
 
 h1.principal-title-daniel {
-  background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
-  background-size: cover;
-  font-family: "Playfair Display", serif;
-  text-align: left;
-  font-size: 4rem;
-  color: #f7efe7;
-  text-shadow: 3px 4px #f2621f;
-  padding: 15rem;
-  background-position: center;
-  border-radius: 0px 0px 15px 15px;
+    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-daniel {
-  display: grid;
-  font-family: "Lexend", sans-serif;
-  font-size: 1.1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 0.9rem;
-  grid-template-areas: " 1, 2 ";
+    display: grid;
+    font-family: "Lexend", sans-serif;
+    font-size: 1.1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.9rem;
+    grid-template-areas: " 1, 2 ";
 }
 
 .texte-daniel p {
-  display: grid;
-  grid-area: 1;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 10%;
+    display: grid;
+    grid-area: 1;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 10%;
 }
 
 div.grid-daniel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr;
-  grid-gap: 0.9rem;
-  grid-template-areas:
-    " 1 2 "
-    " 3 ";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-gap: 0.9rem;
+    grid-template-areas:
+        " 1 2 "
+        " 3 ";
 }
 
 .img1 {
-  grid-area: 1;
-  margin: 1%;
-  background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
-  background-size: cover;
-  background-position: top;
-  padding: 11rem;
-  gap: 1rem;
-  border-radius: 15px;
+    grid-area: 1;
+    margin: 1%;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 11rem;
+    gap: 1rem;
+    border-radius: 15px;
 }
 
 .img2 {
-  grid-area: 2;
-  background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
-  padding: 11rem;
-  margin: 1%;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
+    grid-area: 2;
+    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
+    padding: 11rem;
+    margin: 1%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
 }
 
 .parag2 {
-  grid-area: 2;
+    grid-area: 2;
 }
 
 .cards-daniel {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
 }
 
 .card1 {
-  width: 14rem;
-  height: 20rem;
-  border-radius: 30px;
-  background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #aaaaaa;
-  background-size: cover;
-  background-position: center;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #aaaaaa;
+    background-size: cover;
+    background-position: center;
 }
 
 .card2 {
-  width: 14rem;
-  height: 20rem;
-  border-radius: 30px;
-  background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  background-size: cover;
-  background-position: center;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
 }
 
 .card3 {
-  width: 14rem;
-  height: 20rem;
-  border-radius: 30px;
-  background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  background-size: cover;
-  background-position: center;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
 }
 
 .card4 {
-  width: 14rem;
-  height: 20rem;
-  border-radius: 30px;
-  background: url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  background-size: cover;
-  background-position: center;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
 }
 
 .card5 {
-  width: 14rem;
-  height: 20rem;
-  border-radius: 30px;
-  background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  background-size: cover;
-  background-position: center;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 30px;
+    background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-size: cover;
+    background-position: center;
 }
+
+/* DEBUT PAGE STEPH V */
+/* DEBUT PAGE STEPH V */
 
 
 
 /*page StephV*/
 
+
+.header-stephV {
+    background: url(assets-stephV/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.header-stephV h1 {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 5rem 5rem 5rem 0rem;
+}
+
 .pagestephV {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
-    text-align: left;
 }
 
-.startstephV {
-    background-image: url(assets-stephV/nature.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 0px 0px 15px 15px;
-    padding: 20rem;
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-}
-
+/* ARTICLE 1 STEPH V PRESENTATION */
 .articl1stephV {
     font-family: 'Lexend', sans-serif;
     color: black;
@@ -698,75 +711,138 @@ div.grid-daniel {
     background-image: url(assets-stephV/coucherdesoleil.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
-    border-radius: 0px 0px 15px 15px;
-    padding: 15rem;
+    border-radius: 20px;
+    padding: 2rem 10rem 20rem 5rem;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
 }
 
-.h2stephV {
+.imgarticl1stephV {
+    object-fit: url(assets-stephV/carte_Libourne.jpg);
+    object-position: right;
+}
+
+.h2articl1stephV {
+    color: var(--tertiary-color);
     font-size: 3rem;
     font-weight: bold;
+    text-align: justify;
 }
 
+/* ARTICLE 2 STEPH V */
 .article2stephV {
     font-family: 'Lexend', sans-serif;
     font-size: 2rem;
     color: black;
-    background-image: url(assets-stephV/CYCLO_PIERRO.jpg);
-    background-size: cover;
+    background-image: url(assets-stephV/cyclo2.png);
+    background-size: contain;
     background-position: center;
-    opacity: 0.4;
-    border-radius: 0px 0px 15px 15px;
-    padding: 15rem;
-    text-align: left;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--principal-color) -20px -20px;
+}
+
+.h2article2stephV {
+    color: var(--principal-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
 }
 
 
-/*.liencyclopierro {
-    
-}*/
+.liencyclopierro {
+    color: var(--principal-color);
+}
 
+
+/* ARTICLE 3 STEPH V */
 .article3stephV {
     font-family: 'Lexend', sans-serif;
     font-size: 2rem;
     color: black;
     background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.4;
-    border-radius: 0px 0px 15px 15px;
-    padding: 15rem;
-    text-align: left;
+    background-position: auto;
+    background-color: #FDD2CC;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    background-repeat: no-repeat;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
 }
 
+.h2article3stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.liendrivetoutnu {
+    color: var(--tertiary-color);
+}
+
+/* ARTICLE 4 STEPH V */
 .article4stephV {
     font-family: 'Lexend', sans-serif;
     font-size: 2rem;
     color: black;
-    background-image: url(assets-stephV/EROBOT_LECLERC_LIBOURNE.jpg);
-    background-size: cover;
+    background-image: url(assets-stephV/recyclage2.png);
+    background-size: contain;
     background-position: center;
-    opacity: 0.4;
-    border-radius: 0px 0px 15px 15px;
-    padding: 15rem;
-    text-align: left;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    text-align: justify;
+    margin: 4rem;
+    box-shadow: var(--principal-color) -20px -20px;
 }
 
+.h2article4stephV {
+    color: var(--principal-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.lienbbot {
+    color: var(--principal-color);
+}
+
+/* ARTICLE 5 STEPH V */
 .article5stephV {
     font-family: 'Lexend', sans-serif;
     font-size: 2rem;
     color: black;
-    background-image: url(assets-stephV/KOOZUMAIN.jpg);
+    background-image: url(assets-stephV/koozumain2.png);
     background-size: cover;
-    background-position: center;
-    opacity: 0.4;
-    border-radius: 0px 0px 15px 15px;
-    padding: 15rem;
-    text-align: left;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 5rem 5rem 20rem 10rem;
+    text-align: right;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
 }
 
+.h2article5stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+}
 
-/*fin de page StephV*/
+.lienkoozumain {
+    color: var(--tertiary-color);
+}
+
+/* FIN PAGE STEPH V */
+
 
 /*page StephM*/
 
@@ -780,17 +856,17 @@ div.grid-daniel {
     text-shadow: 3px 4px #f2621f;
     padding: 15rem;
     background-position: 20% 80%;
-    border-radius: 0px 0px 15px 15px; 
-  background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
-  background-size: cover;
-  font-family: "Playfair Display", serif;
-  text-align: left;
-  font-size: 4rem;
-  color: #f7efe7;
-  text-shadow: 3px 4px #f2621f;
-  padding: 15rem;
-  background-position: center;
-  border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 15px 15px;
+    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 15rem;
+    background-position: center;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .texte-stephm {
@@ -798,13 +874,13 @@ div.grid-daniel {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-family: 'Lexend', sans-serif;
-    font-size: 1,2rem;
+    font-size: 1, 2rem;
     grid-gap: .5rem;
-    grid-template-areas: 
-    "1 2"
-    "3 4"
-    "5 6"
-    "7 8";
+    grid-template-areas:
+        "1 2"
+        "3 4"
+        "5 6"
+        "7 8";
     text-align: center;
     padding: 3rem;
 
@@ -823,7 +899,7 @@ div.grid-daniel {
     grid-area: 1;
     background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     border-radius: 15px;
     align-self: center;
     justify-self: center;
@@ -834,7 +910,7 @@ div.grid-daniel {
     grid-area: 2;
     background: url(/assets-stephM/images.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     border-radius: 15px;
     align-self: center;
     justify-self: center;
@@ -862,7 +938,7 @@ div.grid-daniel {
     grid-area: 3;
     background: url(/assets-stephM/Plage.webp);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     border-radius: 15px;
     align-self: center;
     justify-self: center;
@@ -873,7 +949,7 @@ div.grid-daniel {
     grid-area: 4;
     background: url(/assets-stephM/image.png);
     background-size: cover;
-    background-position:top;
+    background-position: top;
     border-radius: 15px;
     align-self: center;
     justify-self: center;
@@ -900,8 +976,8 @@ div.grid-daniel {
     height: 14rem;
     border-radius: 30px;
     background-image: url(/assets-stephM/download.jpg);
-    box-shadow:15px 15px 30px #bebebe,
-    -15px -15px 30px #aaaaaa;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
     background-size: cover;
     background-position: center;
 }
@@ -911,8 +987,8 @@ div.grid-daniel {
     height: 20rem;
     border-radius: 30px;
     background-image: url(/assets-stephM/Forêt.webp);
-    box-shadow:15px 15px 30px #bebebe,
-    -15px -15px 30px #aaaaaa;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
     background-size: cover;
     background-position: center;
 }
@@ -922,8 +998,8 @@ div.grid-daniel {
     height: 14rem;
     border-radius: 30px;
     background-image: url(/assets-stephM/download\ \(1\).jpg);
-    box-shadow:15px 15px 30px #bebebe,
-    -15px -15px 30px #aaaaaa;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
     background-size: cover;
     background-position: center;
 }
@@ -933,8 +1009,8 @@ div.grid-daniel {
     height: 20rem;
     border-radius: 30px;
     background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
-    box-shadow:15px 15px 30px #bebebe,
-    -15px -15px 30px #aaaaaa;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #aaaaaa;
     background-size: cover;
     background-position: center;
 }
@@ -952,102 +1028,25 @@ div.grid-daniel {
 .card5 {
     background: url(/assets-stephM/carte.jpg);
     background-size: cover;
-    background-position:right;
+    background-position: right;
     border-radius: 15px;
     align-self: center;
     justify-self: center;
     width: 10rem;
     height: 10rem;
 }
+
 /*Fin page StepM*/
 
 /*BODY*/
 
-body {
-  background-color: var(--secondary-color);
-  margin: 0rem 0rem;
-}
-
-.texte,
-div {
-  display: flex;
-  padding: 1rem;
-  color: var(--principal-color);
-  font-family: "Lexend", sans-serif;
-}
-
-.texte p {
-  margin-left: 2rem;
-  font-size: 1.5rem;
-}
 /*Contact*/
 
 button {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--principal-color);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  gap: 10px;
-}
-
-
-/*rate*/
-
-.rating:not(:checked) > input {
-  position: absolute;
-  appearance: none;
-}
-
-.rating:not(:checked) > label {
-  float: inherit;
-  cursor: pointer;
-  font-size: 30px;
-  color: #666;
-}
-
-.rating:not(:checked) > label:before {
-  content: "★";
-}
-
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-  color: #e58e09;
-}
-
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-  color: #ff9e0b;
-}
-
-.rating > input:checked ~ label {
-  color: #ffa723;
-}
-
-
-/*Fin rate*/
-
-
-/*FOOTER*/
-
-footer {
-  background-color: var(--principal-color);
-  bottom: 0;
-  width: 100%;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
 }

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="navbar-style.css">
+</head>
+
+<div id="mySidenav" class="sidenav">
+    <a id="closeBtn" href="#" class="close">×</a>
+    <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="decouvertes.html">Découvertes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<a href="#" id="openBtn">
+    <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+</a>
+
+<script>
+    var sidenav = document.getElementById("mySidenav");
+    var openBtn = document.getElementById("openBtn");
+    var closeBtn = document.getElementById("closeBtn");
+
+    openBtn.onclick = openNav;
+    closeBtn.onclick = closeNav;
+
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+        sidenav.classList.add("active");
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        sidenav.classList.remove("active");
+    }
+
+</script>
+
+</html>
