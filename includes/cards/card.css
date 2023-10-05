@@ -1,0 +1,223 @@
+/*initialisation*/
+
+:root {
+    /* Couleurs */
+    --principal-color: #002533;
+    --secondary-color: #f7efe7;
+    --tertiary-color: #f2621f;
+    --bleupale-color: #d1dbe4;
+    /* Titres et texte */
+    --h2-size-desktop: 64px;
+    --h2-size-mobile: 48px;
+    --h3-size-desktop: 48px;
+    --h3-size-mobile: 36px;
+    --h4-size-desktop: 36px;
+    --h4-size-mobile: 24px;
+    --p-size-desktop: 16px;
+    --p-size-mobile: 12px;
+    --p-button: 20px;
+    /* Margin et padding */
+    --margin-x-desktop: 10vw;
+    --margin-y-desktop: 5vh;
+    --padding-y-desktop: 5vh;
+    --padding-x-desktop: 5vw;
+    --margin-x-mobile: 5vw;
+    --margin-y-mobile: 3vh;
+    --padding-y-mobile: 2vh;
+    --padding-x-mobile: 2vw;
+    --row-gap: 30px;
+    --column-gap: 30px;
+    /* Effets */
+    --border-radius: 40px;
+    --img-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    --transition-time: 400ms;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Playfair display;
+    font-size: var(--h2-size-desktop);
+    color: var(--principal-color);
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: Playfair display;
+    font-size: var(--h3-size-desktop);
+    color: var(--principal-color);
+}
+
+
+.centrer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Bouton "Lire plus" et "Découvrir plus"*/
+
+.button-lire-plus {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
+    font-size: var(--p-button);
+    font-family: Playfair Display Regular;
+    justify-content: left;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: var(--margin-y-desktop);
+}
+
+.button-lire-plus:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+
+/* Cards responsive */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+.card__h3 {
+    font-size: var(--h3-size-desktop);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card__image {
+    max-width: 100%;
+    aspect-ratio: 1;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: var(--img-box-shadow);
+    border-radius: 0 0 2em 2em;
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
+}
+
+
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__body h4 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: left;
+    font-family: Playfair Display Semibold;
+}
+
+.card__body p {
+    font-size: var(--p-size-desktop);
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.card__body a {
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+    text-align: left;
+    font-family: Playfair Display Semibold;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.card__button:hover {
+    transition: var(--transition-time);
+    text-decoration: underline var(--tertiary-color);
+}
+
+.user {
+    display: flex;
+    gap: .5rem;
+}
+
+.user__image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.user__info {
+    color: var(--secondary-color);
+}
+
+
+
+/* Media queries - MOBILE */
+
+@media screen and (max-width: 480px) {
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: Playfair display;
+        font-size: var(--h2-size-mobile);
+        color: var(--principal-color);
+        margin-bottom: var(--margin-y-mobile);
+    }
+
+    h3 {
+        font-family: Playfair display;
+        font-size: var(--h3-size-mobile);
+        color: var(--principal-color);
+    }
+
+    .description-center {
+        width: 70%;
+        text-align: center;
+        color: var(--principal-color);
+        font-size: var(--p-size-desktop);
+        margin-top: var(--margin-y-mobile);
+        margin-bottom: var(--margin-y-mobile);
+    }
+
+
+    /* Cards responsive */
+
+    .card__h3 {
+        font-size: var(--h3-size-mobile);
+        text-align: center;
+        padding-bottom: 20px;
+    }
