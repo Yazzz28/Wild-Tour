@@ -1,59 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
     <title>The Wild tour</title>
-</head>
-<body>
-    <header>
-            <!--Partie nav avec logo et un menu déroulant-->
-        <section class="icon"></section>
-            <nav>
-                <ul>
-                    <li><a href="acceuil.html">Acceuil</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <!--Menu deroulant-->
-                    <li class="menuDeroulant">
-                        <a href="#" >Catégories</a>
-                        <ul class="sousMenu">
-                            <li><a href="fiche-yacine.html">Gastronomie</a></li>
-                            <li><a href="fiche-daniel.html">Sport</a></li>
-                            <li><a href="fiche-julien.html">Art</a></li>
-                            <li><a href="fiche-stephV.html">Ecologie</a></li>
-                            <li><a href="fiche_stephM.html">Nature</a></li>
-                        </ul>
-                    </li>
+  </head>
+  <body>
+    <section class="headerG">
+      <header>
+        <div>
+          <nav class="navbar">
+            <img
+              src="assets-yacine/logo-the-wild-tour-navbar.png"
+              alt="logo"
+              class="logo"
+            />
+            <ul class="list-general">
+              <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
+              <li class="listeN"><a href="contact.html">Contact</a></li>
+              <li class="listeN">
+                <a href="#">Découverte</a><span>&#9660;</span>
+                <ul class="sousMenu">
+                  <li class="sousListe">
+                    <a href="fiche-yacine.html">Gastronomie</a>
+                  </li>
+                  <li class="sousListe">
+                    <a href="fiche-daniel.html">Sport</a>
+                  </li>
+                  <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
+                  <li class="sousListe">
+                    <a href="fiche-stephV.html">Ecologie</a>
+                  </li>
+                  <li class="sousListe">
+                    <a href="fiche_stephM.html">Nature</a>
+                  </li>
                 </ul>
-            </nav> 
-    </header>
+              </li>
+            </ul>
+          </nav>
+          <h1>The wild tour</h1>
+        </div>
+      </header>
+    </section>
     <main>
-            <!--Titre central-gauche dans l'image principale-->
-        <h1 class="principal-title">The Wild Tour :<br/>Le Guide Touristique Des Wilders</h1>
-        <section class="texte">
-                <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit quibusdam aliquid, beatae odit laborum perferendis cum culpa repellendus pariatur, magnam veniam? Nobis corrupti pariatur similique magnam placeat odit, dicta, hic repudiandae, tenetur amet in deleniti itaque ipsam minima est quibusdam? Dolore id exercitationem consectetur magni. Cumque maxime facilis nesciunt perferendis dignissimos quam optio itaque.
-            </p>
-        
-            <!--Espaces cartes ou photos-->
-            <div id="cases" class="gird"></div>
-        </section>
+      <!--Titre central-gauche dans l'image principale-->
+      <h1 class="principal-title">
+        The Wild Tour :<br />Le Guide Touristique Des Wilders
+      </h1>
+      <section class="texte">
+        <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit
+          quibusdam aliquid, beatae odit laborum perferendis cum culpa
+          repellendus pariatur, magnam veniam? Nobis corrupti pariatur similique
+          magnam placeat odit, dicta, hic repudiandae, tenetur amet in deleniti
+          itaque ipsam minima est quibusdam? Dolore id exercitationem
+          consectetur magni. Cumque maxime facilis nesciunt perferendis
+          dignissimos quam optio itaque.
+        </p>
+
+        <!--Espaces cartes ou photos-->
+        <div id="cases" class="gird"></div>
+      </section>
     </main>
     <footer>
-            <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions legal</h6>
+      <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
+      <section>
+        <li><a href="rate.html">Donnez votre avis</a></li>
+      </section>
+      <h6>Mentions legal</h6>
     </footer>
-</body>
+  </body>
 </html>

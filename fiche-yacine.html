@@ -1,55 +1,42 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <script src="script.js"></script>
-    <title>The Wild tour : Shogun Sushi</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>The Wild Tour</title>
+</head>
+<body>
+  <section class="headerY">
     <header>
-      <!--Partie nav avec logo et un menu déroulant-->
-      <section class="icon"></section>
+        <div>
+            <nav class="navbar">
+                <img src="assets-yacine/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+                <ul class="list-general">
+                    <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
+                    <li class="listeN"><a href="contact.html">Contact</a></li>
+                    <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
+                        <ul class="sousMenu">
+                            <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                            <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                            <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
+                            <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                            <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Shogun Sushi</h1>
+        </div>
     </header>
-    <main>
-      <nav>
-        <ul class="list-general">
-          <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
-          <li class="listeN"><a href="contact.html">Contact</a></li>
-          <!--Menu deroulant-->
-          <li class="listeN">
-            <a href="#">Categories</a>
-            <span>&#9660;</span>
-            <ul class="sousMenu">
-              <li class="sousListe">
-                <a href="fiche-yacine.html">Gastronomie</a>
-              </li>
-              <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-              <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
-              <li class="sousListe">
-                <a href="fiche-stephV.html">Ecologie</a>
-              </li>
-              <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <!--Titre central-gauche dans l'image principale-->
-      <h1 class="principal-title-yacine">Shogun Sushi</h1>
-      <section class="texte-yacine">
+  </section>
+      <article class="texte-yacine">
         <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
 
         <span class="image-sushi"></span>
@@ -66,11 +53,109 @@
           domicile et bureau. Toute l'équipe du Shogun Sushi est à votre
           disposition pour vous faire passer un agréable moment.
         </p>
+      </article>
 
-        <!--Espaces cartes ou photos-->
-        <div id="cases" class="gird"></div>
+         <!-- Articles de la même catégorie -->
+
+         <section class="centrer">
+          <h3 class="card__h3">Articles de la même catégorie</h3>
+          <div class="container">
+              <div class="card">
+                  <div class="card__header">
+                      <img src="assets-yacine/pexels-geraud-pfeiffer-6605642.jpg" alt="card__image" class="card__image"
+                          width="600">
+                  </div>
+                  <div class="card__body">
+                      <h4>Les differentes maniere de cuisiner de la viande</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
+                          doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      <a class="card__button" href="">Lire plus...</a>
+                  </div>
+                  <div class="card__footer">
+                      <div class="user">
+                          <img src="assets-yacine/yacine.jpg" alt="user__image" class="user__image">
+                          <div class="user__info">
+                            <h5>MENNAA Yacine</h5>
+                              <small>2h ago</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card__header">
+                      <img src="assets-yacine/pexels-roman-odintsov-4553031.jpg" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+
+                      <h4>Le petit dejeuner equilibré parfait pour la santé</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
+                          doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      <a class="card__button">Lire plus...</a>
+                  </div>
+                  <div class="card__footer">
+                      <div class="user">
+                          <img src="assets-yacine/yacine.jpg" alt="user__image" class="user__image">
+                          <div class="user__info">
+                            <h5>MENNAA Yacine</h5>
+                              <small>Yesterday</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card__header">
+                      <img src="assets-yacine/pexels-nataliya-vaitkevich-5792329.jpg" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                      <h4>La gastronomie italienne</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
+                          doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      <a class="card__button" href="">Lire plus...</a>
+                  </div>
+                  <div class="card__footer">
+                      <div class="user">
+                          <img src="assets-yacine/yacine.jpg" alt="user__image" class="user__image">
+                          <div class="user__info">
+                              <h5>MENNAA Yacine</h5>
+                              <small>2d ago</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="articles-recents">
+          <h3 class="article-h3">Les articles récents</h3>
+          <hr>
+          <div class="article-col2">
+              <div class="article-col2-1">
+                  <img class="article-img" src="assets-daniel/mathieu-le-roux-6_HqvY1E7NI-unsplash.jpg">
+              </div>
+              <div class="article-col2-2">
+                  <h4>Le début de la pêche dans l’Aube, Troyes</h4>
+                  <p>This defines the ability for a flex item to grow if necessary. It
+                      accepts a unitless value that serves as a proportion. It dictates what amount of the
+                      available space inside the flex container the item should take up.</p>
+                  <button class="button-lire-plus">Lire plus...</button>
+              </div>
+          </div>
+
+          <div class="article-col2">
+              <div class="article-col2-1">
+                  <img class="article-img" src="assets-julien/IMG_4122.jpg">
+              </div>
+              <div class="article-col2-2">
+                  <h4>Base sous-marine, Bordeaux</h4>
+                  <p>This defines the ability for a flex item to grow if necessary. It
+                      accepts a unitless value that serves as a proportion. It dictates what amount of the
+                      available space inside the flex container the item should take up.</p>
+                  <button class="button-lire-plus">Lire plus...</button>
+              </div>
+          </div>
       </section>
     </main>
+
     <footer>
       <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
       <section>
