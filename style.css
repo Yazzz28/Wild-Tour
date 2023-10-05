@@ -28,52 +28,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*DÃ©but navbar*/
-nav {
-    width: 80%;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 37, 51, 0.5);
-    backdrop-filter: blur(20px);
-    position: fixed;
-    top:0;
-    border-radius: 0px 0px 10px 10px;
-    padding: 1rem;
-    height: 4rem;
+
+.headerG header {
+  background: url(/assets-julien/masashi-wakui-12.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10%;
+  border-radius: 0px 0px 15px 15px;
 }
-
-
-.logo {
-    height: 3.5rem;
-}
-
-.headerG {
-    background: url(/assets-julien/masashi-wakui-12.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 10%;
-    border-radius: 0px 0px 15px 15px;
-}
-
-header nav ul li {
-    list-style: none;
-    padding: 1rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #f7efe7;
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-}
-
 
 header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .headerG h1 {
@@ -845,29 +812,23 @@ div.grid-daniel {
 
 
 /*page StephM*/
-
-.principal-title-stephm {
-    background-image: url(/assets-stephM/couché-de-soleil-plage.jpg);
-    background-size: cover;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: 20% 80%;
-    border-radius: 0px 0px 15px 15px;
-    background-image: url(/assets-stephM/Plage_couché_de_soleil.jpg);
-    background-size: cover;
-    font-family: "Playfair Display", serif;
-    text-align: left;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: center;
-    border-radius: 0px 0px 15px 15px;
+.header-stephm {
+  background: url(/assets-stephM/couché-de-soleil-plage.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 10%;
+  /*border-radius: 0px 0px 15px 15px;*/
 }
+
+.header-stephm h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 4rem;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  padding: 5rem;
+}
+
 
 .texte-stephm {
     display: grid;
@@ -1023,6 +984,7 @@ div.grid-daniel {
     align-items: center;
     justify-items: center;
     margin: 2rem;
+    margin-left: 4rem;
 }
 
 .card5 {
@@ -1036,9 +998,43 @@ div.grid-daniel {
     height: 10rem;
 }
 
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 960px) {
+  .header-stephm h1{
+    /*width: auto;*/
+    font-size: 3rem;
+  }
+  .texte-stephm{
+    /*width: auto;*/
+    display: flex;
+    /*grid-template-columns: none;
+    grid-template-rows: auto;
+    grid-template-areas: none;*/
+    flex-wrap: wrap;
+    
+  }
+  .img1stephm .img2stephm .img3stephm .img4stephm{
+    width: auto;
+  }
+    .cards-stephm{
+    width: auto;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .presentation-stephm{
+    grid-template-columns: none;
+  }
+  .card5{
+    margin-top: 1.5rem;
+  }
+}
+
 /*Fin page StepM*/
 
 /*BODY*/
+
 
 /*Contact*/
 
