@@ -15,5 +15,3 @@ ps je l'ai fait que sur l'acceuil.html histoire de tester :D
 + Ajout de la parti note (a travailler)
 
 27/09/2023 : Finalisation de la page Daniel
-
-05/10/2023 : Finalisation de la page yacine ca reste sommaire mais c'est satisfaisant.
