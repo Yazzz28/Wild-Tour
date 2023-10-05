@@ -1237,30 +1237,18 @@ footer {
   background-color: var(--principal-color);
   margin-top: auto;
   display: flex;
-  justify-content: space-around;
-  
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0.5rem;
 }
 
-.gauche-footer {
+.bas-footer {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: end;
+  padding: 1rem;
 }
 
-.gauche-footer div {
-  background: url(/assets-daniel/logo-the-wild-tour-navbar.png);
-  padding: 2rem;
-}
-
-.droite-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer div {
-  color: var(--secondary-color);
-}
 
 /*fin du footer*/
