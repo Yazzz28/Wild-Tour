@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,50 +10,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    <title>The Wild tour</title>
+    <title>The Wild Tour</title>
 </head>
 <body>
-    <header>
-            <!--Partie nav avec logo et un menu déroulant-->
-        <section class="icon"></section>
-            <nav>
-                <ul>
-                    <li><a href="acceuil.html">Acceuil</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <!--Menu deroulant-->
-                    <li class="menuDeroulant">
-                        <a href="#" >Catégories</a>
-                        <ul class="sousMenu">
-                            <li><a href="fiche-yacine.html">Gastronomie</a></li>
-                            <li><a href="fiche-daniel.html">Sport</a></li>
-                            <li><a href="fiche-julien.html">Art</a></li>
-                            <li><a href="fiche-stephV.html">Ecologie</a></li>
-                            <li><a href="fiche_stephM.html">Nature</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav> 
-    </header>
-    <main>
-            <!--Titre central-gauche dans l'image principale-->
-        <h1 class="principal-title">The Wild Tour :<br/>Le Guide Touristique Des Wilders</h1>
-        <section class="texte">
-                <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit quibusdam aliquid, beatae odit laborum perferendis cum culpa repellendus pariatur, magnam veniam? Nobis corrupti pariatur similique magnam placeat odit, dicta, hic repudiandae, tenetur amet in deleniti itaque ipsam minima est quibusdam? Dolore id exercitationem consectetur magni. Cumque maxime facilis nesciunt perferendis dignissimos quam optio itaque.
-            </p>
-        
-            <!--Espaces cartes ou photos-->
-            <div id="cases" class="gird"></div>
+    <section class="headerG">
+        <header>
+            <div>
+                <nav class="navbar">
+                    <img src="assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+                    <ul class="list-general">
+                        <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
+                        <li class="listeN"><a href="contact.php">Contact</a></li>
+                        <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
+                            <ul class="sousMenu">
+                                <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                                <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                                <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
+                                <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                                <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>The Wild Tour</h1>
+            </div>
+        </header>
+    </section>
+        <main> 
+            
+            <section class="titre-texte-acceuil">
+                <h2>Bienvenue</h2>
+                <div class="ligne-acceuil-dessus-h1"></div>
+                <p>Soyez les bienvenue sur le site "The Wild Tour". Ce site est un blog ou tout les Wilders peuvent y mettre les bonnes adresses ou les meilleurs endrois de leur regions ou départements. N'hesitez pas a feuilleter les articles et si ceux-ci vous interessent alors on vous conseille de vous y rendre.</p>
+            </section>
+            <div class="ligne2-acceuil"></div>
+            <section class="centrer">
+                <h3 class="card__h3">Articles récents</h3>
+                <div class="container">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="/assets-stephM/istockphoto-1172051173-612x612.jpg" alt="card__image" class="card__image"
+                                width="600">
+                        </div>
+                        <div class="card__body">
+                            <h4>Le bien-etre et la nature</h4>
+                            <p></p>
+                            <a class="card__button" href="/fiche_stephM.html">Lire plus...</a>
+                        </div>
+                        <div class="card__footer">
+                            <div class="user">
+                                <img src="" alt="user__image" class="user__image">
+                                <div class="user__info">
+                                    <h5>Stephanie M.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="/assets-yacine/ai-generated-7955585_1920.jpg" alt="card__image" class="card__image" width="600">
+                        </div>
+                        <div class="card__body">
+    
+                            <h4>La gastronomie japonaise</h4>
+                            <p></p>
+                            <a class="card__button" href="/fiche-yacine.html">Lire plus...</a>
+                        </div>
+                        <div class="card__footer">
+                            <div class="user">
+                                <img src="" alt="user__image" class="user__image">
+                                <div class="user__info">
+                                    <h5>Yacine M.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="/assets-stephV/pexels-sarah-chai-7263016.jpg" alt="card__image" class="card__image" width="600">
+                        </div>
+                        <div class="card__body">
+                            <h4>L'écologie dans nos régions</h4>
+                            <p></p>
+                            <a class="card__button" href="/fiche-stephV.html">Lire plus...</a>
+                        </div>
+                        <div class="card__footer">
+                            <div class="user">
+                                <img src="" alt="user__image" class="user__image">
+                                <div class="user__info">
+                                    <h5>Stephanie V.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="articles-recents">
+                <h3 class="article-h3">Les articles de la semaine</h3>
+                <hr>
+                <div class="article-col2">
+                    <div class="article-col2-1">
+                        <img class="article-img" src="/assets-daniel/pexels-cottonbro-studio-4828253.jpg">
+                    </div>
+                    <div class="article-col2-2">
+                        <h4>La pêche dans l’Aube</h4>
+                        <p>Un article tres intéressant sur la peche dans l'aube.</p>
+                        <button class="button-lire-plus">Lire plus...</button>
+                    </div>
+                </div>
+    
+                <div class="article-col2">
+                    <div class="article-col2-1">
+                        <img class="article-img" src="/assets-julien/IMG_4002.jpg">
+                    </div>
+                    <div class="article-col2-2">
+                        <h4>Base sous-marine, Bordeaux</h4>
+                        <p>Cet article vous fera voyager dans la région Bordelaise avec ses secrets et ses histoires.</p>
+                        <button class="button-lire-plus"><a href="/fiche-julien.html"></a>Lire plus...</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="gauche-footer"></div>
+            <div><img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt=""></div>
+        <section class="millieu-footer">
+            <div>mentions legales</div>
+            <div>Politique de confidentialité</div>
+            <div>Conditions d'utilisation</div>
         </section>
-    </main>
-    <footer>
-            <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions legal</h6>
-    </footer>
+        <section class="droite-footer"></section>
+            <div>À propos</div>
+            <div>le blog</div>
+        <div class="bas-footer">
+            <div><p>Boullevard des regions, 96000 WildLand</p></div>
+        </div>
+        </footer>
 </body>
 </html>
