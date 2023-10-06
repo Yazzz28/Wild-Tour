@@ -161,14 +161,7 @@ border-radius: 0px 0px 30px 30px;
 }
 
 /* Styles pour la barre de navigation lorsque le menu est actif */
-/*.navbar.active ul {
-  left: 0;
-  margin-top: 8.5vh;
-}*/
 
-/*.sousMenu li {
-  margin-top: 6vh;
-}*/
 
 
 @media (max-width: 1000px) {
@@ -176,7 +169,16 @@ border-radius: 0px 0px 30px 30px;
     display: block;
   }
 
-  nav {
+  .navbar.active ul {
+    left: 0;
+    margin-top: 8.5vh;
+  }
+  
+  .sousMenu li {
+    margin-top: 6vh;
+  }
+
+ nav {
     width: 100%;
   }
 
