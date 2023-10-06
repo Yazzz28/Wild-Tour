@@ -31,23 +31,27 @@
   --img-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
   --transition-time: 400ms;
 }
+
 /*HEADER*/
-* , *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 /*Début navbar*/
 
 nav {
   width: 80%;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(0, 37, 51, 0.5);
   backdrop-filter: blur(20px);
   position: fixed;
-  top:0;
+  top: 0;
   border-radius: 0px 0px 10px 10px;
   padding: 1rem;
   height: 4rem;
@@ -74,7 +78,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .sousMenu {
@@ -86,7 +90,7 @@ header nav ul {
   border-radius: 0px 0px 10px 10px;
 }
 
-.listeN:hover > ul {
+.listeN:hover>ul {
   display: block;
 }
 
@@ -94,6 +98,7 @@ header nav ul {
   cursor: pointer;
   margin: 0 1.2rem;
 }
+
 /*Fin navbar*/
 /*Acceuil*/
 .headerG header {
@@ -114,7 +119,7 @@ header nav ul {
 }
 
 .titre-texte-acceuil {
-  display:flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0rem 25%;
@@ -149,40 +154,41 @@ header nav ul {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .headerG header {
     padding: 2rem;
-}
+  }
 
-.headerG  h1 {
+  .headerG h1 {
     font-size: 2rem;
     padding: 5rem 0rem;
-}
+  }
 
-.titre-texte-acceuil {
-  margin: 20%;
-}
+  .titre-texte-acceuil {
+    margin: 20%;
+  }
 
-.titre-texte-acceuil h2 {
-  font-size: 2.5rem;
-}
+  .titre-texte-acceuil h2 {
+    font-size: 2.5rem;
+  }
 
-.titre-texte-acceuil p {
-  font-size: 0.8rem;
-}
+  .titre-texte-acceuil p {
+    font-size: 0.8rem;
+  }
 }
 
 /*Fin acceuil*/
 
 /*page yacine*/
 
-.headerY header{
+.headerY header {
   background: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
   background-size: cover;
   background-position: center;
   padding: 10%;
   border-radius: 0px 0px 15px 15px;
 }
+
 .headerY h1 {
   font-family: "Playfair Display", serif;
   text-align: left;
@@ -201,31 +207,31 @@ header nav ul {
 }
 
 .contenu-yacine {
-    font-family: "Lexend";
-    font-size: xx-large;
-    grid-column: 2;
-    margin: 3%;
-    background: rgb(247, 239, 231);
-    background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
+  font-family: "Lexend";
+  font-size: xx-large;
+  grid-column: 2;
+  margin: 3%;
+  background: rgb(247, 239, 231);
+  background: linear-gradient(90deg, rgba(247, 239, 231, 1) 90%, #f2621f 45%);
 }
 
 .image-sushi {
-    background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
-    grid-row: 2;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15%;
-    margin: 3%;
+  background-image: url(assets-yacine/pexels-airam-datoon-9424914.jpg);
+  grid-row: 2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15%;
+  margin: 3%;
 }
 
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1000px) {
   .cards-yacine {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 5rem;
-    gap:5rem;
+    gap: 5rem;
   }
 
   .contenu-yacine {
@@ -285,7 +291,7 @@ header nav ul {
   margin: 5rem;
 }
 
-.img1-daniel{
+.img1-daniel {
   background-image: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
   padding: 10rem 15rem;
   background-position: center;
@@ -294,7 +300,7 @@ header nav ul {
   box-shadow: 10px 10px rgba(0, 37, 51, 1);
 }
 
-.text-daniel-1{
+.text-daniel-1 {
   font-family: 'Lexend', sans-serif;
   font-size: 1.2rem;
   text-align: center;
@@ -310,7 +316,7 @@ header nav ul {
   width: 70%;
   height: 2px;
   border-radius: 15px;
-  margin:0 15%;
+  margin: 0 15%;
   opacity: 70%;
 }
 
@@ -322,7 +328,7 @@ header nav ul {
   color: rgba(0, 37, 51, 1);
 }
 
-.img2-daniel{
+.img2-daniel {
   background-image: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
   padding: 10rem 15rem;
   background-position: center;
@@ -331,7 +337,7 @@ header nav ul {
   box-shadow: 10px 10px rgba(0, 37, 51, 1);
 }
 
-.text-daniel-2{
+.text-daniel-2 {
   font-family: 'Lexend', sans-serif;
   font-size: 1.2rem;
   text-align: center;
@@ -348,7 +354,7 @@ header nav ul {
   width: 70%;
   height: 2px;
   border-radius: 15px;
-  margin:0 15%;
+  margin: 0 15%;
   opacity: 70%;
 }
 
@@ -360,48 +366,48 @@ header nav ul {
   padding: 2rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .headerD header {
-      padding: 2rem;
+    padding: 2rem;
   }
 
-  .headerD  h1 {
-      font-size: 2rem;
-      padding: 5rem 0rem;
+  .headerD h1 {
+    font-size: 2rem;
+    padding: 5rem 0rem;
   }
 
   .texte-img-daniel1 {
-      display: flex;
-      flex-direction: column;
-      margin: 2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0.5rem;
   }
 
   .text-daniel-1 {
-      font-size: 1rem;
-      margin: 1rem;
-      padding: 1.2rem;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1.2rem;
   }
 
   .img1-daniel {
-      margin: 1rem;
-      padding: 5.5rem 9rem;
+    margin: 1rem;
+    padding: 5.5rem 9rem;
   }
 
   .texte-img-daniel2 {
-      display: flex;
-      flex-direction: column-reverse;
-      margin: 2rem 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 2rem 0.5rem;
   }
 
   .text-daniel-2 {
-      font-size: 1rem;
-      margin: 1rem;
-      padding: 1.2rem;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1.2rem;
   }
 
   .img2-daniel {
-      margin: 1rem;
-      padding: 5.5rem 9rem;
+    margin: 1rem;
+    padding: 5.5rem 9rem;
   }
 
 }
@@ -576,6 +582,176 @@ header nav ul {
   color: var(--tertiary-color);
 }
 
+/* VERSION MOBILE STEPH V */
+@media screen and (max-width: 500px) {
+  .header-stephV {
+    background: url(assets-stephV/nature.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .header-stephV h1 {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    font-size: 4rem;
+    color: #f7efe7;
+    text-shadow: 3px 4px #f2621f;
+    padding: 5rem 5rem 5rem 0rem;
+  }
+
+  .pagestephV {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+
+  /* ARTICLE 1 STEPH V PRESENTATION */
+  .articl1stephV {
+
+    font-family: 'Lexend', sans-serif;
+    color: black;
+    font-size: 2rem;
+    background-image: url(assets-stephV/coucherdesoleil.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 2rem 10rem 20rem 5rem;
+    text-align: center;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
+  }
+
+  .imgarticl1stephV {
+    object-fit: url(assets-stephV/carte_Libourne.jpg);
+    object-position: right;
+  }
+
+  .h2articl1stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  /* ARTICLE 2 STEPH V */
+  .article2stephV {
+
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/cyclo2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    text-align: center;
+    margin: 4rem;
+    box-shadow: var(--principal-color) -20px -20px;
+  }
+
+  .h2article2stephV {
+    color: var(--principal-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  .liencyclopierro {
+    color: var(--principal-color);
+  }
+
+
+  /* ARTICLE 3 STEPH V */
+  .article3stephV {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
+    background-position: auto;
+    background-color: #FDD2CC;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
+  }
+
+  .h2article3stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .liendrivetoutnu {
+    color: var(--tertiary-color);
+  }
+
+  /* ARTICLE 4 STEPH V */
+  .article4stephV {
+
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/recyclage2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 5rem 10rem 5rem 5rem;
+    text-align: center;
+    margin: 4rem;
+    box-shadow: var(--principal-color) -20px -20px;
+  }
+
+  .h2article4stephV {
+    color: var(--principal-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .lienbbot {
+    color: var(--principal-color);
+  }
+
+  /* ARTICLE 5 STEPH V */
+  .article5stephV {
+
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    color: black;
+    background-image: url(assets-stephV/koozumain2.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 5rem 5rem 20rem 10rem;
+    text-align: right;
+    margin: 4rem;
+    box-shadow: var(--tertiary-color) 20px 20px;
+  }
+
+  .h2article5stephV {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .lienkoozumain {
+    color: var(--tertiary-color);
+  }
+}
+
+
 /* FIN PAGE STEPH V */
 
 /*page StephM*/
@@ -598,19 +774,19 @@ header nav ul {
 }
 
 .texte-stephm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    font-family: 'Lexend', sans-serif;
-    font-size: 1, 2rem;
-    grid-gap: .5rem;
-    grid-template-areas:
-        "1 2"
-        "3 4"
-        "5 6"
-        "7 8";
-    text-align: center;
-    padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1, 2rem;
+  grid-gap: .5rem;
+  grid-template-areas:
+    "1 2"
+    "3 4"
+    "5 6"
+    "7 8";
+  text-align: center;
+  padding: 3rem;
 }
 
 .texte-stephm p1 {
@@ -624,25 +800,25 @@ header nav ul {
 
 .img1stephm {
 
-    grid-area: 1;
-    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    padding: 10rem 17rem;
+  grid-area: 1;
+  background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  padding: 10rem 17rem;
 }
 
 .img2stephm {
-    grid-area: 2;
-    background: url(/assets-stephM/images.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    padding: 10rem 17rem;
+  grid-area: 2;
+  background: url(/assets-stephM/images.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  padding: 10rem 17rem;
 }
 
 .texte-stephm p2 {
@@ -706,7 +882,7 @@ header nav ul {
   border-radius: 30px;
   background-image: url(/assets-stephM/download.jpg);
   box-shadow: 15px 15px 30px #bebebe,
-      -15px -15px 30px #aaaaaa;
+    -15px -15px 30px #aaaaaa;
   background-size: cover;
   background-position: center;
 }
@@ -717,7 +893,7 @@ header nav ul {
   border-radius: 30px;
   background-image: url(/assets-stephM/Forêt.webp);
   box-shadow: 15px 15px 30px #bebebe,
-      -15px -15px 30px #aaaaaa;
+    -15px -15px 30px #aaaaaa;
   background-size: cover;
   background-position: center;
 }
@@ -728,7 +904,7 @@ header nav ul {
   border-radius: 30px;
   background-image: url(/assets-stephM/download\ \(1\).jpg);
   box-shadow: 15px 15px 30px #bebebe,
-      -15px -15px 30px #aaaaaa;
+    -15px -15px 30px #aaaaaa;
   background-size: cover;
   background-position: center;
 }
@@ -739,7 +915,7 @@ header nav ul {
   border-radius: 30px;
   background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
   box-shadow: 15px 15px 30px #bebebe,
-      -15px -15px 30px #aaaaaa;
+    -15px -15px 30px #aaaaaa;
   background-size: cover;
   background-position: center;
 }
@@ -767,35 +943,41 @@ header nav ul {
 }
 
 @media screen and (max-width: 960px) {
-  .header-stephm h1{
+  .header-stephm h1 {
     /*width: auto;*/
     font-size: 3rem;
   }
-  .texte-stephm{
+
+  .texte-stephm {
     /*width: auto;*/
     display: flex;
     /*grid-template-columns: none;
     grid-template-rows: auto;
     grid-template-areas: none;*/
     flex-wrap: wrap;
-    
+
   }
-  .img1stephm .img2stephm .img3stephm .img4stephm{
+
+  .img1stephm .img2stephm .img3stephm .img4stephm {
     width: auto;
   }
-    .cards-stephm{
+
+  .cards-stephm {
     width: auto;
     padding: 0.5rem;
     flex-wrap: wrap;
     gap: 2rem;
   }
-  .presentation-stephm{
+
+  .presentation-stephm {
     grid-template-columns: none;
   }
-  .card5{
+
+  .card5 {
     margin-top: 1.5rem;
   }
 }
+
 /*fin page StephM*/
 
 /*debut cartes*/
@@ -854,7 +1036,7 @@ hr {
   grid-template-rows: 1fr;
   grid-column-gap: 3vw;
   grid-template-areas:
-      "col2-1", "col2-2";
+    "col2-1", "col2-2";
   padding: 0;
   justify-content: center;
 }
@@ -1025,114 +1207,115 @@ hr {
 @media screen and (max-width: 480px) {
 
   h2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      font-family: Playfair display;
-      font-size: var(--h2-size-mobile);
-      color: var(--principal-color);
-      margin-bottom: var(--margin-y-mobile);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Playfair display;
+    font-size: var(--h2-size-mobile);
+    color: var(--principal-color);
+    margin-bottom: var(--margin-y-mobile);
   }
 
   h3 {
-      font-family: Playfair display;
-      font-size: var(--h3-size-mobile);
-      color: var(--principal-color);
+    font-family: Playfair display;
+    font-size: var(--h3-size-mobile);
+    color: var(--principal-color);
   }
 
   .description-center {
-      width: 70%;
-      text-align: center;
-      color: var(--principal-color);
-      font-size: var(--p-size-desktop);
-      margin-top: var(--margin-y-mobile);
-      margin-bottom: var(--margin-y-mobile);
+    width: 70%;
+    text-align: center;
+    color: var(--principal-color);
+    font-size: var(--p-size-desktop);
+    margin-top: var(--margin-y-mobile);
+    margin-bottom: var(--margin-y-mobile);
   }
 
 
   /* Cards responsive */
 
   .card__h3 {
-      font-size: var(--h3-size-mobile);
-      text-align: center;
-      padding-bottom: 20px;
+    font-size: var(--h3-size-mobile);
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   /* Articles récents */
 
   .articles-recents {
-      padding-top: 40px;
-      padding-bottom: 40px;
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 
   hr {
-      background-color: var(--tertiary-color);
-      border: none;
-      height: 1px;
-      margin-bottom: 20px;
+    background-color: var(--tertiary-color);
+    border: none;
+    height: 1px;
+    margin-bottom: 20px;
   }
 
   .article-h3 {
-      font-size: var(--h3-size-mobile);
-      text-align: left;
-      padding-bottom: 20px;
+    font-size: var(--h3-size-mobile);
+    text-align: left;
+    padding-bottom: 20px;
   }
 
   .article-col2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .article-col2-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .article-col2-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .article-img {
-      object-fit: cover;
-      object-position: center;
-      height: 30vh;
-      width: 90vw;
-      justify-content: left;
-      border-radius: 15px;
-      box-shadow: var(--img-box-shadow);
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: var(--margin-y-mobile);
+    object-fit: cover;
+    object-position: center;
+    height: 30vh;
+    width: 90vw;
+    justify-content: left;
+    border-radius: 15px;
+    box-shadow: var(--img-box-shadow);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--margin-y-mobile);
   }
 
   .article-img:hover {
-      filter: opacity(0.85);
-      transition: var(--transition-time);
+    filter: opacity(0.85);
+    transition: var(--transition-time);
   }
 
   .article-col2 h4 {
-      font-size: var(--h4-size-mobile);
-      color: var(--principal-color);
-      text-align: left;
-      font-family: Playfair Display Semibold;
+    font-size: var(--h4-size-mobile);
+    color: var(--principal-color);
+    text-align: left;
+    font-family: Playfair Display Semibold;
   }
 
   .article-col2 p {
-      font-size: var(--p-size-mobile);
-      color: var(--principal-color);
-      text-align: left;
-      font-family: Lexend Regular;
+    font-size: var(--p-size-mobile);
+    color: var(--principal-color);
+    text-align: left;
+    font-family: Lexend Regular;
   }
 }
+
 /*fin cartes*/
 
 /*Contact*/
@@ -1201,7 +1384,7 @@ form {
   padding: 0rem 5rem 5rem;
 }
 
-.p-contact{
+.p-contact {
   font-family: "Lexend", sans-serif;
   background-color: rgb(170, 6, 6);
   border-radius: 5px;
@@ -1210,7 +1393,7 @@ form {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .form section form {
     margin: 0rem;
   }
@@ -1225,9 +1408,10 @@ form {
   }
 
   .headerC header {
-  padding: 1rem;
+    padding: 1rem;
+  }
 }
-}
+
 /*fin du contact*/
 
 /*footer*/

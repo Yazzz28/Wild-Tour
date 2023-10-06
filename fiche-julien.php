@@ -49,9 +49,9 @@
                 <h2>Base sous-marine, Bordeaux</h2>
                 <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
                 <p class="texte">
-                    Construit entre 1941 et 1944 durant la Seconde Guerre mondiale, la Base sous-marine de bordeaux
+                    Construite entre 1941 et 1944 durant la Seconde Guerre mondiale, la base sous-marine de Bordeaux
                     abritait historiquement des sous-marins allemands pendant la guerre. Ce gigantesque monument de 42
-                    000 m2 mesurent près de 20 mètres de haut. Il pouvait accueillir jusqu'à quinze sous-marins répartis
+                    000m2, mesure près de 20 mètres de haut. Il pouvait accueillir jusqu'à quinze sous-marins répartis
                     dans onze bassins couverts.
                 </p>
             </div>
@@ -64,20 +64,20 @@
                 <h3>Un monument bordelais</h3>
                 <br>
                 <p class="description-left">Les travaux de construction du bunker auraient nécessité jusqu'à 6 000
-                    travailleurs, des prisonniers de guerre principalement espagnols et portugais. Ils ont travaillé
-                    sans relâche jour et nuit dans des conditions effroyables. Beaucoup sont morts d'épuisement ou
+                    travailleurs, des prisonniers de guerre, principalement espagnols et portugais. Ils ont travaillé
+                    sans relâche jour et nuit, dans des conditions effroyables. Beaucoup sont morts d'épuisement ou
                     noyés, bien qu'il ne faille pas croire la légende urbaine soutenant que d'autres seraient tombés
-                    dans les fondations du bâtiment où ils auraient péri, prisonniers du béton.
+                    dans les fondations du bâtiment, où ils auraient péri, prisonniers du béton.
                 </p>
                 <br>
-                <p class="description-left">Vous pourrez observer à la Base sous-marine le mémorial qui a été
+                <p class="description-left">Vous pourrez observer à la base sous-marine le mémorial qui a été
                     érigé en hommage à ceux qui ont pris part à la construction, et en particulier à ceux qui y ont
                     laissé leur vie.
                 </p>
                 <br>
                 <p class="description-left"> Ce lieu offre aujourd'hui un espace culturel dédié à la création
                     contemporaine. Désormais, l'espace s'est policé pour faire naître un nouveau lieu peuplé d'une
-                    étrange poésie contemporaine. Allez visiter ses espaces hors norme et bruts où il règne une ambiance
+                    étrange poésie contemporaine. Allez visiter ses espaces hors norme et bruts, où il règne une ambiance
                     particulière. Le décor abrupt ne vous laissera pas indifférent.
                 </p>
             </div>
@@ -87,9 +87,9 @@
                 <p class="texte">
                     Ce lieu atypique est un lieu d’exposition depuis 2000. Il met à l’honneur une programmation
                     pluridisciplinaire avec des expositions temporaires, et des événements aux genres éclectiques. Les
-                    expositions ont en général une forte identité tournée vers le numérique et la culture électronique
+                    expositions ont en général une forte identité tournée vers le numérique et la culture électronique,
                     telles que l’exposition “Digitale Abysse” ou encore l’exposition “Nobody knew you’re a dog” de
-                    Romain Tardy mêlant projections et installations lumineuses. Le lieu organise également des
+                    Romain Tardy, mêlant projections et installations lumineuses. Le lieu organise également des
                     événements dédiés à la culture urbaine avec par exemple l’exposition “Légendes urbaines” qui mettait
                     à l’honneur le street-art.
                 </p>
@@ -97,7 +97,7 @@
                 <p class="texte">
                     Les œuvres des expositions mettent maintes fois en lumière des problématiques contemporaines sur des
                     questions sociétales d’hyper-connectivité, d’inégalités sociales ou encore sur les ravages de la
-                    mondialisation. On y retrouve entre-autre l’exposition Medio Acqua traitant la problématique de
+                    mondialisation. On y retrouve entre-autre l’exposition Medio Acqua, traitant la problématique de
                     l’eau sous toutes ses formes, entraînant voyage et réflexion.
                 </p>
             </div>
@@ -112,13 +112,13 @@
         <section class="section-left">
             <div class="description-left">
                 <p class="texte">
-                    Dès 2020, la Base rebaptisée « Bassins des lumières » rouvrit ses portes dans le cadre d’un projet
+                    Dès 2020, la base rebaptisée « Bassins des lumières », rouvrit ses portes dans le cadre d’un projet
                     de centre numérique, au demeurant le plus important au monde. Utilisant quatre des onze bassins
-                    d’origine que compte le lieu, il y est désormais projeté sur 12 000 m2 ce que l’on appelle des «
-                    expositions immersives » qui par un jeu d’images vous transportent vers d’autres lieux ou époques à
-                    travers notamment les oeuvres de grands peintes ou artistes. C’est ainsi que depuis son ouverture,
+                    d’origine que compte le lieu, il y est désormais projeté sur 12 000m2 ce que l’on appelle des «
+                    expositions immersives », qui, par un jeu d’images, vous transportent vers d’autres lieux ou époques à
+                    travers notamment les oeuvres de grands peintres ou artistes. C’est ainsi que depuis son ouverture,
                     l’ancienne base a rendu hommage à Gustav Klimt, Monet, Renoir, à l’art vénitien et à quelques autres
-                    thématiques. Et à chaque fois un rendu remarquable et magique qui font que l’on ne regrette pas la
+                    thématiques. Et à chaque fois, un rendu remarquable et magique qui font que l’on ne regrette pas la
                     visite…
                 </p>
             </div>
@@ -143,7 +143,7 @@
                         <div class="user">
                             <img src="assets-daniel/pexels-cottonbro-studio-4828253.jpg" alt="user__image" class="user__image">
                             <div class="user__info">
-                                <h5>Daniel</h5>
+                                <h5>Julien P.</h5>
                                 <small>2h ago</small>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                         <div class="user">
                             <img src="assets-julien/IMG_4888.jpg" alt="user__image" class="user__image">
                             <div class="user__info">
-                                <h5>Julien</h5>
+                                <h5>Julien P.</h5>
                                 <small>Yesterday</small>
                             </div>
                         </div>
@@ -184,8 +184,8 @@
                         <div class="user">
                             <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
                             <div class="user__info">
-                                <h5>Stéphanie V</h5>
-                                <small>2d ago</small>
+                                <h5>Julien P.</h5>
+                                <small>2h</small>
                             </div>
                         </div>
                     </div>
