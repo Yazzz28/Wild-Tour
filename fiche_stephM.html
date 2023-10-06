@@ -14,31 +14,33 @@
     <title>The Wild Tour</title>
 </head>
 <body>
-    <section class="header-stephm">
-        <header>
-            <div>
-                <nav class="navbar">
-                    <img src="/assets-stephM/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
-                    <ul class="list-general">
-                        <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
-                        <li class="listeN"><a href="contact.html">Contact</a></li>
-                        <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
-                            <ul class="sousMenu">
-                                <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
-                                <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                                <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
-                                <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
-                                <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-                            </ul>
-                        </li>
+    <header class="centrer">
+        <nav class="navbar">
+            <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <ul class="list-general">
+                <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
+                <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
+                    <ul class="sousMenu">
+                        <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                        <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
+                        <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                        <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
                     </ul>
-                </nav>
-                <h1>Le bien-être à travers la nature</h1>
-            </div>
-        </header>
-    </section>
+                </li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
+    </header>
     <main>
-
+        <!--Image principale top et titre -->
+        <section>
+            <h1 class="title-top">Nature</h1>
+            <div>
+                <img class="img-top" src="/assets-stephM/couché-de-soleil-plage.jpg">
+            </div>
+        </section>
         <section class="texte-stephm">
             <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
             
@@ -79,66 +81,63 @@
                 <!-- Articles de la même catégorie -->
 
                 <section class="centrer">
-                    <h3 class="card__h3">Articles de la même catégorie</h3>
+                    <h3 class="card__h3">Articles du même auteur</h3>
                     <div class="container">
                         <div class="card">
                             <div class="card__header">
-                                <img src="includes/cards/pexels-cottonbro-studio-4828253.jpg" alt="card__image" class="card__image"
+                                <img src="\assets-stephM\ob_65d955_cayola-talmont-saint-hilaire.jpg"alt="card__image" class="card__image"
                                     width="600">
                             </div>
                             <div class="card__body">
-                                <h4>Le début de la pêche dans l’Aube, Troyes</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                                    doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                                <h4>Les côtes sauvage de Vendée</h4>
+                                <p>Le litoral regorge de plages et de bord de mer en tout genre. Parlons aujourd'hui des côtes sauvages Vendéennes.</p>
                                 <a class="card__button" href="">Lire plus...</a>
                             </div>
                             <div class="card__footer">
                                 <div class="user">
-                                    <img src="includes/cards/pexels-cottonbro-studio-4828253.jpg" alt="user__image" class="user__image">
+                                    <img src="/assets-stephM/IMG_8704.JPEG" alt="user__image" class="user__image">
                                     <div class="user__info">
-                                        <h5>Daniel</h5>
-                                        <small>2h ago</small>
+                                        <h5>Stephanie M.</h5>
+                                        <small></small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__header">
-                                <img src="includes/cards/IMG_4122.jpg" alt="card__image" class="card__image" width="600">
+                                <img src="/assets-stephM/istockphoto-1172051173-612x612.jpg" alt="card__image" class="card__image" width="600">
                             </div>
                             <div class="card__body">
         
-                                <h4>Base sous-marine, Bordeaux</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                                    doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                                <h4>Le bord de mer et ses humeurs</h4>
+                                <p>Tantôt ensoleillé, tantôt venteux avec marée basse ou marée haute, l'océan nous offre une magnifique palette coloré de paysages différents.</p>
                                 <a class="card__button">Lire plus...</a>
                             </div>
                             <div class="card__footer">
                                 <div class="user">
-                                    <img src="includes/cards/IMG_4888.jpg" alt="user__image" class="user__image">
+                                    <img src="/assets-stephM/IMG_8704.JPEG" alt="user__image" class="user__image">
                                     <div class="user__info">
-                                        <h5>Julien</h5>
-                                        <small>Yesterday</small>
+                                        <h5>Stephanie M.</h5>
+                                        <small></small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__header">
-                                <img src="includes/cards/pexels-sarah-chai-7263016.jpg" alt="card__image" class="card__image" width="600">
+                                <img src="\assets-stephM\Forêt_domaniale_d_Olonne_(panneau).jpg" alt="card__image" class="card__image" width="600">
                             </div>
                             <div class="card__body">
-                                <h4>Écoresponsabilité en entreprise, Libourne</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                                    doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                                <h4>La forêt domaniale d'Olonne</h4>
+                                <p>Véritable petite bulle de nature et de sérénité, je vous propose de découvrir en détail cet univers entre sable, verdure et animaux de la forêt.</p>
                                 <a class="card__button" href="">Lire plus...</a>
                             </div>
                             <div class="card__footer">
                                 <div class="user">
-                                    <img src="includes/cards/https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+                                    <img src="/assets-stephM/IMG_8704.JPEG" alt="user__image" class="user__image">
                                     <div class="user__info">
-                                        <h5>Stéphanie V</h5>
-                                        <small>2d ago</small>
+                                        <h5>Stephanie M.</h5>
+                                        <small></small>
                                     </div>
                                 </div>
                             </div>
@@ -149,11 +148,24 @@
         </body>
     </main>
     <footer>
-            <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="/rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions legal</h6>
+        <div class="footer-central">
+            <div class="logo">
+                <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+            </div>
+            <div class="menssions">
+                <p>Mentions légales <br>
+                Plolitique de confidentialité <br>
+                Conditions d'utilisation</p>
+            </div>
+            <div class="blog">
+                <p>A propos <br>
+                Blog</p>
+            </div>
+        </div>
+        <div class="bas-footer">
+            <p>Boullevard des regions, 96000 WildLand</p>
+        </div>
     </footer>
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 </html>

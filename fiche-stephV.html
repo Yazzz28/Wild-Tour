@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="includes/cards/card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
-<link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
+    <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
-<link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
@@ -21,34 +20,33 @@
 
 <body>
 
-    <section class="header-stephV">
-        <header>
-            <div>
-                <nav class="navbar">
-                    <img src="assets-stephV/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
-                    <ul class="list-general">
-                        <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
-                        <li class="listeN"><a href="contact.html">Contact</a></li>
-                        <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
-                            <ul class="sousMenu">
-                                <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
-                                <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                                <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
-                                <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
-                                <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-                            </ul>
-                        </li>
+    <header class="centrer">
+        <nav class="navbar">
+            <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <ul class="list-general">
+                <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
+                <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
+                    <ul class="sousMenu">
+                        <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                        <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
+                        <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                        <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
                     </ul>
-              </nav>
-        <!--sections 1 et 2 - les titres principaux de ma page et ma présentation-->
-        <section class="pagestephV">
-            <section class="startstephV">
-
-                <h1 class="h1stephV">Bienvenue dans le GreenWildTour!</h1>
+                </li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
+    </header>
+    <main>
+        <!--Image principale top et titre -->
+        <section>
+            <h1 class="title-top">Ecologie</h1>
+            <div>
+                <img class="img-top" src="/assets-stephV/nature.jpg">
             </div>
-        </header>
-    </section>
-
+        </section>
     <!--sections 1 et 2 - les titres principaux de ma page et ma présentation-->
     <section class="pagestephV">
         <section class="articl1stephV">
@@ -262,12 +260,25 @@
 
 
     <footer>
-        <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="/rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions légales</h6>
+        <div class="footer-central">
+            <div class="logo">
+                <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+            </div>
+            <div class="menssions">
+                <p>Mentions légales <br>
+                Plolitique de confidentialité <br>
+                Conditions d'utilisation</p>
+            </div>
+            <div class="blog">
+                <p>A propos <br>
+                Blog</p>
+            </div>
+        </div>
+        <div class="bas-footer">
+            <p>Boullevard des regions, 96000 WildLand</p>
+        </div>
     </footer>
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 
 </html>

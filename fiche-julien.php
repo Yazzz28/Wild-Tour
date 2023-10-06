@@ -17,22 +17,23 @@
 </head>
 
 <body>
-    <header class="centrer">
+<header class="centrer">
         <nav class="navbar">
-            <img src="logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
             <ul class="list-general">
-                <li class="listeN"><a href="accueil.html">Accueil</a></li>
-                <li class="listeN"><a href="contact.html">Contact</a></li>
-                <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
+                <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
+                <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
                     <ul class="sousMenu">
                         <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
                         <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                        <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
                         <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
                         <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
                     </ul>
                 </li>
             </ul>
+            <div id="icons"></div>
         </nav>
     </header>
 
@@ -41,7 +42,7 @@
         <section>
             <h1 class="title-top">Découvertes</h1>
             <div class="">
-                <img class="img-top" src="assets-julien/IMG_4122.jpg">
+                <img class="img-top" src="\assets-julien\photo-base-sous-marine(123).jpg">
             </div>
         </section>
         <section class="section-center">
@@ -127,45 +128,43 @@
         <!-- Articles de la même catégorie -->
 
         <section class="centrer">
-            <h3 class="card__h3">Articles de la même catégorie</h3>
+            <h3 class="card__h3">Autres articles</h3>
             <div class="container">
                 <div class="card">
                     <div class="card__header">
                         <img src="assets-daniel/pexels-cottonbro-studio-4828253.jpg" alt="card__image" class="card__image" width="600">
                     </div>
                     <div class="card__body">
-                        <h4>Le début de la pêche dans l’Aube, Troyes</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                            doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        <h4>La pêche dans l’Aube</h4>
+                        <p>La pêche dans l’aube est un peu le sport national de la région, avec tout les étangs et tous les plans d’eau</p>
                         <a class="card__button" href="">Lire plus...</a>
                     </div>
                     <div class="card__footer">
                         <div class="user">
-                            <img src="assets-daniel/pexels-cottonbro-studio-4828253.jpg" alt="user__image" class="user__image">
+                            <img src="\assets-daniel\IMG_1713.jpg" alt="user__image" class="user__image">
                             <div class="user__info">
-                                <h5>Daniel</h5>
-                                <small>2h ago</small>
+                                <h5>Daniel L.</h5>
+                                <small></small>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card__header">
-                        <img src="assets-julien/IMG_4122.jpg" alt="card__image" class="card__image" width="600">
+                        <img src="\assets-julien\photo-base-sous-marine(123).jpg" alt="card__image" class="card__image" width="600">
                     </div>
                     <div class="card__body">
 
                         <h4>Base sous-marine, Bordeaux</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                            doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        <p>Cet article vous fera voyager dans la région Bordelaise avec ses secrets, ses histoires ainsi que que son art et architechture.</p>
                         <a class="card__button">Lire plus...</a>
                     </div>
                     <div class="card__footer">
                         <div class="user">
-                            <img src="assets-julien/IMG_4888.jpg" alt="user__image" class="user__image">
+                            <img src="\assets-julien\profil-julien.prv-instagram.jpg" alt="user__image" class="user__image">
                             <div class="user__info">
                                 <h5>Julien</h5>
-                                <small>Yesterday</small>
+                                <small></small>
                             </div>
                         </div>
                     </div>
@@ -175,17 +174,16 @@
                         <img src="assets-stephV/pexels-sarah-chai-7263016.jpg" alt="card__image" class="card__image" width="600">
                     </div>
                     <div class="card__body">
-                        <h4>Écoresponsabilité en entreprise, Libourne</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                            doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        <h4>L'écologie dans nos régions</h4>
+                        <p>Un petit tour d'horizon libournais sur les actions écoresponsables</p>
                         <a class="card__button" href="">Lire plus...</a>
                     </div>
                     <div class="card__footer">
                         <div class="user">
-                            <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+                            <img src="\assets-stephV\photostephV.jpg" alt="user__image" class="user__image">
                             <div class="user__info">
-                                <h5>Stéphanie V</h5>
-                                <small>2d ago</small>
+                                <h5>Stéphanie V.</h5>
+                                <small></small>
                             </div>
                         </div>
                     </div>
@@ -193,7 +191,7 @@
             </div>
         </section>
 
-        <!-- Articles récents PHP -->
+        <!-- Articles récents PHP 
 
         <?php include 'assets-julien/articles.php'; ?>
 
@@ -218,75 +216,30 @@
                     <?php endforeach; ?>
                 <?php endforeach; ?>
             </div>
-        </section>
-
-        <!-- Articles récents HTML -->
-
-        <section class="articles-recents">
-            <h3 class="article-h3">Les articles récents</h3>
-            <hr>
-            <div class="article-col2">
-                <div class="article-col2-1">
-                    <img class="article-img" src="assets-daniel/pexels-cottonbro-studio-4828253.jpg">
-                </div>
-                <div class="article-col2-2">
-                    <h4>Le début de la pêche dans l’Aube, Troyes</h4>
-                    <p>This defines the ability for a flex item to grow if necessary. It
-                        accepts a unitless value that serves as a proportion. It dictates what amount of the
-                        available space inside the flex container the item should take up.</p>
-                    <button class="button-lire-plus">Lire plus...</button>
-                </div>
-            </div>
-
-            <div class="article-col2">
-                <div class="article-col2-1">
-                    <img class="article-img" src="assets-julien/IMG_4122.jpg">
-                </div>
-                <div class="article-col2-2">
-                    <h4>Base sous-marine, Bordeaux</h4>
-                    <p>This defines the ability for a flex item to grow if necessary. It
-                        accepts a unitless value that serves as a proportion. It dictates what amount of the
-                        available space inside the flex container the item should take up.</p>
-                    <button class="button-lire-plus">Lire plus...</button>
-                </div>
-            </div>
-        </section>
-
-
+        </section>-->
 
     </main>
 
-    <!-- Footer -->
-
-    <footer class="footer-col3">
-        <section>
-            <div class="footer-col3-1">
-                <img src="logo-the-wild-tour-navbar.png">
+    <footer>
+            <div class="footer-central">
+                <div class="logo">
+                    <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+                </div>
+                <div class="menssions">
+                    <p>Mentions légales <br>
+                    Plolitique de confidentialité <br>
+                    Conditions d'utilisation</p>
+                </div>
+                <div class="blog">
+                    <p>A propos <br>
+                    Blog</p>
+                </div>
             </div>
-            <div class="footer-col3-2">
-                <h3>Pages principales</h3>
-                <ul>
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="decouvertes.html">Découvertes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="bas-footer">
+                <p>Boullevard des regions, 96000 WildLand</p>
             </div>
-            <div class="footer-col3-3">
-                <h3>Mentions légales</h3>
-                <ul>
-                    <li><a href="mentions-legales.html">Politique de confidentialité</a></li>
-                    <li><a href="cgv.html">CGV / CGU</a></li>
-                </ul>
-            </div>
-        </section>
-        <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="/rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions légales</h6>
-    </footer>
-
-    <!-- Fin du footer -->
+        </footer>
+        <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 
 </html>

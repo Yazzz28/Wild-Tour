@@ -19,15 +19,15 @@
 <body>
     <header class="centrer">
         <nav class="navbar">
-            <img src="logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <img src="\assets-daniel\logo-the-wild-tour-navbar.png" alt="logo" class="logo">
             <ul class="list-general">
                 <li class="listeN"><a href="accueil.html">Accueil</a></li>
-                <li class="listeN"><a href="contact.html">Contact</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
                 <li class="listeN"><a href="#">Découvertes</a><span>&#9660;</span>
                     <ul class="sousMenu">
                         <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
                         <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                        <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
                         <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
                         <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
                     </ul>
@@ -205,35 +205,28 @@
 
     <!-- Footer -->
 
-    <footer class="footer-col3">
-        <section>
-            <div class="footer-col3-1">
-                <img src="logo-the-wild-tour-navbar.png">
+    <footer>
+            <div class="footer-central">
+                <div class="logo">
+                    <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+                </div>
+                <div class="menssions">
+                    <p>Mentions légales <br>
+                    Plolitique de confidentialité <br>
+                    Conditions d'utilisation</p>
+                </div>
+                <div class="blog">
+                    <p>A propos <br>
+                    Blog</p>
+                </div>
             </div>
-            <div class="footer-col3-2">
-                <h3>Pages principales</h3>
-                <ul>
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="decouvertes.html">Découvertes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="bas-footer">
+                <p>Boullevard des regions, 96000 WildLand</p>
             </div>
-            <div class="footer-col3-3">
-                <h3>Mentions légales</h3>
-                <ul>
-                    <li><a href="mentions-legales.html">Politique de confidentialité</a></li>
-                    <li><a href="cgv.html">CGV / CGU</a></li>
-                </ul>
-            </div>
-        </section>
-        <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="/rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions légales</h6>
-    </footer>
+        </footer>
 
     <!-- Fin du footer -->
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,83 +10,133 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    
-    <title>The Wild tour</title>
+    <title>The Wild Tour</title>
 </head>
 <body>
-    <section class="headerG">
-        <header>
-            <div>
-                <nav class="navbar">
-                    <img src="assets-yacine/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
-                    <ul class="list-general">
-                        <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
-                        <li class="listeN"><a href="contact.html">Contact</a></li>
-                        <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
-                            <ul class="sousMenu">
-                                <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
-                                <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                                <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
-                                <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
-                                <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <h1>Shogun Sushi</h1>
-            </div>
-        </header>
-      </section>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="acceuil.html">Acceuil</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="menuDeroulant">
+    <header class="centrer">
+        <nav class="navbar">
+            <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <ul class="list-general">
+                <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
+                <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
                     <ul class="sousMenu">
-                        <li><a href="fiche-yacine.html">Gastronomie</a></li>
-                        <li><a href="fiche-daniel.html">Sport</a></li>
-                        <li><a href="fiche-julien.html">Art</a></li>
-                        <li><a href="fiche-stephV.html">Nature</a></li>
-                        <li><a href="fiche_stephM.html">Bien-etre</a></li>
+                        <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                        <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
+                        <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                        <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
                     </ul>
                 </li>
             </ul>
+            <div id="icons"></div>
         </nav>
-            <!--Titre central-gauche dans l'image principale-->
-        <h1 class="principal-title-daniel">La peche dans l'aube</h1>
-        <section class="texte-daniel">
-                <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
-            <p>
-                La pêche dans l’aube: la pêche dans l’aube est comme un sport national, de plus en plus pratiqué par les jeunes qui veulent entretenir et préserver l'environnement. L’AAPPMA de l’aube est très proche de l'environnement et fait souvent des stages de sensibilisation afin d’apprendre les bonnes valeurs et les bonnes pratiques à avoir lorsque l’on est au bord de l’eau. Elle fait également à l'ouverture de la pêche une journée dépollution ou tous les adhérents sont invités à venir ramasser les déchets afin de préserver les plans d’eau.
-            </p>
-        
-            <!--Espaces cartes ou photos-->
-            <div id="cases" class="gird-daniel"></div>
-                <div class="img1"></div>
-                <div class="img2"></div>
-                <div class="parag2">
-                    <p>En complément de ces stages de sensibilisation et pour préserver et garantir la survie des poissons de nos régions, elle organise des journées découvertes afin d’enseigner les bonnes pratiques de capture, et incite à la pêche en “NO KILL” qui signifie relâcher le poisson vivant dans le meilleur état de santé possible. Des journées écrevisses sont aussi organisées afin de dépolluer nos rivières et nos étangs des écrevisses de Louisiane qui mangent notre flore aquatique mais également nos berges. Je vous conseille de venir profiter de nos cours d’eau, de nos lacs et étangs. Nous avons de très belles rivières pleines de perches, brochets et truites mais également l’yonne et la seine qui elles aussi ont énormément de diversité sous-marine. Un petit instant au bord d’un lac avec quelques amis ou la famille, pouvoir se ressourcer et se rapprocher de la nature.
-
-                    </p>
-                </div>
+    </header>
+    <main>
+        <!--Image principale top et titre -->
+        <section>
+            <h1 class="title-top">La pêche</h1>
+            <div>
+                <img class="img-top" src="/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg">
+            </div>
         </section>
-        <section class="cards-daniel">
-            <!--test cards-->
-            <div class="card1"></div>
-            <div class="card2"></div>
-            <div class="card3"></div>
-            <div class="card4"></div>
-            <div class="card5"></div>
+        <div class="texte-img-daniel1">
+            <div class="text-daniel-1">
+                <p>La pêche dans l’aube: la pêche dans l’aube est comme un sport national, de plus en plus pratiqué par les jeunes qui veulent entretenir et préserver l'environnement. L’AAPPMA de l’aube est très proche de l'environnement et fait souvent des stages de sensibilisation afin d’apprendre les bonnes valeurs et les bonnes pratiques à avoir lorsque l’on est au bord de l’eau. Elle fait également à l'ouverture de la pêche une journée dépollution ou tous les adhérents sont invités à venir ramasser les déchets afin de préserver les plans d’eau.</p>
+            </div>
+            <div class="img1-daniel"></div>
+        </div>
+        <div class="ligne-daniel"></div>
+        <div class="texte-img-daniel2">
+            <div class="img2-daniel"></div>
+            <div class="text-daniel-2">
+                <p>En complément de ces stages de sensibilisation et pour préserver et garantir la survie des poissons de nos régions, elle organise des journées découvertes afin d’enseigner les bonnes pratiques de capture, et incite à la pêche en “NO KILL” qui signifie relâcher le poisson vivant dans le meilleur état de santé possible. Des journées écrevisses sont aussi organisées afin de dépolluer nos rivières et nos étangs des écrevisses de Louisiane qui mangent notre flore aquatique mais également nos berges. Je vous conseille de venir profiter de nos cours d’eau, de nos lacs et étangs. Nous avons de très belles rivières pleines de perches, brochets et truites mais également l’yonne et la seine qui elles aussi ont énormément de diversité sous-marine. Un petit instant au bord d’un lac avec quelques amis ou la famille, pouvoir se ressourcer et se rapprocher de la nature.
+                </p>
+            </div>
+        </div>
+        <div class="ligne2-daniel"></div>
+        <!--Cards-->
+        <section class="centrer">
+            <h3 class="card__h3">Articles du même auteur</h3>
+            <div class="container">
+                <div class="card">
+                    <div class="card__header">
+                        <img src="/assets-daniel/pexels-brian-forsyth-17441481.jpg" alt="card__image" class="card__image"
+                            width="600">
+                    </div>
+                    <div class="card__body">
+                        <h4>Les différentes especes d'écrevisses</h4>
+                        <p>Dans cet article découvrez les differentes especes d'écrevisses qui peuplent nos lacs, rivieres et étangs.</p>
+                        <a class="card__button" href="">Lire plus...</a>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <img src="/assets-daniel/IMG_1713.jpg" alt="user__image" class="user__image">
+                            <div class="user__info">
+                                <h5>Daniel L.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <img src="/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg" alt="card__image" class="card__image" width="600">
+                    </div>
+                    <div class="card__body">
+
+                        <h4>Les meilleures cannes UL</h4>
+                        <p>La peche en UL vous offre de grandes sanssations lors des combats et des touches, jettez un oeil a notre selection de cannes UL pour l'ouverture de la peche.</p>
+                        <a class="card__button">Lire plus...</a>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <img src="/assets-daniel/IMG_1713.jpg" alt="user__image" class="user__image">
+                            <div class="user__info">
+                                <h5>Daniel L.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <img src="/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg" alt="card__image" class="card__image" width="600">
+                    </div>
+                    <div class="card__body">
+                        <h4>Les meilleurs spots de peche dans l’Aube</h4>
+                        <p>Pour vous on a recenssé les meilleurs spots de peche dans toute l'aube. De bonnes journées de peche en perspective.</p>
+                        <a class="card__button" href="">Lire plus...</a>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <img src="/assets-daniel/IMG_1713.jpg" alt="user__image" class="user__image">
+                            <div class="user__info">
+                                <h5>Daniel L.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-            <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-        <section>
-            <li><a href="/rate.html">Donnez votre avis</a></li>
-        </section>
-        <h6>Mentions legal</h6>
+        <div class="footer-central">
+            <div class="logo">
+                <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+            </div>
+            <div class="menssions">
+                <p>Mentions légales <br>
+                Plolitique de confidentialité <br>
+                Conditions d'utilisation</p>
+            </div>
+            <div class="blog">
+                <p>A propos <br>
+                Blog</p>
+            </div>
+        </div>
+        <div class="bas-footer">
+            <p>Boullevard des regions, 96000 WildLand</p>
+        </div>
     </footer>
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 </html>

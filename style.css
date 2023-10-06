@@ -1,5 +1,4 @@
 /*initialisation*/
-
 :root {
   /* Couleurs */
   --principal-color: #002533;
@@ -22,7 +21,7 @@
   --padding-y-desktop: 5vh;
   --padding-x-desktop: 5vw;
   --margin-x-mobile: 5vw;
-  --margin-y-mobile: 5vh;
+  --margin-y-mobile: 3vh;
   --padding-y-mobile: 2vh;
   --padding-x-mobile: 2vw;
   --row-gap: 30px;
@@ -33,15 +32,188 @@
   --transition-time: 400ms;
 }
 
-*, *::before, *::after {
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Lexend', sans-serif;
+}
+
+/*HEADER*/
+* , *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/*DÃ©but navbar*/
+
+.navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 37, 51, 0.5);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1rem;
+  height: 4rem;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 1rem;
+}
+
+.list-general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  font-family: "Playfair Display", serif;
+  font-size: var(--h5-size-desktop);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN a:hover {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN:hover>ul {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN {
+  cursor: pointer;
+  margin: 0 1.5rem;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN-pointer {
+  height: 50%;
+  width: 50%;
+}
+
+.sousMenu {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  background-color: rgba(0, 37, 51, 0.5);
+  border-radius: 0px 0px 10px 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.sousListe {
+  color: #f7efe7;
+  font-family: 'Lexend Regular';
+  font-size: var(--p-button);
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*Fin navbar*/
+.title-top {
+  font-family: Playfair Display Semibold;
+  font-style: italic;
+  text-align: left;
+  font-size: 8rem;
+  color: #f7efe7;
+  position: absolute;
+  bottom: 30vh;
+  margin-left: 5vw;
+  mix-blend-mode: soft-light;
+}
+
+.img-top {
+object-fit: cover;
+object-position: center;
+height: 75vh;
+width: 100%;
+margin: 0;
+border-radius: 0px 0px 30px 30px;
+}
+/*Menu burger*/
+/* Styles pour l'icône du menu */
+#icons {
+  cursor: pointer;
+  display: none;
+}
+
+/* Styles pour la barre de navigation lorsque le menu est actif */
+/*.navbar.active ul {
+  left: 0;
+  margin-top: 8.5vh;
+}*/
+
+/*.sousMenu li {
+  margin-top: 6vh;
+}*/
 
 
-/*HEADER*/
+@media (max-width: 1000px) {
+  #icons {
+    display: block;
+  }
 
+  nav {
+    width: 100%;
+  }
+
+  #icons::before {
+    content: "\2630"; /* Icône du menu hamburger */
+    color: var(--secondary-color); /* Couleur de l'icône */
+  }
+
+  .navbar.active #icons::before {
+    content: "\2715"; /* Icône de fermeture du menu */
+  }
+
+  /* Styles pour la barre de navigation */
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: rgba(0, 37, 51, 0.5);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    text-align: center;
+    transition: 0.5s; /* Transition plus rapide */
+  }
+
+  nav li {
+    padding: 3px 0;
+  }
+
+  nav li:hover {
+    background: #01749e;
+  }
+}
+/* Afficher la barre de navigation en cas de clic sur l'icône du menu */
+
+/*Fin navbar*/
+/*Acceuil*/
 .headerG header {
   background: url(/assets-julien/masashi-wakui-12.jpg);
   background-size: cover;
@@ -50,57 +222,79 @@
   border-radius: 0px 0px 15px 15px;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .headerG h1 {
-    font-family: "Playfair Display", serif;
-    text-align: left;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-    padding: 5rem;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 4rem;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  padding: 5rem;
 }
 
-.sousMenu {
-    display: none;
-    position: absolute;
-    top: 4rem;
-    background-color: rgba(0, 37, 51, 0.5);
-    backdrop-filter: blur(20px);
-    border-radius: 0px 0px 10px 10px;
-    padding: 0;
+.titre-texte-acceuil {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0rem 25%;
 }
 
-
-.listeN:hover > ul {
-    display: block;
-}
-
-.listeN {
-    cursor: pointer;
-    margin: 0 1.2rem;
-}
-
-
-/*Fin navbar*/
-/*HEADER*/
-
-
-body {
-
-  background-color: var(--secondary-color);
+.titre-texte-acceuil h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  padding: 2rem;
+  color: var(--principal-color);
   margin: 0;
 }
 
+.ligne-acceuil-dessus-h1 {
+  border: var(--principal-color) solid 1px;
+  width: 80%;
+  height: 2px;
+  margin-bottom: 2rem;
+}
+
+.titre-texte-acceuil p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.ligne2-acceuil {
+  border: var(--principal-color) solid 1px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px){
+  .headerG header {
+    padding: 2rem;
+}
+
+.headerG  h1 {
+    font-size: 2rem;
+    padding: 5rem 0rem;
+}
+
+.titre-texte-acceuil {
+  margin: 20%;
+}
+
+.titre-texte-acceuil h2 {
+  font-size: 2.5rem;
+}
+
+.titre-texte-acceuil p {
+  font-size: 0.8rem;
+}
+}
+
+/*Fin acceuil*/
+
 /*page yacine*/
 
-
-/*remplacer header par img-top et title-top !!!!*/
-.headerY {
+.headerY header{
   background: url(/assets-yacine/pexels-cats-coming-1907229.jpg);
   background-size: cover;
   background-position: center;
@@ -142,6 +336,581 @@ body {
     margin: 3%;
 }
 
+@media screen and (max-width: 1000px) { 
+  .cards-yacine {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    gap:5rem;
+  }
+
+  .contenu-yacine {
+    flex-wrap: nowrap;
+  }
+
+  .texte-yacine {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  .contenu-yacine {
+    grid-row: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .image-sushi {
+    display: none;
+  }
+}
+
+.card5y {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background: url(/assets-yacine/ai-generated-7955585_1920.jpg);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+/*fin page yacine*/
+
+/*page Daniel*/
+.headerD header {
+  background: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.headerD h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 4rem;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  padding: 5rem;
+}
+
+.texte-img-daniel1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem;
+}
+
+.img1-daniel{
+  background-image: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
+  padding: 10rem 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgba(0, 37, 51, 1);
+}
+
+.text-daniel-1{
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #E0CEBC;
+  border-radius: 15px;
+  margin: 2rem 5rem;
+  padding: 4.5rem;
+  box-shadow: 15px 15px rgba(0, 37, 51, 1);
+}
+
+.ligne-daniel {
+  border: solid 2px rgba(0, 37, 51, 1);
+  width: 70%;
+  height: 2px;
+  border-radius: 15px;
+  margin:0 15%;
+  opacity: 70%;
+}
+
+.texte-img-daniel2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem;
+  color: rgba(0, 37, 51, 1);
+}
+
+.img2-daniel{
+  background-image: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
+  padding: 10rem 15rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgba(0, 37, 51, 1);
+}
+
+.text-daniel-2{
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #E0CEBC;
+  border-radius: 15px;
+  margin: 2rem 5rem;
+  padding: 4.5rem;
+  box-shadow: 15px 15px rgba(0, 37, 51, 1);
+  color: rgba(0, 37, 51, 1);
+}
+
+.ligne2-daniel {
+  border: solid 2px rgba(0, 37, 51, 1);
+  width: 70%;
+  height: 2px;
+  border-radius: 15px;
+  margin:0 15%;
+  opacity: 70%;
+}
+
+.articles-fin {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: rgba(0, 37, 51, 1);
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px){
+  .headerD header {
+      padding: 2rem;
+  }
+
+  .headerD  h1 {
+      font-size: 2rem;
+      padding: 5rem 0rem;
+  }
+
+  .texte-img-daniel1 {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0.5rem;
+  }
+
+  .text-daniel-1 {
+      font-size: 1rem;
+      margin: 1rem;
+      padding: 1.2rem;
+  }
+
+  .img1-daniel {
+      margin: 1rem;
+      padding: 5.5rem 9rem;
+  }
+
+  .texte-img-daniel2 {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 2rem 0.5rem;
+  }
+
+  .text-daniel-2 {
+      font-size: 1rem;
+      margin: 1rem;
+      padding: 1.2rem;
+  }
+
+  .img2-daniel {
+      margin: 1rem;
+      padding: 5.5rem 9rem;
+  }
+
+}
+
+/*fin page Daniel*/
+
+/*page StephV*/
+
+.header-stephV {
+  background: url(assets-stephV/nature.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.header-stephV h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 4rem;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  padding: 5rem 5rem 5rem 0rem;
+}
+
+.pagestephV {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+
+/* ARTICLE 1 STEPH V PRESENTATION */
+.articl1stephV {
+
+  font-family: 'Lexend', sans-serif;
+  color: black;
+  font-size: 2rem;
+  background-image: url(assets-stephV/coucherdesoleil.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 2rem 10rem 20rem 5rem;
+  text-align: justify;
+  margin: 4rem;
+  box-shadow: var(--tertiary-color) 20px 20px;
+}
+
+.imgarticl1stephV {
+  object-fit: url(assets-stephV/carte_Libourne.jpg);
+  object-position: right;
+}
+
+.h2articl1stephV {
+  color: var(--tertiary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: justify;
+
+}
+
+/* ARTICLE 2 STEPH V */
+.article2stephV {
+
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-image: url(assets-stephV/cyclo2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5rem 10rem 5rem 5rem;
+  text-align: justify;
+  margin: 4rem;
+  box-shadow: var(--principal-color) -20px -20px;
+}
+
+.h2article2stephV {
+  color: var(--principal-color);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+.liencyclopierro {
+  color: var(--principal-color);
+}
+
+
+/* ARTICLE 3 STEPH V */
+.article3stephV {
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
+  background-position: auto;
+  background-color: #FDD2CC;
+  border-radius: 20px;
+  padding: 5rem 10rem 5rem 5rem;
+  background-repeat: no-repeat;
+  text-align: justify;
+  margin: 4rem;
+  box-shadow: var(--tertiary-color) 20px 20px;
+}
+
+.h2article3stephV {
+  color: var(--tertiary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.liendrivetoutnu {
+  color: var(--tertiary-color);
+}
+
+/* ARTICLE 4 STEPH V */
+.article4stephV {
+
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-image: url(assets-stephV/recyclage2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 5rem 10rem 5rem 5rem;
+  text-align: justify;
+  margin: 4rem;
+  box-shadow: var(--principal-color) -20px -20px;
+}
+
+.h2article4stephV {
+  color: var(--principal-color);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.lienbbot {
+  color: var(--principal-color);
+}
+
+/* ARTICLE 5 STEPH V */
+.article5stephV {
+
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-image: url(assets-stephV/koozumain2.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 5rem 5rem 20rem 10rem;
+  text-align: right;
+  margin: 4rem;
+  box-shadow: var(--tertiary-color) 20px 20px;
+}
+
+.h2article5stephV {
+  color: var(--tertiary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.lienkoozumain {
+  color: var(--tertiary-color);
+}
+
+/* FIN PAGE STEPH V */
+
+/*page StephM*/
+
+.header-stephm {
+  background: url(/assets-stephM/couché-de-soleil-plage.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 10%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.header-stephm h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  font-size: 4rem;
+  color: #f7efe7;
+  text-shadow: 3px 4px #f2621f;
+  padding: 5rem;
+}
+
+.texte-stephm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1, 2rem;
+    grid-gap: .5rem;
+    grid-template-areas:
+        "1 2"
+        "3 4"
+        "5 6"
+        "7 8";
+    text-align: center;
+    padding: 3rem;
+}
+
+.texte-stephm p1 {
+  grid-area: 1;
+  font-size: 1.1rem;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  padding: 2rem;
+}
+
+.img1stephm {
+
+    grid-area: 1;
+    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.img2stephm {
+    grid-area: 2;
+    background: url(/assets-stephM/images.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 10rem 17rem;
+}
+
+.texte-stephm p2 {
+  font-size: 1.1rem;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  padding: 2rem;
+}
+
+.texte-stephm p3 {
+  grid-area: 3;
+  font-size: 1.1rem;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  padding: 2rem;
+}
+
+.img3stephm {
+
+  grid-area: 3;
+  background: url(/assets-stephM/Plage.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  padding: 10rem 17rem;
+}
+
+.img4stephm {
+  grid-area: 4;
+  background: url(/assets-stephM/image.png);
+  background-size: cover;
+  background-position: top;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  padding: 10rem 17rem;
+}
+
+.texte-stephm p4 {
+  font-size: 1.1rem;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  padding: 2rem;
+}
+
+.cards-stephm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+}
+
+.card1 {
+  width: 20rem;
+  height: 14rem;
+  border-radius: 30px;
+  background-image: url(/assets-stephM/download.jpg);
+  box-shadow: 15px 15px 30px #bebebe,
+      -15px -15px 30px #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background-image: url(/assets-stephM/Forêt.webp);
+  box-shadow: 15px 15px 30px #bebebe,
+      -15px -15px 30px #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  width: 20rem;
+  height: 14rem;
+  border-radius: 30px;
+  background-image: url(/assets-stephM/download\ \(1\).jpg);
+  box-shadow: 15px 15px 30px #bebebe,
+      -15px -15px 30px #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.card4 {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 30px;
+  background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
+  box-shadow: 15px 15px 30px #bebebe,
+      -15px -15px 30px #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation-stephm {
+  display: grid;
+  grid-template-columns: 1.5fr .5fr;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-items: center;
+  margin: 2rem;
+  margin-left: 4rem;
+}
+
+.card5 {
+  background: url(/assets-stephM/carte.jpg);
+  background-size: cover;
+  background-position: right;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media screen and (max-width: 960px) {
+  .header-stephm h1{
+    font-size: 3rem;
+  }
+  .texte-stephm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+  .img1stephm .img2stephm .img3stephm .img4stephm{
+    width: auto;
+  }
+  .cards-stephm{
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .presentation-stephm{
+    grid-template-columns: none;
+  }
+  .card5{
+    margin-top: 1.5rem;
+  }
+}
+/*fin page StephM*/
+
+/*debut cartes*/
 h2 {
   display: flex;
   flex-direction: column;
@@ -153,17 +922,11 @@ h2 {
   margin-bottom: 50px;
 }
 
-
-/*fin page yacine*/
-
-/*Page Daniel*/
-
 h3 {
   font-family: Playfair display;
   font-size: var(--h3-size-desktop);
   color: var(--principal-color);
 }
-
 
 .centrer {
   display: flex;
@@ -196,7 +959,6 @@ hr {
   text-align: left;
   padding-bottom: 20px;
 }
-
 
 .article-col2 {
   display: grid;
@@ -277,14 +1039,6 @@ hr {
 
 
 /* Cards responsive */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 .container {
   display: flex;
@@ -490,573 +1244,138 @@ hr {
       text-align: left;
       font-family: Lexend Regular;
   }
-
-
 }
-.card5y {
-  width: 14rem;
-  height: 20rem;
-  border-radius: 30px;
-  background: url(/assets-yacine/ai-generated-7955585_1920.jpg);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+
+/*fin cartes*/
+
+/*Contact*/
+.body-contact {
+  background: url(/assets-daniel/aaron-burden-6DD9FJYj0Vo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.headerC header {
+  background: url();
   background-size: cover;
   background-position: center;
+  padding: 5% 10% 1% 10%;
+  border-radius: 0px 0px 15px 15px;
 }
 
-@media screen and (max-width: 1000px) { 
-  .cards-yacine {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5rem;
-    gap:5rem;
-  }
-
-  .contenu-yacine {
-    flex-wrap: nowrap;
-  }
-
-  .texte-yacine {
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
-  }
-
-  .contenu-yacine {
-    grid-row: 1;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .image-sushi {
-    display: none;
-  }
-}
-
-
-/*fin page yacine*/
-
-/*Page Daniel*/
-
-h1.principal-title-daniel {
-    background-image: url(/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg);
-    background-size: cover;
-    font-family: "Playfair Display", serif;
-    text-align: left;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-    padding: 15rem;
-    background-position: center;
-    border-radius: 0px 0px 15px 15px;
-}
-
-.texte-daniel {
-    display: grid;
-    font-family: "Lexend", sans-serif;
-    font-size: 1.1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 0.9rem;
-    grid-template-areas: " 1, 2 ";
-}
-
-.texte-daniel p {
-    display: grid;
-    grid-area: 1;
-    padding: 2rem;
-    text-align: center;
-    margin-top: 10%;
-}
-
-div.grid-daniel {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    grid-gap: 0.9rem;
-    grid-template-areas:
-        " 1 2 "
-        " 3 ";
-}
-
-.img1 {
-    grid-area: 1;
-    margin: 1%;
-    background: url(/assets-daniel/pexels-cottonbro-studio-4828253.jpg);
-    background-size: cover;
-    background-position: top;
-    padding: 11rem;
-    gap: 1rem;
-    border-radius: 15px;
-}
-
-.img2 {
-    grid-area: 2;
-    background: url(/assets-daniel/kelly-sikkema-YlhAolPcwQ4-unsplash.jpg);
-    padding: 11rem;
-    margin: 1%;
-    border-radius: 15px;
-    background-size: cover;
-    background-position: center;
-}
-
-.parag2 {
-    grid-area: 2;
-}
-
-.cards-daniel {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5rem;
-}
-
-.card1 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background-image: url(/assets-daniel/pure-julia-B8y6uvTnEvU-unsplash.jpg);
-    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #aaaaaa;
-    background-size: cover;
-    background-position: center;
-}
-
-.card2 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background: url(/assets-daniel/stefan-lehner-XfkBIABG3VA-unsplash.jpg);
-    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-    background-size: cover;
-    background-position: center;
-}
-
-.card3 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background: url(/assets-daniel/pexels-cottonbro-studio-4828248.jpg);
-    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-    background-size: cover;
-    background-position: center;
-}
-
-.card4 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background: url(/assets-daniel/shelly-pence-rAYWKUJOXWk-unsplash.jpg);
-    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-    background-size: cover;
-    background-position: center;
-}
-
-.card5 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background: url(/assets-daniel/taylor-r-clkI9_xcuis-unsplash.jpg);
-    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-    background-size: cover;
-    background-position: center;
-}
-
-/* DEBUT PAGE STEPH V */
-/* DEBUT PAGE STEPH V */
-
-
-
-/*page StephV*/
-
-.header-stephV {
-    background: url(assets-stephV/nature.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 10%;
-    border-radius: 0px 0px 15px 15px;
-}
-
-.header-stephV h1 {
-    font-family: "Playfair Display", serif;
-    text-align: left;
-    font-size: 4rem;
-    color: #f7efe7;
-    text-shadow: 3px 4px #f2621f;
-    padding: 5rem 5rem 5rem 0rem;
-}
-
-.pagestephV {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-}
-
-/* ARTICLE 1 STEPH V PRESENTATION */
-.articl1stephV {
-
-    font-family: 'Lexend', sans-serif;
-    color: black;
-    font-size: 2rem;
-    background-image: url(assets-stephV/coucherdesoleil.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    padding: 2rem 10rem 20rem 5rem;
-    text-align: justify;
-    margin: 4rem;
-    box-shadow: var(--tertiary-color) 20px 20px;
-}
-
-.imgarticl1stephV {
-    object-fit: url(assets-stephV/carte_Libourne.jpg);
-    object-position: right;
-}
-
-.h2articl1stephV {
-    color: var(--tertiary-color);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: justify;
-
-}
-
-/* ARTICLE 2 STEPH V */
-.article2stephV {
-
-    font-family: 'Lexend', sans-serif;
-    font-size: 2rem;
-    color: black;
-    background-image: url(assets-stephV/cyclo2.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 5rem 10rem 5rem 5rem;
-    text-align: justify;
-    margin: 4rem;
-    box-shadow: var(--principal-color) -20px -20px;
-}
-
-.h2article2stephV {
-    color: var(--principal-color);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: justify;
-}
-
-
-.liencyclopierro {
-    color: var(--principal-color);
-}
-
-
-/* ARTICLE 3 STEPH V */
-.article3stephV {
-    font-family: 'Lexend', sans-serif;
-    font-size: 2rem;
-    color: black;
-    background-image: url(assets-stephV/LE_DRIVE_TOUT_NU.png);
-    background-position: auto;
-    background-color: #FDD2CC;
-    border-radius: 20px;
-    padding: 5rem 10rem 5rem 5rem;
-    background-repeat: no-repeat;
-    text-align: justify;
-    margin: 4rem;
-    box-shadow: var(--tertiary-color) 20px 20px;
-}
-
-.h2article3stephV {
-    color: var(--tertiary-color);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: justify;
-}
-
-.liendrivetoutnu {
-    color: var(--tertiary-color);
-}
-
-/* ARTICLE 4 STEPH V */
-.article4stephV {
-
-    font-family: 'Lexend', sans-serif;
-    font-size: 2rem;
-    color: black;
-    background-image: url(assets-stephV/recyclage2.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    padding: 5rem 10rem 5rem 5rem;
-    text-align: justify;
-    margin: 4rem;
-    box-shadow: var(--principal-color) -20px -20px;
-}
-
-.h2article4stephV {
-    color: var(--principal-color);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: justify;
-}
-
-.lienbbot {
-    color: var(--principal-color);
-}
-
-/* ARTICLE 5 STEPH V */
-.article5stephV {
-
-    font-family: 'Lexend', sans-serif;
-    font-size: 2rem;
-    color: black;
-    background-image: url(assets-stephV/koozumain2.png);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    padding: 5rem 5rem 20rem 10rem;
-    text-align: right;
-    margin: 4rem;
-    box-shadow: var(--tertiary-color) 20px 20px;
-}
-
-.h2article5stephV {
-    color: var(--tertiary-color);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: justify;
-}
-
-.lienkoozumain {
-    color: var(--tertiary-color);
-}
-
-/* FIN PAGE STEPH V */
-
-
-/*page StephM*/
-
-.header-stephm {
-  background: url(/assets-stephM/couché-de-soleil-plage.jpg);
-  background-size: cover;
-  background-position: bottom;
-  padding: 10%;
-  /*border-radius: 0px 0px 15px 15px;*/
-}
-
-.header-stephm h1 {
+.headerC h1 {
   font-family: "Playfair Display", serif;
-  text-align: left;
+  text-align: center;
   font-size: 4rem;
   color: #f7efe7;
-  text-shadow: 3px 4px #f2621f;
-  padding: 5rem;
+  text-shadow: var(--principal-color) 3px 4px;
+  padding: 0rem 2rem 2rem 2rem;
 }
 
-
-.texte-stephm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    font-family: 'Lexend', sans-serif;
-    font-size: 1, 2rem;
-    grid-gap: .5rem;
-    grid-template-areas:
-        "1 2"
-        "3 4"
-        "5 6"
-        "7 8";
-    text-align: center;
-    padding: 3rem;
-}
-
-.texte-stephm p1 {
-  grid-area: 1;
-  font-size: 1.1rem;
-  align-self: center;
-  justify-self: center;
-  width: 70%;
-  padding: 2rem;
-}
-
-.img1stephm {
-
-    grid-area: 1;
-    background: url(/assets-stephM/Baie-des-Sables-d-Olonne.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    padding: 10rem 17rem;
-}
-
-.img2stephm {
-    grid-area: 2;
-    background: url(/assets-stephM/images.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    padding: 10rem 17rem;
-}
-
-.texte-stephm p2 {
-  font-size: 1.1rem;
-  align-self: center;
-  justify-self: center;
-  width: 70%;
-  padding: 2rem;
-}
-
-.texte-stephm p3 {
-  grid-area: 3;
-  font-size: 1.1rem;
-  align-self: center;
-  justify-self: center;
-  width: 70%;
-  padding: 2rem;
-}
-
-.img3stephm {
-
-    grid-area: 3;
-    background: url(/assets-stephM/Plage.webp);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    padding: 10rem 17rem;
-}
-
-.img4stephm {
-    grid-area: 4;
-    background: url(/assets-stephM/image.png);
-    background-size: cover;
-    background-position: top;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    padding: 10rem 17rem;
-}
-
-.texte-stephm p4 {
-  font-size: 1.1rem;
-  align-self: center;
-  justify-self: center;
-  width: 70%;
-  padding: 2rem;
-}
-
-.cards-stephm {
+.form section form {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 35%;
+  z-index: 998;
 }
 
-.card1 {
-    width: 20rem;
-    height: 14rem;
-    border-radius: 30px;
-    background-image: url(/assets-stephM/download.jpg);
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #aaaaaa;
-    background-size: cover;
-    background-position: center;
+.form section form input {
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 15px;
+  border: none;
 }
 
-.card2 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background-image: url(/assets-stephM/Forêt.webp);
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #aaaaaa;
-    background-size: cover;
-    background-position: center;
+.form section form textarea {
+  font-family: "Lexend", sans-serif;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: none;
 }
 
-.card3 {
-    width: 20rem;
-    height: 14rem;
-    border-radius: 30px;
-    background-image: url(/assets-stephM/download\ \(1\).jpg);
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #aaaaaa;
-    background-size: cover;
-    background-position: center;
+.form section form button {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: none;
 }
 
-.card4 {
-    width: 14rem;
-    height: 20rem;
-    border-radius: 30px;
-    background-image: url(/assets-stephM/istockphoto-1172051173-612x612.jpg);
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #aaaaaa;
-    background-size: cover;
-    background-position: center;
+form {
+  padding: 0.5rem;
+  background-color: rgba(0, 37, 51, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
-.presentation-stephm {
-    display: grid;
-    grid-template-columns: 1.5fr .5fr;
-    font-family: 'Lexend', sans-serif;
-    font-size: 1.2rem;
-    align-items: center;
-    justify-items: center;
-    margin: 2rem;
-    margin-left: 4rem;
+.box-form {
+  padding: 0rem 5rem 5rem;
 }
 
-.card5 {
-    background: url(/assets-stephM/carte.jpg);
-    background-size: cover;
-    background-position: right;
-    border-radius: 15px;
-    align-self: center;
-    justify-self: center;
-    width: 10rem;
-    height: 10rem;
+.p-contact{
+  font-family: "Lexend", sans-serif;
+  background-color: rgb(170, 6, 6);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 1rem;
+  color: var(--secondary-color);
 }
 
-/* MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+  .form section form {
+    margin: 0rem;
+  }
 
-@media screen and (max-width: 960px) {
-  .header-stephm h1{
-    /*width: auto;*/
+  .box-form {
+    padding: 1rem;
+  }
+
+  .headerC h1 {
+    padding: 3rem 3rem 0rem 3rem;
     font-size: 3rem;
   }
-  .texte-stephm{
-    /*width: auto;*/
-    display: flex;
-    /*grid-template-columns: none;
-    grid-template-rows: auto;
-    grid-template-areas: none;*/
-    flex-wrap: wrap;
-    
-  }
-  .img1stephm .img2stephm .img3stephm .img4stephm{
-    width: auto;
-  }
-    .cards-stephm{
-    width: auto;
-    padding: 0.5rem;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  .presentation-stephm{
-    grid-template-columns: none;
-  }
-  .card5{
-    margin-top: 1.5rem;
-  }
+
+  .headerC header {
+  padding: 1rem;
+}
+}
+/*fin du contact*/
+
+/*footer*/
+
+footer {
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--principal-color);
 }
 
-/*Fin page StepM*/
+footer .bas-footer {
+  display: flex;
+  justify-content:center ;
+  align-items: end;
+}
+
+footer .bas-footer p {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+}
+
+footer .footer-central {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-central div p {
+  font-size: 0.7rem;
+  color: var(--secondary-color);
+}
+
+.blog {
+  margin-right: 3rem;
+}
+
+/*fin du footer*/

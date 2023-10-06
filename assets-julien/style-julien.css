@@ -46,70 +46,6 @@
 
 /* Début navbar */
 
-header {}
-
-.navbar {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 37, 51, 0.7);
-    backdrop-filter: blur(20px);
-    position: fixed;
-    top: 0;
-    border-radius: 0px 0px 10px 10px;
-    margin: auto;
-    height: 12vh;
-}
-
-.logo {
-    padding: 1%;
-    height: 100%;
-    width: auto;
-    align-content: left;
-}
-
-.navbar ul li {
-    list-style: none;
-    padding: 1rem;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #f7efe7;
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-
-}
-
-.sousMenu {
-    display: none;
-    position: absolute;
-    top: 4rem;
-    background-color: rgba(0, 37, 51, 0.7);
-    font-family: 'Lexend Regular';
-    backdrop-filter: blur(20px);
-    border-radius: 0px 0px 10px 10px;
-    padding: 0;
-}
-
-.listeN:hover>ul {
-    display: block;
-}
-
-.listeN {
-    cursor: pointer;
-    margin: 0 1.2rem;
-}
-
-
 /* Fin navbar */
 
 .title-top {
@@ -824,3 +760,39 @@ footer a:active {
 
 
 }
+/*footer*/
+
+footer {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--principal-color);
+  }
+  
+  footer .bas-footer {
+    display: flex;
+    justify-content:center ;
+    align-items: end;
+  }
+  
+  footer .bas-footer p {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+  }
+  
+  footer .footer-central {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .footer-central div p {
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+  }
+  
+  .blog {
+    margin-right: 3rem;
+  }
+  
+  /*fin du footer*/

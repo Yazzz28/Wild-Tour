@@ -13,29 +13,33 @@
     <title>The Wild Tour</title>
 </head>
 <body>
-  <section class="headerY">
-    <header>
-        <div>
-            <nav class="navbar">
-                <img src="assets-yacine/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
-                <ul class="list-general">
-                    <li class="listeN"><a href="acceuil.html">Acceuil</a></li>
-                    <li class="listeN"><a href="contact.html">Contact</a></li>
-                    <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
-                        <ul class="sousMenu">
-                            <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
-                            <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                            <li class="sousListe"><a href="fiche-julien.html">Art</a></li>
-                            <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
-                            <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <h1>Shogun Sushi</h1>
-        </div>
+    <header class="centrer">
+        <nav class="navbar">
+            <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <ul class="list-general">
+                <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
+                <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
+                    <ul class="sousMenu">
+                        <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                        <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
+                        <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                        <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
     </header>
-  </section>
+    <main>
+        <!--Image principale top et titre -->
+        <section>
+            <h1 class="title-top">Gastronomie</h1>
+            <div>
+                <img class="img-top" src="/assets-yacine/pexels-cats-coming-1907229.jpg">
+            </div>
+        </section>
       <article class="texte-yacine">
         <!--Partie paragraphe a centrer selon la disposition que l'on souhaite-->
 
@@ -67,8 +71,9 @@
                   </div>
                   <div class="card__body">
                       <h4>Les differentes maniere de cuisiner de la viande</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                          doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      <p>Nous allons parler des différentes manières de cuisiner la viande, un sujet qui a toujours été au cœur de nombreuses cultures gastronomiques à travers le monde.
+                        Il existe de nombreuses manières de cuisiner la viande, chacune apportant sa propre touche de saveur et de texture. Que vous aimiez la viande saignante, à point ou bien cuite, vous avez l'embarras du choix pour créer des plats …
+                        </p>
                       <a class="card__button" href="">Lire plus...</a>
                   </div>
                   <div class="card__footer">
@@ -76,7 +81,7 @@
                           <img src="assets-yacine/yacine.jpg" alt="user__image" class="user__image">
                           <div class="user__info">
                             <h5>MENNAA Yacine</h5>
-                              <small>2h ago</small>
+                              <small></small>
                           </div>
                       </div>
                   </div>
@@ -88,8 +93,7 @@
                   <div class="card__body">
 
                       <h4>Le petit dejeuner equilibré parfait pour la santé</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                          doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      <p>L'objectif d'un petit déjeuner équilibré est de combiner des glucides complexes, des protéines, des graisses saines et des fibres pour vous donner l'énergie nécessaire tout en vous maintenant rassasié jusqu'au prochain repas …</p>
                       <a class="card__button">Lire plus...</a>
                   </div>
                   <div class="card__footer">
@@ -108,8 +112,7 @@
                   </div>
                   <div class="card__body">
                       <h4>La gastronomie italienne</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                          doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      <p>La cuisine italienne se caractérise également par l'importance accordée à la fraîcheur des ingrédients et à la saisonnalité. Les Italiens privilégient les produits locaux et de saison pour préparer leurs plats. En fin de compte, la simplicité, la passion pour la cuisine et la convivialité sont au cœur de la gastronomie italienne, faisant de chaque repas une expérience mémorable. Buon appetito !</p>
                       <a class="card__button" href="">Lire plus...</a>
                   </div>
                   <div class="card__footer">
@@ -124,45 +127,27 @@
               </div>
           </div>
       </section>
-
-      <section class="articles-recents">
-          <h3 class="article-h3">Les articles récents</h3>
-          <hr>
-          <div class="article-col2">
-              <div class="article-col2-1">
-                  <img class="article-img" src="assets-daniel/mathieu-le-roux-6_HqvY1E7NI-unsplash.jpg">
-              </div>
-              <div class="article-col2-2">
-                  <h4>Le début de la pêche dans l’Aube, Troyes</h4>
-                  <p>This defines the ability for a flex item to grow if necessary. It
-                      accepts a unitless value that serves as a proportion. It dictates what amount of the
-                      available space inside the flex container the item should take up.</p>
-                  <button class="button-lire-plus">Lire plus...</button>
-              </div>
-          </div>
-
-          <div class="article-col2">
-              <div class="article-col2-1">
-                  <img class="article-img" src="assets-julien/IMG_4122.jpg">
-              </div>
-              <div class="article-col2-2">
-                  <h4>Base sous-marine, Bordeaux</h4>
-                  <p>This defines the ability for a flex item to grow if necessary. It
-                      accepts a unitless value that serves as a proportion. It dictates what amount of the
-                      available space inside the flex container the item should take up.</p>
-                  <button class="button-lire-plus">Lire plus...</button>
-              </div>
-          </div>
-      </section>
     </main>
 
     <footer>
-      <!--Partie basse avec anotations de politiques internet et link cliquable Rate-->
-      <section>
-        <li><a href="/rate.html">Donnez votre avis</a></li>
-      </section>
-      <h6>Mentions legal</h6>
+        <div class="footer-central">
+            <div class="logo">
+                <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+            </div>
+            <div class="menssions">
+                <p>Mentions légales <br>
+                Plolitique de confidentialité <br>
+                Conditions d'utilisation</p>
+            </div>
+            <div class="blog">
+                <p>A propos <br>
+                Blog</p>
+            </div>
+        </div>
+        <div class="bas-footer">
+            <p>Boullevard des regions, 96000 WildLand</p>
+        </div>
     </footer>
-    <script src=""></script>
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
   </body>
 </html>
