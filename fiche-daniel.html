@@ -13,30 +13,33 @@
     <title>The Wild Tour</title>
 </head>
 <body>
-    <section class="headerD">
-        <header>
-            <div>
-                <nav class="navbar">
-                    <img src="assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
-                    <ul class="list-general">
-                        <li class="listeN"><a href="acceuil.html">Accueil</a></li>
-                        <li class="listeN"><a href="contact.php">Contact</a></li>
-                        <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
-                            <ul class="sousMenu">
-                                <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
-                                <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                                <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
-                                <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
-                                <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-                            </ul>
-                        </li>
+    <header class="centrer">
+        <nav class="navbar">
+            <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+            <ul class="list-general">
+                <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                <li class="listeN"><a href="contact.php">Contact</a></li>
+                <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
+                    <ul class="sousMenu">
+                        <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                        <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                        <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
+                        <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                        <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
                     </ul>
-                </nav>
-                <h1>La peche dans l'aube</h1>
-            </div>
-        </header>
-    </section>
+                </li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
+    </header>
     <main>
+        <!--Image principale top et titre -->
+        <section>
+            <h1 class="title-top">La pêche</h1>
+            <div>
+                <img class="img-top" src="/assets-daniel/jaeyoon-jeong-haTl7gFp5KQ-unsplash.jpg">
+            </div>
+        </section>
         <div class="texte-img-daniel1">
             <div class="text-daniel-1">
                 <p>La pêche dans l’aube: la pêche dans l’aube est comme un sport national, de plus en plus pratiqué par les jeunes qui veulent entretenir et préserver l'environnement. L’AAPPMA de l’aube est très proche de l'environnement et fait souvent des stages de sensibilisation afin d’apprendre les bonnes valeurs et les bonnes pratiques à avoir lorsque l’on est au bord de l’eau. Elle fait également à l'ouverture de la pêche une journée dépollution ou tous les adhérents sont invités à venir ramasser les déchets afin de préserver les plans d’eau.</p>
@@ -54,7 +57,7 @@
         <div class="ligne2-daniel"></div>
         <!--Cards-->
         <section class="centrer">
-            <h3 class="card__h3">Articles du meme auteur</h3>
+            <h3 class="card__h3">Articles du même auteur</h3>
             <div class="container">
                 <div class="card">
                     <div class="card__header">
@@ -116,20 +119,24 @@
         </section>
     </main>
     <footer>
-
-        <div class="gauche-footer"></div>
-            <div><img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt=""></div>
-        <section class="millieu-footer">
-            <div>mentions legales</div>
-            <div>Politique de confidentialité</div>
-            <div>Conditions d'utilisation</div>
-        </section>
-        <section class="droite-footer"></section>
-            <div>À propos</div>
-            <div>le blog</div>
+        <div class="footer-central">
+            <div class="logo">
+                <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+            </div>
+            <div class="menssions">
+                <p>Mentions légales <br>
+                Plolitique de confidentialité <br>
+                Conditions d'utilisation</p>
+            </div>
+            <div class="blog">
+                <p>A propos <br>
+                Blog</p>
+            </div>
+        </div>
         <div class="bas-footer">
-            <div><p>Boullevard des regions, 96000 WildLand</p></div>
+            <p>Boullevard des regions, 96000 WildLand</p>
         </div>
     </footer>
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 </html>

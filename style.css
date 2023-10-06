@@ -31,50 +31,86 @@
   --img-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
   --transition-time: 400ms;
 }
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Lexend', sans-serif;
+}
+
 /*HEADER*/
 * , *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/*Début navbar*/
+/*DÃ©but navbar*/
 
-nav {
+.navbar {
   width: 80%;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(0, 37, 51, 0.5);
   backdrop-filter: blur(20px);
   position: fixed;
-  top:0;
+  top: 0;
   border-radius: 0px 0px 10px 10px;
   padding: 1rem;
   height: 4rem;
   z-index: 999;
+  text-decoration: none;
 }
 
 .logo {
   height: 3.5rem;
 }
 
-header nav ul li {
+nav ul li {
+  text-decoration: none;
   list-style: none;
   padding: 1rem;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: #f7efe7;
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
-}
-
-header nav ul {
+.list-general {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  color: var(--secondary-color);
+  font-family: "Playfair Display", serif;
+  font-size: var(--h5-size-desktop);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN a:hover {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN:hover>ul {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN {
+  cursor: pointer;
+  margin: 0 1.5rem;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.listeN-pointer {
+  height: 50%;
+  width: 50%;
 }
 
 .sousMenu {
@@ -82,18 +118,100 @@ header nav ul {
   position: absolute;
   top: 4rem;
   background-color: rgba(0, 37, 51, 0.5);
-  backdrop-filter: blur(20px);
   border-radius: 0px 0px 10px 10px;
+  text-decoration: none;
+  list-style: none;
 }
 
-.listeN:hover > ul {
-  display: block;
+.sousListe {
+  color: #f7efe7;
+  font-family: 'Lexend Regular';
+  font-size: var(--p-button);
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
 }
 
-.listeN {
+/*Fin navbar*/
+.title-top {
+  font-family: Playfair Display Semibold;
+  font-style: italic;
+  text-align: left;
+  font-size: 8rem;
+  color: #f7efe7;
+  position: absolute;
+  bottom: 30vh;
+  margin-left: 5vw;
+  mix-blend-mode: soft-light;
+}
+
+.img-top {
+object-fit: cover;
+object-position: center;
+height: 75vh;
+width: 100%;
+margin: 0;
+border-radius: 0px 0px 30px 30px;
+}
+/*Menu burger*/
+/* Styles pour l'icône du menu */
+#icons {
   cursor: pointer;
-  margin: 0 1.2rem;
+  display: none;
 }
+
+/* Styles pour la barre de navigation lorsque le menu est actif */
+/*.navbar.active ul {
+  left: 0;
+  margin-top: 8.5vh;
+}*/
+
+/*.sousMenu li {
+  margin-top: 6vh;
+}*/
+
+
+@media (max-width: 1000px) {
+  #icons {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  #icons::before {
+    content: "\2630"; /* Icône du menu hamburger */
+    color: var(--secondary-color); /* Couleur de l'icône */
+  }
+
+  .navbar.active #icons::before {
+    content: "\2715"; /* Icône de fermeture du menu */
+  }
+
+  /* Styles pour la barre de navigation */
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: rgba(0, 37, 51, 0.5);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    text-align: center;
+    transition: 0.5s; /* Transition plus rapide */
+  }
+
+  nav li {
+    padding: 3px 0;
+  }
+
+  nav li:hover {
+    background: #01749e;
+  }
+}
+/* Afficher la barre de navigation en cas de clic sur l'icône du menu */
+
 /*Fin navbar*/
 /*Acceuil*/
 .headerG header {
@@ -585,7 +703,7 @@ header nav ul {
   background-size: cover;
   background-position: bottom;
   padding: 10%;
-  /*border-radius: 0px 0px 15px 15px;*/
+  border-radius: 0px 0px 15px 15px;
 }
 
 .header-stephm h1 {
@@ -768,23 +886,17 @@ header nav ul {
 
 @media screen and (max-width: 960px) {
   .header-stephm h1{
-    /*width: auto;*/
     font-size: 3rem;
   }
   .texte-stephm{
-    /*width: auto;*/
     display: flex;
-    /*grid-template-columns: none;
-    grid-template-rows: auto;
-    grid-template-areas: none;*/
     flex-wrap: wrap;
-    
+    justify-content: center; 
   }
   .img1stephm .img2stephm .img3stephm .img4stephm{
     width: auto;
   }
-    .cards-stephm{
-    width: auto;
+  .cards-stephm{
     padding: 0.5rem;
     flex-wrap: wrap;
     gap: 2rem;
@@ -1133,6 +1245,7 @@ hr {
       font-family: Lexend Regular;
   }
 }
+
 /*fin cartes*/
 
 /*Contact*/
@@ -1233,22 +1346,36 @@ form {
 /*footer*/
 
 footer {
-  font-size: 0.8rem;
-  background-color: var(--principal-color);
-  margin-top: auto;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  margin-bottom: 0;
-  padding: 0.5rem;
-}
-
-.bas-footer {
-  display: flex;
-  justify-content: center;
-  align-items: end;
   padding: 1rem;
+  width: 100%;
+  background-color: var(--principal-color);
 }
 
+footer .bas-footer {
+  display: flex;
+  justify-content:center ;
+  align-items: end;
+}
+
+footer .bas-footer p {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+}
+
+footer .footer-central {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-central div p {
+  font-size: 0.7rem;
+  color: var(--secondary-color);
+}
+
+.blog {
+  margin-right: 3rem;
+}
 
 /*fin du footer*/

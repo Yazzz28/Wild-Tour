@@ -60,6 +60,7 @@ if ($_POST){
                             </li>
                         </ul>
                     </nav>
+                    <div id="icons"></div>
                     <h1>Contact</h1>
                 </div>
             </header>
@@ -97,21 +98,26 @@ if ($_POST){
                     </form>
                 </section>
             </main>
-        <footer>
-                <div class="gauche-footer"></div>
-                <div><img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt=""></div>
-            <section class="millieu-footer">
-                <div>Mentions legales</div>
-                <div>Politique de confidentialité</div>
-                <div>Conditions d'utilisation</div>
-            </section>
-            <section class="droite-footer"></section>
-                <div>À propos</div>
-                <div>Pages principales</div>
+            <footer>
+            <div class="footer-central">
+                <div class="logo">
+                    <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+                </div>
+                <div class="menssions">
+                    <p>Mentions légales <br>
+                    Plolitique de confidentialité <br>
+                    Conditions d'utilisation</p>
+                </div>
+                <div class="blog">
+                    <p>A propos <br>
+                    Blog</p>
+                </div>
+            </div>
             <div class="bas-footer">
-                <div><p>Boullevard des regions, 96000 WildLand</p></div>
+                <p>Boullevard des regions, 96000 WildLand</p>
             </div>
         </footer>
     </section>
+    <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 </html>

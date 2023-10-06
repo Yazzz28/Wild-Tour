@@ -13,31 +13,33 @@
     <title>The Wild Tour</title>
 </head>
 <body>
-    <section class="headerG">
-        <header>
-            <div>
-                <nav class="navbar">
-                    <img src="assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
-                    <ul class="list-general">
-                        <li class="listeN"><a href="acceuil.html">Accueil</a></li>
-                        <li class="listeN"><a href="contact.php">Contact</a></li>
-                        <li class="listeN"><a href="#">Découverte</a><span>&#9660;</span>
-                            <ul class="sousMenu">
-                                <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
-                                <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
-                                <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
-                                <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
-                                <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <h1>The Wild Tour</h1>
-            </div>
+        <header class="centrer">
+            <nav class="navbar">
+                <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo">
+                <ul class="list-general">
+                    <li class="listeN"><a href="acceuil.html">Accueil</a></li>
+                    <li class="listeN"><a href="contact.php">Contact</a></li>
+                    <li class="listeN"><a href="decouvertes.php">Découvertes</a><span class="listeN-pointer">&#9660;</span>
+                        <ul class="sousMenu">
+                            <li class="sousListe"><a href="fiche-yacine.html">Gastronomie</a></li>
+                            <li class="sousListe"><a href="fiche-daniel.html">Sport</a></li>
+                            <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
+                            <li class="sousListe"><a href="fiche-stephV.html">Ecologie</a></li>
+                            <li class="sousListe"><a href="fiche_stephM.html">Nature</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="icons"></div>
+            </nav>
         </header>
-    </section>
         <main> 
-            
+            <!--Image principale top et titre -->
+        <section>
+            <h1 class="title-top">Accueil</h1>
+            <div>
+                <img class="img-top" src="/assets-julien/image-accueil.jpg">
+            </div>
+        </section>
             <section class="titre-texte-acceuil">
                 <h2>Bienvenue</h2>
                 <div class="ligne-acceuil-dessus-h1"></div>
@@ -54,7 +56,7 @@
                         </div>
                         <div class="card__body">
                             <h4>Le bien-etre et la nature</h4>
-                            <p></p>
+                            <p>Découvrez la beauté d'une des villes balnéaires de la côte atlantique à travers ses différents paysages entre plage et forêt.</p>
                             <a class="card__button" href="/fiche_stephM.html">Lire plus...</a>
                         </div>
                         <div class="card__footer">
@@ -73,7 +75,7 @@
                         <div class="card__body">
     
                             <h4>La gastronomie japonaise</h4>
-                            <p></p>
+                            <p>Découvrez la bonne adresse pour découvrir la gastronomie japonaise dans la région de l'Eure et Loire. un environnement typiquement japonais en pleins coeur de chartres avec beaucoup de gourmandise au menu</p>
                             <a class="card__button" href="/fiche-yacine.html">Lire plus...</a>
                         </div>
                         <div class="card__footer">
@@ -91,7 +93,7 @@
                         </div>
                         <div class="card__body">
                             <h4>L'écologie dans nos régions</h4>
-                            <p></p>
+                            <p>Un petit tour d'horizon libournais sur les actions écoresponsables</p>
                             <a class="card__button" href="/fiche-stephV.html">Lire plus...</a>
                         </div>
                         <div class="card__footer">
@@ -105,7 +107,7 @@
                     </div>
                 </div>
             </section>
-    
+        
             <section class="articles-recents">
                 <h3 class="article-h3">Les articles de la semaine</h3>
                 <hr>
@@ -115,7 +117,7 @@
                     </div>
                     <div class="article-col2-2">
                         <h4>La pêche dans l’Aube</h4>
-                        <p>Un article tres intéressant sur la peche dans l'aube.</p>
+                        <p>Un trés article sur la pêche dans la région de l'aube et ses environs</p>
                         <button class="button-lire-plus">Lire plus...</button>
                     </div>
                 </div>
@@ -126,16 +128,32 @@
                     </div>
                     <div class="article-col2-2">
                         <h4>Base sous-marine, Bordeaux</h4>
-                        <p>Cet article vous fera voyager dans la région Bordelaise avec ses secrets et ses histoires.</p>
-                        <button class="button-lire-plus"><a href="/fiche-julien.html"></a>Lire plus...</button>
+                        <p>Cet article vous fera voyager dans la région Bordelaise avec ses secrets, ses histoires ainsi que que son art et architechture.</p>
+                        <button class="button-lire-plus"><a href="/fiche-julien.php"></a>Lire plus...</button>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="bas-footer"></div>
-                <div><p>Boullevard des regions, 96000 WildLand</p></div>
+            <div class="footer-central">
+                <div class="logo">
+                    <img src="/assets-daniel/logo-the-wild-tour-navbar.png" alt="" width="150">
+                </div>
+                <div class="menssions">
+                    <p>Mentions légales <br>
+                    Plolitique de confidentialité <br>
+                    Conditions d'utilisation</p>
+                </div>
+                <div class="blog">
+                    <p>A propos <br>
+                    Blog</p>
+                </div>
+            </div>
+            <div class="bas-footer">
+                <p>Boullevard des regions, 96000 WildLand</p>
+            </div>
         </footer>
+        <script src="includes/menu-burger-mobile/menu-burger-mobile.js"></script>
 </body>
 </html>
 
