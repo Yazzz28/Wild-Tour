@@ -42,40 +42,41 @@ if ($_POST){
 <body>
     <section class="body-contact">
         <section class="headerC">
-        <header>
-        <div class="container">
-          <nav class="navbar" id="nav">
-            <img
-              src="assets-daniel/logo-the-wild-tour-navbar.png"
-              alt="logo"
-              class="logo"
-            />
-            <ul class="list-general">
-              <li class="listeN"><a href="acceuil.html">Accueil</a></li>
-              <li class="listeN"><a href="contact.php">Contact</a></li>
-              <li class="listeN">
-              <a href="decouvertes.php">Découverte</a><span>&#9660;</span>
-                <ul class="sousMenu">
-                  <li class="sousListe">
-                    <a href="fiche-yacine.html">Gastronomie</a>
-                  </li>
-                  <li class="sousListe">
-                    <a href="fiche-daniel.html">Sport</a>
-                  </li>
-                  <li class="sousListe"><a href="fiche-julien.php">Art</a></li>
-                  <li class="sousListe">
-                    <a href="fiche-stephV.html">Ecologie</a>
-                  </li>
-                  <li class="sousListe">
-                    <a href="fiche_stephM.html">Nature</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div id="icons"></div>
-          </nav>
-        </div>
-      </header>
+        <header class="centrer">
+			<nav class="navbar" id="nav">
+				<img src="assets-daniel/logo-the-wild-tour-navbar.png" alt="logo" class="logo"/>
+				<ul class="list-general">
+					<li class="listeN">
+						<a href="acceuil.html">Accueil</a>
+					</li>
+					<li class="listeN">
+						<a href="contact.php">Contact</a>
+					</li>
+					<li class="listeN">
+						<a href="#">Découverte</a>
+						<span>&#9660;</span>
+						<ul class="sousMenu">
+							<li class="sousListe">
+								<a href="fiche-yacine.html">Gastronomie</a>
+							</li>
+							<li class="sousListe">
+								<a href="fiche-daniel.html">Sport</a>
+							</li>
+							<li class="sousListe">
+								<a href="fiche-julien.php">Art</a>
+							</li>
+							<li class="sousListe">
+								<a href="fiche-stephV.html">Ecologie</a>
+							</li>
+							<li class="sousListe">
+								<a href="fiche_stephM.html">Nature</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div id="icons"></div>
+			</nav>
+		</header>
         </section>
             <main class="form" id="formulaire"> 
                 <section class="box-form">

@@ -8,12 +8,12 @@
 
     /* Set the width of the side navigation to 250px */
     function openNav() {
-        sidenav.classList.add("active");
+        sidenav.classList.add("active")
     }
 
     /* Set the width of the side navigation to 0 */
     function closeNav() {
-        sidenav.classList.remove("active");
+        sidenav.classList.remove("active")
     }
 
 </script>
